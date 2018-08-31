@@ -1,0 +1,5 @@
+( function( $ ) {
+	$('.logo-strip).slick({
+  });
+
+} )( jQuery );

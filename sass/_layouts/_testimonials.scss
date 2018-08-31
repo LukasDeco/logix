@@ -1,0 +1,102 @@
+div.testimonials-section {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-family: Kievit;
+		div.quote-and-title {
+			display: flex;
+			min-height: 305px;
+			max-height: 305px;
+			overflow: hidden;
+			justify-content: space-between;
+				div.hidden {
+					display: none !important;
+				}
+				
+				div.customer-quote {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					flex: 4;
+					max-width: 555px;
+					margin-top: 20px;
+					margin-bottom: 30px;
+					position: relative;
+					transition: .25s;
+					opacity: 0;
+					
+						p.customer-text {
+							color: $arctic-blue;
+							font-size: $large-font-size;
+							font-family: KievitItalic;
+							margin-bottom: 8px;
+							overflow: hidden;
+						}
+						
+						p.customer-title {
+							color: $arctic-blue;
+							font-size: $medium-font-size;
+							font-family: FranklinGothicBook;
+								span {
+										font-size: 11pt;
+									}
+							
+						}
+						
+						&:before {
+							content: '';
+							border-left: 20px solid transparent;
+							border-right: 20px solid transparent;
+							border-bottom: 20px solid $arctic-blue;
+							position: absolute;
+							left: 30px;
+							bottom: -18px;
+						}
+				}
+				
+				div.title {
+					display: flex;
+					flex: 1;
+					color: $wine-red;
+					font-size: 14px;
+					font-family: FranklinGothicBook;
+					max-width: 170px;
+					padding-top: 10px;
+				}
+				
+		}
+		
+		div.logo-strip {
+			display: flex;
+			height: 70px;
+			width: 100%;
+			overflow: hidden;
+
+				div.logo {
+					display: flex;
+					min-width: 112.5px;
+					max-width: 112.5px;
+					padding: 5px;
+					cursor: pointer;
+					opacity: .4;
+					transition: .5s;
+					&.compat-object-fit {
+						   background-size: contain;
+						   background-repeat: no-repeat;
+						   background-position: center center;
+						   img { // hide image if object fit is not supported - opacity to 0 for the link area
+							opacity: 0;
+						   }
+						  }
+						img {
+							object-fit: contain;
+							flex-basis: 112.5px;
+						}
+				}
+				div.selected-logo {
+					opacity: 1;
+				}
+			
+		}
+		
+}

@@ -1,0 +1,26 @@
+div.resources-list {
+	display: flex;
+	flex-direction: column;
+	color: $arctic-blue;
+	font-size: $medium-font-size;
+		div.resource {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-bottom: 5px;
+		}
+		span.file-icon {
+			color: $wine-red;
+			padding-right: 5px;
+			padding-left: 5px;
+			border: 1px solid $wine-red;
+			
+			margin-right: 5px;
+		}
+		a {
+			
+			font-size: 15pt;
+			text-decoration: none;
+			color: $arctic-blue;
+		}
+}

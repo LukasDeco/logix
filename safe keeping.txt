@@ -1,0 +1,61 @@
+ $query_vars = json_decode( stripslashes( $_POST['query_vars'] ), true );
+
+    $query_vars['category_name'] = $_POST['cat_slug'];
+
+    $resources_query = new WP_Query( $query_vars );
+	echo 'doobie';
+			while ( $resources_query->have_posts() ) : $resources_query->the_post();
+				$file = get_field('resource_file');
+				$title = get_the_title();
+				$url = $file['url'];
+				$filetype = pathinfo($url, PATHINFO_EXTENSION);
+				$type = strtoupper(pathinfo($url, PATHINFO_EXTENSION));
+				switch ($filetype) {
+                  case "pdf":
+                      $fileclass = 'file-pdf';
+					  $icon_color = '#c13149';
+                      break;
+                  case "jpg":
+                  case "jpeg":
+                  case "png":
+                  case "svg":
+                      $fileclass = 'file-image';
+					  $icon_color = '#4386fc';
+                      break;
+                  case "pptx":
+                  case "pptm":
+                  case "ppt":
+                      $fileclass = 'file-powerpoint';
+					  $icon_color = '#f4b400';
+                      break;
+                  case "xlsx":
+                  case "xlsm":
+                  case "xls":
+                      $fileclass = 'file-excel';
+					  $icon_color = 'green';
+                      break;
+                  case "doc":
+                  case "docm":
+                  case "docx":
+                  case "odt":
+                  case "rtf":
+                  case "txt":
+                      $fileclass = 'document-text';
+                      break;
+                  default:
+                      $fileclass = 'document-text';
+                      break;
+				}
+				
+				$icon =  $file['icon'];
+		?>		
+				<div class="resource">
+					<a href="<?php echo esc_url( $url ) ?>">
+						<i style="color:<?php echo $icon_color ?>; " class="mdi mdi-<?php echo $fileclass ?>"></i>
+						<h5><?php echo $title; ?></h5>
+						 <?php the_content(); ?>
+					</a>
+				</div>
+		<?php
+			endwhile;
+			wp_reset_query();

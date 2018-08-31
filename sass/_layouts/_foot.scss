@@ -1,0 +1,77 @@
+footer.site-footer {
+	display: flex;
+	padding: 10px;
+	background: $sky-blue;
+	margin-top: 50px;
+	justify-content: center;
+	align-items: center;
+		.footer-content{
+			max-width: 912px;
+			display: flex;
+		}
+	
+		div.site-info{
+			color: $wine-red;
+				div.site-branding {
+					max-width:128px;
+				}
+				div.logix-contact-info{
+					p{
+						display: flex;
+						align-items: center;
+						font-family: FranklinGothicBook;
+							a {
+								text-decoration: none;
+								color: $wine-red;
+							}
+					}
+					
+					p.address{
+						font-size: 11pt;
+					}
+				}
+			}
+			div.site-footer-nav {
+				display: flex;
+					ul {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: flex-end;
+						li{
+							display: flex;
+							flex-direction: column;
+							margin: 10px;
+							min-width: 175px;
+							max-width: 175px;
+								a {
+									margin-bottom: 8px;
+									text-decoration: none;
+									color: $arctic-blue;
+									font-family: KievitMedium;
+										&:hover {
+													font-weight: 600;
+												}
+								}
+								ul {
+									display: flex;
+									flex-direction: column;
+									margin-left: 0px;
+										li {
+											margin: 1px;
+											margin-left: 0px;
+												a {
+													font-family: Kievit;
+													margin-bottom: 0px;
+														&:hover {
+															font-weight: 600;
+														}
+												}
+												ul {
+													margin-left: 20px;
+												}
+										}
+								}
+						}
+					}
+			}
+}

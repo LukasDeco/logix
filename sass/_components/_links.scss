@@ -1,0 +1,45 @@
+a.link-one {
+	color: $dark-grey;
+	transition: .5s;
+	position: relative;
+	overflow: hidden;
+	&:hover {
+		color: $wine-red;
+		&::after{
+		left:0;
+		}
+	}
+	&::after {
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: $wine-red;
+	left:-100%;
+	bottom: 0;
+	position: absolute;
+	transition: .25s;
+	}
+}
+
+div ul.nav-menu li a {
+	color: $dark-grey;
+	transition: .5s;
+	position: relative;
+	overflow: hidden;
+	&:hover {
+		color: $wine-red;
+		&::after{
+		left:0;
+		}
+	}
+	&::after {
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: $wine-red;
+	left:-100%;
+	bottom: 0;
+	position: absolute;
+	transition: .25s;
+	}
+}

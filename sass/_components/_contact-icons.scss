@@ -1,0 +1,28 @@
+div.lx-contact-icons {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+color: $wine-red;
+min-width: 100px;
+	a {
+	text-decoration: none;
+	color: $wine-red;
+	
+		i {
+			font-size: $larger-font-size;	
+		}
+	
+	}
+		
+	p.divider {
+	width: 1px;
+	height: 30px;
+	background: $wine-red;
+	margin-bottom: 0px;
+	margin-left: 0px !important;
+	padding-right: 0px !important;
+	}
+	
+		
+	
+}

@@ -1,0 +1,103 @@
+div.solution-page {
+	display: flex;
+	margin-bottom: 40px;
+	max-width: 912px;
+	width: 100%;
+		div.solution-main-content {
+			display: flex;
+			flex-direction: column;
+			flex: 4;
+				div.title-area {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 40px;
+						h1 {
+							font-size: 62pt;
+							color: $wine-red;
+							font-weight: $heavy-font-weight;
+							font-family: KievitBoldItalic;
+							margin-bottom: 30px;
+							letter-spacing: 2px;
+							line-height: 80px;
+						}
+						
+						h2 {
+							font-size: 32pt;
+							color: $arctic-blue;
+							margin-top: -25px;
+						}
+						
+						h5 {
+							font-size: $large-font-size;
+							color: $arctic-blue;
+						}
+				}
+				
+			div.solution-page-area {
+				font-size: 13pt;
+			}
+		}
+		
+		
+		
+		div.solution-sidebar {
+			display: flex;
+			flex-direction: column;
+			padding-left: 60px;
+			flex: 2;
+			margin-top: 60px;
+				div.solution-quote {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: flex-start;
+					margin-bottom: 10px;
+					color: $arctic-blue;
+					font-size: $large-font-size;
+					width:100%;
+						}
+						p {
+						font-family: KievitItalic;
+						}
+						div.quote-type {
+							color: $white;
+							font-size: $base-font-size;
+							padding: 5px;
+							margin-bottom: 30px;
+							border: 1px solid $dark-grey;
+							background: $dark-grey;
+							position: relative;	
+							letter-spacing: -1px;
+								&:before {
+											position: absolute;
+											content: '';
+											bottom: -26px;
+											left: 8px;
+											width: 0;
+											height: 0;
+											border-style: solid;
+											border-width: 0 0 30px 50px;
+											border-color: transparent $dark-grey transparent $dark-grey;
+										}
+								
+								&:after {
+											position: absolute;
+											content: '';
+											bottom: -31px;
+											left: 4px;
+											width: 0;
+											height: 0;
+											border-style: solid;
+											border-width: 0 0 30px 20px;
+											border-color: transparent $white transparent $white;
+										}
+								
+								
+						}
+				}
+				
+				
+		}
+		
+		
+		

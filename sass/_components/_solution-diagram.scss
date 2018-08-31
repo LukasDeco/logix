@@ -1,0 +1,31 @@
+a.solution-diagram-link {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid $wine-red;
+	border-radius: 4px;
+	text-decoration: none;
+	padding: 15px;
+}
+
+img.solution-diagram{
+	object-fit: contain;
+		&:after {
+		
+		}
+
+}
+
+p.solution-diagram-text {
+	color: $wine-red;
+	text-decoration: none;
+	font-size: $medium-font-size;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-family: FranklinGothicBook;
+		i {
+			font-size: $bigger-header-font-size;
+			margin-left: 5px;
+		}
+		
+}

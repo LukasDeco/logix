@@ -1,0 +1,65 @@
+div.logix-page div.solutions-archive-hero.hero-section {
+	max-height: 200px;
+	min-height: 200px;
+	
+	}
+
+div.solutions-archive-content {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: $arctic-blue;
+	font-size: 20pt;
+	width: 100%;
+	max-width: 912px;
+	line-height: 1.2;
+		p {
+			max-width: 700px;
+			font-size: 28px;
+		}
+}
+
+div.solutions-archive {
+	min-height: 300px;
+	max-width: 912px;
+	width: 100%;
+	display: flex;
+	align-content: flex-start;
+		div.title {
+			max-height: 40px;
+			font-size: 17.3333333px;
+		}
+	ul {
+		margin-left: 0px;
+		font-size: 20pt;
+			ul {
+				margin-left: 20px;
+				
+			}
+	}
+		div.solutions-list {
+			display: flex;
+			min-height: 300px;
+				div.solution-image {
+					max-height: 300px;
+					margin-top: 20px;
+					flex: 2;
+					display: flex;
+					overflow:hidden;
+						img {
+							object-fit: contain;
+							height:unset;
+						}
+				}
+				div.solutions-menu {
+					flex: 1;
+						ul {
+							li {
+								a {
+									font-size:20pt;
+								}
+							}
+						}
+				}
+		}
+}
