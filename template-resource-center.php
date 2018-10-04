@@ -5,10 +5,10 @@ get_header(); ?>
 
 <div class="logix-page">
 
-		<div class="hero-section resource-center" style="background-image:url('https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');">
+		<div class="hero-section solutions-archive-hero" style="background-image:url(<?php echo $background_image; ?>);">
 			<div class="hero-container">
 				<div class="hero-title">
-					<h2>Resource Center</h2>				
+					<h2>Resource Center</h2>
 				</div>
 				<div class="hero-empty">
 				</div>
@@ -32,28 +32,28 @@ get_header(); ?>
 							// Get all the taxonomies for this post type
 							$taxonomies = get_object_taxonomies( (object) array( 'post_type' => $post_type ) );
 
-							foreach( $taxonomies as $taxonomy ) : 
+							foreach( $taxonomies as $taxonomy ) :
 
 								// Gets every "category" (term) in this taxonomy to get the respective posts
 								$terms = get_terms( $taxonomy );
-								
-									 foreach( $terms as $term ) : 
+
+									 foreach( $terms as $term ) :
 										 $slug = get_term_link($term->slug, $taxonomy);
 										 $name = $term->name;
-										 
+
 										if ($name !== 'Uncategorized') {
-											 
+
 									 ?>
-									 
+
 								<li id="<?php echo $slug; ?>" class="resource-category"><?php echo $name ?></li>
 
 										<?php	 }
-						
-						
+
+
 						endforeach;
 
 						endforeach;
-														
+
 								?>
 
 					</ul>
@@ -151,9 +151,9 @@ get_header(); ?>
                       $fileclass = 'document-text';
                       break;
 				}
-				
+
 				$icon =  $file['icon'];
-		?>		
+		?>
 				<div class="resource">
 					<a href="<?php echo esc_url( $url ) ?>" target="_blank">
 						<i style="color:<?php echo $icon_color ?>; " class="mdi mdi-<?php echo $fileclass ?>"></i>
@@ -169,6 +169,6 @@ get_header(); ?>
 </div>
 
 
-<?php 
+<?php
 
 get_footer();
