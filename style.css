@@ -46,7 +46,7 @@ Lukas Conant made the actual Logix theme built on top of the Underscores theme!
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-/* line 5, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -67,38 +67,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -280,34 +280,39 @@ div.logix-page {
     justify-content: center;
     align-items: center;
     height: 250px;
-    background-size: cover; }
-    /* line 17, sass/_layouts/_front-page.scss */
+    background-size: cover;
+    background-position: center; }
+    /* line 18, sass/_layouts/_front-page.scss */
     div.logix-page div.hero-section div.hero-container {
       display: flex;
       width: 100%;
       max-width: 912px; }
-      /* line 22, sass/_layouts/_front-page.scss */
+      /* line 23, sass/_layouts/_front-page.scss */
       div.logix-page div.hero-section div.hero-container div.hero-title {
         flex: 3;
         min-width: 300px; }
-        /* line 25, sass/_layouts/_front-page.scss */
+        /* line 26, sass/_layouts/_front-page.scss */
         div.logix-page div.hero-section div.hero-container div.hero-title h1 {
           color: #242021;
           font-size: 22pt;
           font-family: KievitMedium;
           line-height: 1;
           font-weight: inherit; }
-        /* line 33, sass/_layouts/_front-page.scss */
+        /* line 34, sass/_layouts/_front-page.scss */
         div.logix-page div.hero-section div.hero-container div.hero-title h2 {
           color: #ffffff;
-          font-size: 40pt;
+          font-size: 37.33333px;
           font-family: Kievit;
           line-height: 1;
           font-weight: inherit; }
-      /* line 42, sass/_layouts/_front-page.scss */
+          @media (min-width: 500px) {
+            /* line 34, sass/_layouts/_front-page.scss */
+            div.logix-page div.hero-section div.hero-container div.hero-title h2 {
+              font-size: 40pt; } }
+      /* line 46, sass/_layouts/_front-page.scss */
       div.logix-page div.hero-section div.hero-container div.hero-empty {
         flex: 2; }
-  /* line 48, sass/_layouts/_front-page.scss */
+  /* line 52, sass/_layouts/_front-page.scss */
   div.logix-page div.logix-page-content {
     display: flex;
     flex-direction: column;
@@ -723,17 +728,21 @@ div.solution-page {
   margin-bottom: 40px;
   max-width: 912px;
   width: 100%; }
-  /* line 6, sass/_layouts/_solutions-page.scss */
+  @media (min-width: 500px) {
+    /* line 1, sass/_layouts/_solutions-page.scss */
+    div.solution-page {
+      flex-direction: column-reverse; } }
+  /* line 9, sass/_layouts/_solutions-page.scss */
   div.solution-page div.solution-main-content {
     display: flex;
     flex-direction: column;
     flex: 4; }
-    /* line 10, sass/_layouts/_solutions-page.scss */
+    /* line 13, sass/_layouts/_solutions-page.scss */
     div.solution-page div.solution-main-content div.title-area {
       display: flex;
       flex-direction: column;
       margin-bottom: 40px; }
-      /* line 14, sass/_layouts/_solutions-page.scss */
+      /* line 17, sass/_layouts/_solutions-page.scss */
       div.solution-page div.solution-main-content div.title-area h1 {
         font-size: 62pt;
         color: RGB(173, 6, 23);
@@ -742,26 +751,26 @@ div.solution-page {
         margin-bottom: 30px;
         letter-spacing: 2px;
         line-height: 80px; }
-      /* line 24, sass/_layouts/_solutions-page.scss */
+      /* line 27, sass/_layouts/_solutions-page.scss */
       div.solution-page div.solution-main-content div.title-area h2 {
         font-size: 32pt;
         color: #5e8ab4;
         margin-top: -25px; }
-      /* line 30, sass/_layouts/_solutions-page.scss */
+      /* line 33, sass/_layouts/_solutions-page.scss */
       div.solution-page div.solution-main-content div.title-area h5 {
         font-size: 22pt;
         color: #5e8ab4; }
-    /* line 36, sass/_layouts/_solutions-page.scss */
+    /* line 39, sass/_layouts/_solutions-page.scss */
     div.solution-page div.solution-main-content div.solution-page-area {
       font-size: 13pt; }
-  /* line 43, sass/_layouts/_solutions-page.scss */
+  /* line 46, sass/_layouts/_solutions-page.scss */
   div.solution-page div.solution-sidebar {
     display: flex;
     flex-direction: column;
     padding-left: 60px;
     flex: 2;
     margin-top: 60px; }
-    /* line 49, sass/_layouts/_solutions-page.scss */
+    /* line 52, sass/_layouts/_solutions-page.scss */
     div.solution-page div.solution-sidebar div.solution-quote {
       display: flex;
       flex-direction: column;
@@ -771,10 +780,10 @@ div.solution-page {
       color: #5e8ab4;
       font-size: 22pt;
       width: 100%; }
-    /* line 59, sass/_layouts/_solutions-page.scss */
+    /* line 62, sass/_layouts/_solutions-page.scss */
     div.solution-page div.solution-sidebar p {
       font-family: KievitItalic; }
-    /* line 62, sass/_layouts/_solutions-page.scss */
+    /* line 65, sass/_layouts/_solutions-page.scss */
     div.solution-page div.solution-sidebar div.quote-type {
       color: #ffffff;
       font-size: 12pt;
@@ -784,7 +793,7 @@ div.solution-page {
       background: #242021;
       position: relative;
       letter-spacing: -1px; }
-      /* line 71, sass/_layouts/_solutions-page.scss */
+      /* line 74, sass/_layouts/_solutions-page.scss */
       div.solution-page div.solution-sidebar div.quote-type:before {
         position: absolute;
         content: '';
@@ -795,7 +804,7 @@ div.solution-page {
         border-style: solid;
         border-width: 0 0 30px 50px;
         border-color: transparent #242021 transparent #242021; }
-      /* line 83, sass/_layouts/_solutions-page.scss */
+      /* line 86, sass/_layouts/_solutions-page.scss */
       div.solution-page div.solution-sidebar div.quote-type:after {
         position: absolute;
         content: '';
@@ -1155,7 +1164,7 @@ div.lx-contact-icons {
     margin-left: 0px !important;
     padding-right: 0px !important; }
 
-/* line 1, sass/_components/arctic-blue.scss */
+/* line 1, sass/_components/_arctic-blue.scss */
 span.arctic-blue {
   color: #5e8ab4; }
 

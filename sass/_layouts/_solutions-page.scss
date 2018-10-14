@@ -3,6 +3,9 @@ div.solution-page {
 	margin-bottom: 40px;
 	max-width: 912px;
 	width: 100%;
+	@include breakpoint(500px){
+		flex-direction: column-reverse;
+	}
 		div.solution-main-content {
 			display: flex;
 			flex-direction: column;
@@ -20,26 +23,26 @@ div.solution-page {
 							letter-spacing: 2px;
 							line-height: 80px;
 						}
-						
+
 						h2 {
 							font-size: 32pt;
 							color: $arctic-blue;
 							margin-top: -25px;
 						}
-						
+
 						h5 {
 							font-size: $large-font-size;
 							color: $arctic-blue;
 						}
 				}
-				
+
 			div.solution-page-area {
 				font-size: 13pt;
 			}
 		}
-		
-		
-		
+
+
+
 		div.solution-sidebar {
 			display: flex;
 			flex-direction: column;
@@ -66,7 +69,7 @@ div.solution-page {
 							margin-bottom: 30px;
 							border: 1px solid $dark-grey;
 							background: $dark-grey;
-							position: relative;	
+							position: relative;
 							letter-spacing: -1px;
 								&:before {
 											position: absolute;
@@ -79,7 +82,7 @@ div.solution-page {
 											border-width: 0 0 30px 50px;
 											border-color: transparent $dark-grey transparent $dark-grey;
 										}
-								
+
 								&:after {
 											position: absolute;
 											content: '';
@@ -91,13 +94,10 @@ div.solution-page {
 											border-width: 0 0 30px 20px;
 											border-color: transparent $white transparent $white;
 										}
-								
-								
+
+
 						}
 				}
-				
-				
+
+
 		}
-		
-		
-		

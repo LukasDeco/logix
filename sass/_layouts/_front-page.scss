@@ -5,7 +5,7 @@ div.logix-page {
 	align-items: center;
 	margin-top: 73px;
 	font-family: Kievit;
-		
+
 		div.hero-section {
 			display: flex;
 			flex-direction: row;
@@ -14,11 +14,12 @@ div.logix-page {
 					align-items: center;
 			height: 250px;
 			background-size: cover;
+			background-position: center;
 				div.hero-container {
 					display: flex;
 					width:100%;
 					max-width: 912px;
-					
+
 						div.hero-title{
 						flex:3;
 						min-width: 300px;
@@ -29,22 +30,25 @@ div.logix-page {
 								line-height: 1;
 								font-weight: inherit;
 							}
-							
+
 							h2 {
 								color: $white;
-								font-size: $biggest-header-font-size;
+								font-size: $big-header-font-size;
 								font-family: Kievit;
 								line-height: 1;
 								font-weight: inherit;
+								@include breakpoint(500px){
+									font-size: $biggest-header-font-size;
+								}
 							}
 						}
-						
+
 						div.hero-empty {
 						flex: 2;
 						}
 				}
 		}
-		
+
 		div.logix-page-content {
 			display: flex;
 			flex-direction: column;
