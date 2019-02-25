@@ -1,16 +1,20 @@
 <?php
 /* Template Name: Solutions Archive*/
 
-$solutions_type = get_field('solutions_type');
+$solutions_type = ucfirst(get_field('solutions_type'));
 $solutions_type_slug = str_replace(" ", "-",strtolower($solutions_type));
+
+$thumb_id = get_post_thumbnail_id();
+$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+$thumb_url = $thumb_url_array[0];
 
 get_header(); ?>
 
 	<div class="logix-page">
-		<div class="hero-section solutions-archive-hero" style="background-image:url(<?php echo $background_image; ?>);">
+		<div class="hero-section solutions-archive-hero" style="background-image:url(<?php echo $thumb_url; ?>);">
 			<div class="hero-container">
 				<div class="hero-title">
-					<h2><?php echo $solutions_type; ?></h2>
+					<h2><?php echo $solutions_type; ?> Solutions</h2>
 				</div>
 				<div class="hero-empty">
 				</div>
@@ -23,7 +27,7 @@ get_header(); ?>
 		</div>
 		<div class="our-solutions solutions-archive has-red-divider-uptop">
 			<div class="title">
-				Our <?php echo $solutions_type; ?>
+				Our <?php echo $solutions_type; ?> Solutions
 			</div>
 			<div class="solutions-list">
 				<div class="solutions-menu">

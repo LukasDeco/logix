@@ -45,6 +45,7 @@ function logix_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'logix' ),
+		'menu-2' => esc_html__( 'Customers', 'logix' ),
 	) );
 
 	/*
@@ -106,26 +107,26 @@ add_action( 'widgets_init', 'logix_widgets_init' );
  */
 function logix_scripts() {
 	wp_enqueue_style( 'logix-style', get_stylesheet_uri(), 'dashicons' );
-	
+
 	wp_enqueue_style( 'dashicons' );
-	
+
 	wp_enqueue_script('jquery');
 
 	wp_enqueue_script( 'logix-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'logix-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-	
+
 	//vendor scripts and styles
-	
+
 	wp_enqueue_style( 'ionicons', get_template_directory_uri() . '/vendors/ionicons/css/ionicons.min.css');
 	wp_enqueue_style( 'md-icons', get_template_directory_uri() . '/vendors/MaterialDesign/css/materialdesignicons.min.css');
 	wp_enqueue_style( 'lgx-icons', get_template_directory_uri() . '/vendors/logix-icons/style.css');
-	
-	
-	
+
+
+
 	wp_register_script( 'slick-testimonial-logos', get_template_directory_uri() . '/js/slick-testimonial-logos.js', 'jquery', '1.1', true );
 	//wp_enqueue_script('slick-testimonial-logos');
-	
-	
+
+
 
 	wp_register_script( 'contact-icons', get_template_directory_uri() . '/js/contact-icons.js', 'jquery', '1.1', true );
 	wp_register_script( 'logo-strip', get_template_directory_uri() . '/js/logo-strip.js', 'jquery', '1.1', true );
@@ -135,8 +136,8 @@ function logix_scripts() {
 	wp_register_script( 'ajax-resource-center', get_template_directory_uri() . '/js/ajax-resource-center.js', 'jquery', '1.1', true );
 	wp_register_script( 'modernizr', get_template_directory_uri() . '/js/modernizr-custom.js', 'jquery', '1.1', true );
 	wp_register_script( 'ie-object-fit-img', get_template_directory_uri() . '/js/ie-object-fit-img.js', 'jquery', '1.1', true );
-	
-	
+
+
 	wp_enqueue_script('contact-icons');
 	wp_enqueue_script('logo-strip');
 	wp_enqueue_script('key-benefits');
@@ -145,25 +146,25 @@ function logix_scripts() {
 	wp_enqueue_script('ajax-resource-center');
 	wp_enqueue_script('modernizr');
 	wp_enqueue_script('ie-object-fit-img');
-	
+
 	wp_localize_script( 'ajax-resource-center', 'ajaxrc', array(
 	'ajaxurl' => admin_url( 'admin-ajax.php' ),
 	'query_vars' => json_encode( $wp_query->query )
 	));
-	
-	
+
+
 	$email_address = get_theme_mod( 'email_icon' );
 	$phone_number = get_theme_mod( 'phone_icon' );
-	
+
 	$contact_info = array(
     'email' => $email_address,
     'phone' => $phone_number,
 	);
-	
+
 	wp_localize_script( 'contact-icons', 'contact_info', $contact_info );
 
 	//end contact-icons scripts
-	
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -243,8 +244,8 @@ function my_rc_loop() {
     $query_vars['post_type'] = 'resources';
     $query_vars['post_status'] = 'publish';
     $query_vars['s'] = $_POST['keyword'];
-	
-	
+
+
     $resources_query = new WP_Query($query_vars);
 	$GLOBALS['wp_query'] = $resources_query;
 			while ( $resources_query->have_posts() ) : $resources_query->the_post();
@@ -289,10 +290,10 @@ function my_rc_loop() {
                       $fileclass = 'document-text';
                       break;
 				}
-				
+
 				$icon =  $file['icon'];
-				
-		?>		
+
+		?>
 				<div class="resource">
 					<a href="<?php echo esc_url( $url ) ?>">
 						<i style="color:<?php echo $icon_color ?>; " class="mdi mdi-<?php echo $fileclass ?>"></i>
@@ -303,9 +304,8 @@ function my_rc_loop() {
 		<?php
 			endwhile;
 			wp_reset_query();
-   
+
 
     die();
 
 }
-

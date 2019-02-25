@@ -3,8 +3,9 @@ div.solution-page {
 	margin-bottom: 40px;
 	max-width: 912px;
 	width: 100%;
+	flex-direction: column-reverse;
 	@include breakpoint(500px){
-		flex-direction: column-reverse;
+		flex-direction: row;
 	}
 		div.solution-main-content {
 			display: flex;
@@ -61,6 +62,7 @@ div.solution-page {
 						}
 						p {
 						font-family: KievitItalic;
+						color: $arctic-blue;
 						}
 						div.quote-type {
 							color: $white;
