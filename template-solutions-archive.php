@@ -10,7 +10,7 @@ $thumb_url = $thumb_url_array[0];
 
 get_header(); ?>
 
-	<div class="logix-page">
+	<div class="logix-page blue-gradient">
 		<div class="hero-section solutions-archive-hero" style="background-image:url(<?php echo $thumb_url; ?>);">
 			<div class="hero-container">
 				<div class="hero-title">

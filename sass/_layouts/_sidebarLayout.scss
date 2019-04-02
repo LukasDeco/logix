@@ -1,0 +1,75 @@
+div.logix-page-sidebar-content {
+  display: flex;
+  margin-top: 60px;
+	margin-bottom: 40px;
+	max-width: 1175px;
+	width: 100%;
+	flex-direction: column;
+	@include breakpoint(500px){
+		flex-direction: row;
+	}
+    div.main-section {
+      display: flex;
+      flex-direction: column;
+      flex: 5;
+      max-width: 750px;
+      margin: 15px;
+      font-size: $larger-font-size;
+        @include breakpoint(500px){
+          margin-right: 30px;
+        }
+        .main-content {
+          margin-bottom: 20px;
+        }
+        div.title-area {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 40px;
+            h1 {
+              font-size: 62pt;
+              color: $wine-red;
+              font-weight: $heavy-font-weight;
+              font-family: KievitBoldItalic;
+              margin-bottom: 30px;
+              letter-spacing: 2px;
+              line-height: 80px;
+            }
+
+            h2 {
+              font-size: 32pt;
+              color: $arctic-blue;
+              margin-top: -25px;
+            }
+
+            h5 {
+              font-size: $large-font-size;
+              color: $arctic-blue;
+            }
+        }
+
+      div.page-area {
+        font-size: $large-font-size;
+      }
+    }
+
+    div.sidebar {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: $grey-blue;
+      padding: 0px 15px;
+      font-size: $large-font-size;
+      h4 {
+        font-size: $large-font-size;
+      }
+      @include breakpoint(500px){
+        justify-content: flex-start;
+        align-items: inherit;
+        text-align: left;
+        padding: 0px 45px 0px 0px;
+      }
+    }
+}

@@ -1,0 +1,13 @@
+.img-row {
+  display: flex;
+  height: 200px;
+  img {
+    flex: 1;
+    min-width: 100px;
+    height: auto;
+    object-fit: cover;
+  }
+  img:nth-child(1) {
+    margin-right: 10px;
+  }
+}

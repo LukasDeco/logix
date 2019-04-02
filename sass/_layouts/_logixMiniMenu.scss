@@ -1,0 +1,63 @@
+div.logix-mini-menu {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 10px;
+		div.title {
+					color: $wine-red;
+					flex: 2;
+					font-family: FranklinGothicBook;
+					font-size: $large-font-size;
+					font-weight: bold;
+				}
+
+		div.logix-mini-menu-section {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+			flex-direction: column;
+				@include breakpoint(500px) {
+					flex-direction: row;
+				}
+				h3 {
+					color: $arctic-blue;
+					position: relative;
+					padding-left: 30px;
+					font-family: KievitBold;
+					font-size: $big-header-font-size;
+					display: flex;
+					align-items: center;
+						&:before {
+							content: '';
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+							border-left: 15px solid $arctic-blue;
+							position: absolute;
+							left: 0;
+						}
+				}
+
+				ul {
+					list-style: none;
+						li {
+							font-size: $medium-large-font-size;
+							font-family: FranklinGothicBook;
+								a {
+									color: $grey-blue;
+										&:hover {
+											color: $wine-red;
+										}
+
+										&:visited {
+											color: $wine-red;
+										}
+
+								}
+							ul li a {
+								font-family: Kievit;
+								font-size: 11pt;
+							}
+						}
+				}
+		}
+}

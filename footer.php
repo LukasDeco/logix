@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-content">
 			<div class="site-info">
-				<div class="site-branding">	
+				<div class="site-branding">
 					<?php if ( get_theme_mod( 'logix_logo' ) ) : ?>
 						<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'logix_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
 					<?php else : ?>
@@ -27,9 +27,9 @@
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 				<div class="logix-contact-info">
-					<p><a href="<?php echo get_theme_mod( 'email_icon' ); ?>"><i class="mdi mdi-email"></i><?php echo get_theme_mod( 'email_icon' ); ?></a></p>
-					<p><?php get_theme_mod( 'phone_icon' ); ?></p>
-					<p class="address"><?php echo get_theme_mod( 'street_address' ); ?><br><?php echo get_theme_mod( 'city_state_zip' ); ?></p>
+					<div><a href="<?php echo get_theme_mod( 'email_icon' ); ?>"><i class="mdi mdi-email"></i><?php echo get_theme_mod( 'email_icon' ); ?></a></div>
+					<div><?php echo get_theme_mod( 'phone_icon' ); ?></div>
+					<div class="address"><?php echo get_theme_mod( 'street_address' ); ?><br><?php echo get_theme_mod( 'city_state_zip' ); ?></div>
 				</div>
 			</div><!-- .site-info -->
 			<div class="site-footer-nav">

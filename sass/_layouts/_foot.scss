@@ -2,41 +2,57 @@ footer.site-footer {
 	display: flex;
 	padding: 10px;
 	background: $sky-blue;
-	margin-top: 50px;
+	padding-top: 50px;
 	justify-content: center;
 	align-items: center;
 		.footer-content{
-			max-width: 912px;
+			max-width: 1366px;
 			display: flex;
+			flex-wrap: wrap;
 		}
 
 		div.site-info{
 			color: $wine-red;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
 				div.site-branding {
-					max-width:128px;
+					flex: 1
 				}
 				div.logix-contact-info{
-					p{
+					flex: 3;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					margin-bottom: 70px;
+					div{
 						display: flex;
 						align-items: center;
 						font-family: FranklinGothicBook;
+						font-size: 14pt;
 							a {
 								text-decoration: none;
 								color: $wine-red;
 							}
 					}
 
-					p.address{
+					.address{
 						font-size: 11pt;
 					}
 				}
 			}
 			div.site-footer-nav {
 				display: flex;
+				flex: 5;
+				.menu-menu-1-container {
+					flex: 1;
+				}
 					ul {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: flex-end;
+						display: flex;
+				    flex-flow: column wrap;
+				    justify-content: flex-start;
+				    align-items: flex-start;
+				    height: 275px;
 						li{
 							display: flex;
 							flex-direction: column;
@@ -56,6 +72,8 @@ footer.site-footer {
 									display: flex;
 									flex-direction: column;
 									margin-left: 0px;
+									flex-wrap: nowrap;
+    							height: auto;
 										li {
 											margin: 1px;
 											margin-left: 0px;

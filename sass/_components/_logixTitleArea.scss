@@ -1,0 +1,32 @@
+div.logix-main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+    div.logix-content-title {
+      display: flex;
+      flex-direction: column;
+        h1 {
+          font-size: $bigger-header-font-size;
+          color: $wine-red;
+          font-weight: $heavy-font-weight;
+          font-family: KievitBoldItalic;
+          margin-bottom: 5px;
+          margin-top: 0px;
+          line-height: 80px;
+        }
+
+        h2 {
+          font-size: $medium-large-font-size;
+          color: $wine-red;
+          margin-top: -25px;
+        }
+
+        p {
+          color: $arctic-blue;
+        }
+    }
+
+  div.solution-page-area {
+    font-size: 13pt;
+  }
+}

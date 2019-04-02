@@ -1,0 +1,12 @@
+.logix-statement {
+  position: relative;
+    .statement-logo {
+      position: absolute;
+      top: -32px;
+    }
+    .statement-title {
+      font-family: Kievit;
+      color: $wine-red;
+      font-size: 24px;
+    }
+}

@@ -1,0 +1,48 @@
+.columned-menu {
+  display: flex;
+  justify-content: space-between;
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20px;
+    .titled-section {
+      position: relative;
+      margin-top: 15px;
+        &:before {
+          position: absolute;
+          top: -2px;
+          content: "";
+          height: 2px;
+          width: 60px;
+          background: $wine-red;
+        }
+        h3 {
+          color: $wine-red;
+          margin-bottom: 15px;
+          font-size: 18px;
+          font-family: FranklinGothicBook;
+        }
+        .item {
+          a {
+            padding-left: 10px;
+            text-decoration: none;
+            color: $grey-blue;
+            font-size: 18px;
+            position: relative;
+            font-family: FranklinGothicBook;
+              &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: calc(50% - 3px);
+                border-radius: 50%;
+                background: $arctic-blue;
+                height: 3px;
+                width: 3px;
+              }
+          }
+        }
+    }
+  }
+}

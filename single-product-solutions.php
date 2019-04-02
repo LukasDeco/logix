@@ -28,35 +28,9 @@ get_header(); ?>
 								</div>
 
 							</div>
-							
+
 							<div class="solution-sidebar">
-								<div class="solution-sidebar">
-								<?php if(get_field('quote_1_type') && get_field('quote_1')) {?>
-								<div class="solution-quote">
-									
-									<div class="quote-type">
-										<?php the_field('quote_1_type'); ?>
-									</div>
-									
-									<p>
-										<?php the_field('quote_1'); ?>
-										
-									</p>
-								</div>
-								<?php } ?>
-								<?php if(get_field('quote_2_type') || get_field('quote_2')) {?>
-								<div class="solution-quote" >
-									<div class="quote-type">
-										<?php the_field('quote_2_type'); ?>
-									</div>
-									
-									<p>
-										<?php the_field('quote_2'); ?>
-									</p>
-								</div>
-								<?php } ?>
 								<?php the_field('sidebar_area'); ?>
-							
 							</div>
 						</div>
 				<?php		endwhile; // End of the loop.   ?>

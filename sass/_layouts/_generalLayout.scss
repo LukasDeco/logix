@@ -1,0 +1,17 @@
+.below-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.general-page {
+  	display: flex;
+  	margin-bottom: 40px;
+  	max-width: 1175px;
+  	width: 100%;
+  	flex-direction: row;
+  	@include breakpoint(500px){
+  		flex-direction: column;
+  	}
+}

@@ -1,34 +1,35 @@
 div.solution-page {
 	display: flex;
 	margin-bottom: 40px;
-	max-width: 912px;
+	max-width: 1175px;
 	width: 100%;
 	flex-direction: column-reverse;
 	@include breakpoint(500px){
 		flex-direction: row;
 	}
-		div.solution-main-content {
+		.solution-main-content {
 			display: flex;
 			flex-direction: column;
 			flex: 4;
-				div.title-area {
+			min-width: 750px;
+				.title-area {
 					display: flex;
 					flex-direction: column;
 					margin-bottom: 40px;
 						h1 {
-							font-size: 62pt;
+							font-size: 75px;
 							color: $wine-red;
 							font-weight: $heavy-font-weight;
 							font-family: KievitBoldItalic;
-							margin-bottom: 30px;
+							margin-bottom: 20px;
 							letter-spacing: 2px;
 							line-height: 80px;
 						}
-
 						h2 {
-							font-size: 32pt;
-							color: $arctic-blue;
+							font-size: 26px;
+							color: $wine-red;
 							margin-top: -25px;
+							margin-bottom: 25px;
 						}
 
 						h5 {
@@ -37,8 +38,13 @@ div.solution-page {
 						}
 				}
 
-			div.solution-page-area {
-				font-size: 13pt;
+			.solution-page-area {
+				font-size: 18px;
+
+					.has-red-divider-uptop {
+						font-size: 24px;
+					}
+
 			}
 		}
 
@@ -50,56 +56,9 @@ div.solution-page {
 			padding-left: 60px;
 			flex: 2;
 			margin-top: 60px;
-				div.solution-quote {
-					display: flex;
-					flex-direction: column;
-					justify-content: flex-start;
-					align-items: flex-start;
-					margin-bottom: 10px;
-					color: $arctic-blue;
-					font-size: $large-font-size;
-					width:100%;
-						}
-						p {
-						font-family: KievitItalic;
-						color: $arctic-blue;
-						}
-						div.quote-type {
-							color: $white;
-							font-size: $base-font-size;
-							padding: 5px;
-							margin-bottom: 30px;
-							border: 1px solid $dark-grey;
-							background: $dark-grey;
-							position: relative;
-							letter-spacing: -1px;
-								&:before {
-											position: absolute;
-											content: '';
-											bottom: -26px;
-											left: 8px;
-											width: 0;
-											height: 0;
-											border-style: solid;
-											border-width: 0 0 30px 50px;
-											border-color: transparent $dark-grey transparent $dark-grey;
-										}
-
-								&:after {
-											position: absolute;
-											content: '';
-											bottom: -31px;
-											left: 4px;
-											width: 0;
-											height: 0;
-											border-style: solid;
-											border-width: 0 0 30px 20px;
-											border-color: transparent $white transparent $white;
-										}
-
-
-						}
+				.has-red-divider-uptop {
+					font-size: 24px;
 				}
-
-
 		}
+
+	}

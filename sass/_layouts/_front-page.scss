@@ -15,6 +15,7 @@ div.logix-page {
 			height: 250px;
 			background-size: cover;
 			background-position: center;
+
 				div.hero-container {
 					display: flex;
 					width:100%;
@@ -23,6 +24,11 @@ div.logix-page {
 						div.hero-title{
 						flex:3;
 						min-width: 300px;
+						margin: 0px 15px;
+						@include breakpoint(500px){
+							font-size: $biggest-header-font-size;
+							margin-left: 100px;
+						}
 							h1 {
 								color: $dark-grey;
 								font-size: $large-font-size;
@@ -54,7 +60,7 @@ div.logix-page {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			max-width: 912px;
+			max-width: 1366px;
 			width:100%;
 		}
 }

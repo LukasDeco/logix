@@ -15,76 +15,86 @@ header.site-header {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		max-width: 1024px;
+		max-width: 1366px;
 	}
-	
+
 	div.site-branding {
+		position: absolute;
+		width: 30%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 2;
+		overflow: hidden;
+		height: 100%;
+			@include breakpoint(500px) {
+				position: initial;
+				width: initial;
+			}
+			a {
 			display: flex;
-			justify-content: center;
 			align-items: center;
-			flex: 2;
-				overflow: hidden;
-				height: 100%;
-				a {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				flex: 1;	
-					overflow: hidden;
-					img {
-					width: 80%;
-					object-fit: cover;
-					z-index: -10;
-					}
-				}
-			}
-				nav.main-navigation {
-				flex: 7;
-				margin-left: 20px;
-				margin-right: 20px;
-					div ul.nav-menu {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					width: 100%;
-						li {
-						padding: 5px;
-						padding-bottom: 10px;
-						background: $white;
-							ul {
-								margin-top: 10px;
-								min-width: 175px;
-									li {
-										padding: 0px;
-										padding-left:10px;
-										width: 100%;
-										background: $light-grey-gradient;
-										min-height: 25px;
-										
-											a {
-										
-												
-												width: 100%;
-											}
-									}
-							}
-							a {
-							font-size: 10pt;
-							}
-						}
-					
-					}
-				
-				
-				}
-			
-			div.lx-contact-icons {
+			justify-content: center;
 			flex: 1;
+				overflow: hidden;
+				img {
+				width: 80%;
+				object-fit: cover;
+				z-index: -10;
+				}
 			}
-	
-	
-	
-	
+		}
+			nav.main-navigation {
+				@include breakpoint(500px) {
+					flex: 8;
+					margin: 0px 100px;
+				}
+				div ul.nav-menu {
+				display: none;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				@include breakpoint(500px) {
+					display: flex;
+				}
+					li {
+					padding: 5px;
+					padding-bottom: 10px;
+					background: $white;
+						ul {
+							margin-top: 10px;
+							min-width: 175px;
+								li {
+									padding: 0px;
+									padding-left:10px;
+									width: 100%;
+									background: $light-grey-gradient;
+									min-height: 25px;
+
+										a {
+
+
+											width: 100%;
+										}
+								}
+						}
+						a {
+						font-size: 12pt;
+						}
+					}
+
+				}
+
+
+			}
+
+		div.lx-contact-icons {
+		flex: 1;
+		}
+
+
+
+
 
 
 
