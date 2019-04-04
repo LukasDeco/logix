@@ -13,7 +13,6 @@ div.logix-page-sidebar-content {
       flex-direction: column;
       flex: 5;
       max-width: 750px;
-      margin: 15px;
       font-size: $larger-font-size;
         @include breakpoint(500px){
           margin-right: 30px;

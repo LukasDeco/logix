@@ -6,7 +6,7 @@ div.logix-main-content {
       display: flex;
       flex-direction: column;
         h1 {
-          font-size: $bigger-header-font-size;
+          font-size: 55px;
           color: $wine-red;
           font-weight: $heavy-font-weight;
           font-family: KievitBoldItalic;
@@ -16,9 +16,9 @@ div.logix-main-content {
         }
 
         h2 {
-          font-size: $medium-large-font-size;
+          font-size: 26px;
           color: $wine-red;
-          margin-top: -25px;
+          margin-top: -10px;
         }
 
         p {

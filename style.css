@@ -1104,21 +1104,20 @@ div.logix-page-sidebar-content {
     flex-direction: column;
     flex: 5;
     max-width: 750px;
-    margin: 15px;
     font-size: 26px; }
     @media (min-width: 500px) {
       /* line 11, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section {
         margin-right: 30px; } }
-    /* line 21, sass/_layouts/_sidebarLayout.scss */
+    /* line 20, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section .main-content {
       margin-bottom: 20px; }
-    /* line 24, sass/_layouts/_sidebarLayout.scss */
+    /* line 23, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section div.title-area {
       display: flex;
       flex-direction: column;
       margin-bottom: 40px; }
-      /* line 28, sass/_layouts/_sidebarLayout.scss */
+      /* line 27, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h1 {
         font-size: 62pt;
         color: RGB(173, 6, 23);
@@ -1127,19 +1126,19 @@ div.logix-page-sidebar-content {
         margin-bottom: 30px;
         letter-spacing: 2px;
         line-height: 80px; }
-      /* line 38, sass/_layouts/_sidebarLayout.scss */
+      /* line 37, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h2 {
         font-size: 32pt;
         color: #5e8ab4;
         margin-top: -25px; }
-      /* line 44, sass/_layouts/_sidebarLayout.scss */
+      /* line 43, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h5 {
         font-size: 24px;
         color: #5e8ab4; }
-    /* line 50, sass/_layouts/_sidebarLayout.scss */
+    /* line 49, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section div.page-area {
       font-size: 24px; }
-  /* line 55, sass/_layouts/_sidebarLayout.scss */
+  /* line 54, sass/_layouts/_sidebarLayout.scss */
   div.logix-page-sidebar-content div.sidebar {
     display: flex;
     flex-direction: column;
@@ -1150,11 +1149,11 @@ div.logix-page-sidebar-content {
     color: #758592;
     padding: 0px 15px;
     font-size: 24px; }
-    /* line 65, sass/_layouts/_sidebarLayout.scss */
+    /* line 64, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.sidebar h4 {
       font-size: 24px; }
     @media (min-width: 500px) {
-      /* line 55, sass/_layouts/_sidebarLayout.scss */
+      /* line 54, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.sidebar {
         justify-content: flex-start;
         align-items: inherit;
@@ -1381,7 +1380,7 @@ div.resources-list {
   width: 100%;
   color: #758592;
   font-size: 24px;
-  margin-top: 20px; }
+  margin-top: 60px; }
   @media (min-width: 500px) {
     /* line 1, sass/_components/_quotes.scss */
     .logix-quote {
@@ -1389,19 +1388,18 @@ div.resources-list {
   /* line 13, sass/_components/_quotes.scss */
   .logix-quote .solution-quote {
     width: 100%;
-    text-indent: -20px;
-    margin-left: 20px; }
-  /* line 18, sass/_components/_quotes.scss */
+    text-indent: -10px; }
+  /* line 17, sass/_components/_quotes.scss */
   .logix-quote .customer-info {
     font-family: FranklinGothicBook; }
-    /* line 20, sass/_components/_quotes.scss */
+    /* line 19, sass/_components/_quotes.scss */
     .logix-quote .customer-info p {
       font-size: 20px; }
-    /* line 23, sass/_components/_quotes.scss */
+    /* line 22, sass/_components/_quotes.scss */
     .logix-quote .customer-info span {
       font-size: 20px; }
 
-/* line 29, sass/_components/_quotes.scss */
+/* line 28, sass/_components/_quotes.scss */
 .quote-icon {
   height: auto; }
 
@@ -1416,7 +1414,7 @@ div.logix-main-content {
     flex-direction: column; }
     /* line 8, sass/_components/_logixTitleArea.scss */
     div.logix-main-content div.logix-content-title h1 {
-      font-size: 37pt;
+      font-size: 55px;
       color: RGB(173, 6, 23);
       font-weight: 700;
       font-family: KievitBoldItalic;
@@ -1425,9 +1423,9 @@ div.logix-main-content {
       line-height: 80px; }
     /* line 18, sass/_components/_logixTitleArea.scss */
     div.logix-main-content div.logix-content-title h2 {
-      font-size: 20px;
+      font-size: 26px;
       color: RGB(173, 6, 23);
-      margin-top: -25px; }
+      margin-top: -10px; }
     /* line 24, sass/_components/_logixTitleArea.scss */
     div.logix-main-content div.logix-content-title p {
       color: #5e8ab4; }
@@ -1438,7 +1436,7 @@ div.logix-main-content {
 /* line 1, sass/_components/_imgRow.scss */
 .img-row {
   display: flex;
-  height: 200px; }
+  height: 270px; }
   /* line 4, sass/_components/_imgRow.scss */
   .img-row img {
     flex: 1;
@@ -1458,26 +1456,28 @@ div.logix-main-content {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-right: 20px; }
-    /* line 9, sass/_components/_columnedMenu.scss */
+    margin-right: 22px;
+    max-width: 210px; }
+    /* line 10, sass/_components/_columnedMenu.scss */
     .columned-menu .column .titled-section {
       position: relative;
-      margin-top: 15px; }
-      /* line 12, sass/_components/_columnedMenu.scss */
+      margin-top: 15px;
+      margin-bottom: 63px; }
+      /* line 14, sass/_components/_columnedMenu.scss */
       .columned-menu .column .titled-section:before {
         position: absolute;
-        top: -2px;
+        top: -15px;
         content: "";
         height: 2px;
         width: 60px;
         background: RGB(173, 6, 23); }
-      /* line 20, sass/_components/_columnedMenu.scss */
+      /* line 22, sass/_components/_columnedMenu.scss */
       .columned-menu .column .titled-section h3 {
         color: RGB(173, 6, 23);
-        margin-bottom: 15px;
+        margin-bottom: 37px;
         font-size: 18px;
         font-family: FranklinGothicBook; }
-      /* line 27, sass/_components/_columnedMenu.scss */
+      /* line 29, sass/_components/_columnedMenu.scss */
       .columned-menu .column .titled-section .item a {
         padding-left: 10px;
         text-decoration: none;
@@ -1485,7 +1485,7 @@ div.logix-main-content {
         font-size: 18px;
         position: relative;
         font-family: FranklinGothicBook; }
-        /* line 34, sass/_components/_columnedMenu.scss */
+        /* line 36, sass/_components/_columnedMenu.scss */
         .columned-menu .column .titled-section .item a:before {
           content: '';
           position: absolute;
@@ -2386,4 +2386,4 @@ Lukas Styles for All!
 */
 /* line 955, sass/style.scss */
 .top-margin {
-  margin-top: 20px; }
+  margin-top: 40px; }

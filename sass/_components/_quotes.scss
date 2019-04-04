@@ -6,15 +6,13 @@
   width: 100%;
   color: $grey-blue;
   font-size: $large-font-size;
-  margin-top: 20px;
+  margin-top: 60px;
     @include breakpoint(500px){
       align-items: flex-start;
     }
     .solution-quote {
       width: 100%;
-      text-indent: -20px;
-      margin-left: 20px;
-      padding-right: 20px;
+      text-indent: -10px;
     }
     .customer-info {
       font-family: FranklinGothicBook;
