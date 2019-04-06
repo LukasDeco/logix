@@ -1417,10 +1417,10 @@ div.logix-main-content {
       font-size: 55px;
       color: RGB(173, 6, 23);
       font-weight: 700;
-      font-family: KievitBoldItalic;
+      font-family: FranklinGothicDemiItalic;
       margin-bottom: 5px;
       margin-top: 0px;
-      line-height: 80px; }
+      line-height: 48px; }
     /* line 18, sass/_components/_logixTitleArea.scss */
     div.logix-main-content div.logix-content-title h2 {
       font-size: 26px;
@@ -1474,27 +1474,30 @@ div.logix-main-content {
       /* line 22, sass/_components/_columnedMenu.scss */
       .columned-menu .column .titled-section h3 {
         color: RGB(173, 6, 23);
-        margin-bottom: 37px;
+        margin-bottom: 34px;
         font-size: 18px;
         font-family: FranklinGothicBook; }
-      /* line 29, sass/_components/_columnedMenu.scss */
-      .columned-menu .column .titled-section .item a {
-        padding-left: 10px;
-        text-decoration: none;
-        color: #758592;
-        font-size: 18px;
-        position: relative;
-        font-family: FranklinGothicBook; }
-        /* line 36, sass/_components/_columnedMenu.scss */
-        .columned-menu .column .titled-section .item a:before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: calc(50% - 3px);
-          border-radius: 50%;
-          background: #5e8ab4;
-          height: 3px;
-          width: 3px; }
+      /* line 28, sass/_components/_columnedMenu.scss */
+      .columned-menu .column .titled-section .item {
+        line-height: 14px; }
+        /* line 30, sass/_components/_columnedMenu.scss */
+        .columned-menu .column .titled-section .item a {
+          padding-left: 10px;
+          text-decoration: none;
+          color: #758592;
+          font-size: 18px;
+          position: relative;
+          font-family: FranklinGothicBook; }
+          /* line 37, sass/_components/_columnedMenu.scss */
+          .columned-menu .column .titled-section .item a:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: calc(50% - 3px);
+            border-radius: 50%;
+            background: #5e8ab4;
+            height: 3px;
+            width: 3px; }
 
 /* line 1, sass/_components/_logixStatement.scss */
 .logix-statement {
