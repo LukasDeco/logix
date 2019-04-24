@@ -1,6 +1,7 @@
 .columned-menu {
   display: flex;
   justify-content: space-between;
+  font-family: FranklinGothicBookCondensed;
   .column {
     display: flex;
     flex-direction: column;
@@ -27,13 +28,13 @@
         }
         .item {
             line-height: 14px;
+            margin-bottom: 5px;
           a {
             padding-left: 10px;
             text-decoration: none;
             color: $grey-blue;
             font-size: 18px;
             position: relative;
-            font-family: FranklinGothicBook;
               &:before {
                 content: '';
                 position: absolute;

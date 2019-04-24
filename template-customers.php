@@ -9,7 +9,7 @@ $thumb_url = $thumb_url_array[0];
 
 get_header(); ?>
 
-	<div class="logix-page">
+	<div class="logix-page blue-gradient">
 		<div class="hero-section solutions-archive-hero" style="background-image:url(<?php echo $thumb_url; ?>);">
 			<div class="hero-container">
 				<div class="hero-title">
@@ -33,19 +33,20 @@ get_header(); ?>
     			<div class="title">
     				Our Customers
     			</div>
-        <div class="logix-mini-menu-section">
-					<div>
-						<h3>Industries Served</h3>
-						<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => '14', 'submenu' => 'Industries Served' ) ); ?>
+        	<div class="logix-mini-menu-section">
+						<div>
+							<h3>Industries Served</h3>
+							<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => '14', 'submenu' => 'Industries Served' ) ); ?>
+						</div>
+						<div>
+							<h3>Customer Profiles</h3>
+							<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => '14', 'submenu' => 'Customer Profiles' ) ); ?>
+						</div>
 					</div>
-					<div>
-						<h3>Customer Profiles</h3>
-						<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => '14', 'submenu' => 'Customer Profiles' ) ); ?>
-					</div>
-				</div>
-    </div>
-
-  </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
 
 
 <?php

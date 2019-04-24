@@ -27,7 +27,8 @@ div.logix-page {
 						margin: 0px 15px;
 						@include breakpoint(500px){
 							font-size: $biggest-header-font-size;
-							margin-left: 100px;
+						    margin-left: 260px;
+							
 						}
 							h1 {
 								color: $dark-grey;

@@ -40,6 +40,10 @@ div.solution-page {
 
 			.solution-page-area {
 				font-size: 18px;
+				p {
+          color: $arctic-blue;
+					font-size: 18px;
+        }
 
 					.has-red-divider-uptop {
 						font-size: 24px;
@@ -60,5 +64,18 @@ div.solution-page {
 					font-size: 24px;
 				}
 		}
+
+	}
+
+	.solution-page-area {
+		font-size: 18px;
+		p {
+			color: $arctic-blue;
+			font-size: 26px;
+		}
+
+			.has-red-divider-uptop {
+				font-size: 24px;
+			}
 
 	}

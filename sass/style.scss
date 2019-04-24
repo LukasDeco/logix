@@ -80,6 +80,8 @@ Lukas Conant made the actual Logix theme built on top of the Underscores theme!
 @import "_components/imgRow";
 @import "_components/columnedMenu";
 @import "_components/logixStatement";
+@import "_components/mobileToggle";
+@import "_components/mobileMenu";
 
 @include font-face(CALIBRI, fonts/CALIBRI, null, null, 'ttf');
 @include font-face(CALIBRIB, fonts/CALIBRIB, null, null, 'ttf');
@@ -91,6 +93,7 @@ Lukas Conant made the actual Logix theme built on top of the Underscores theme!
 @include font-face(KievitBoldItalic, fonts/KievitOT-BoldItalic, null, null, 'otf');
 @include font-face(KievitItalic, fonts/KievitOT-Italic, null, null, 'otf');
 @include font-face(FranklinGothicBook, fonts/ITCFranklinGothicStd-Book, null, null, 'otf');
+@include font-face(FranklinGothicBookCondensed, fonts/FranklinGothicBookCondensed, null, null, 'otf');
 @include font-face(FranklinGothicDemiItalic, fonts/franklin-gothic-demi-italic, null, null, 'ttf');
 
 
@@ -105,6 +108,7 @@ html {
 }
 
 body {
+	hyphens: auto;
 	margin: auto;
 	width: 100%;
 	line-height: .9;

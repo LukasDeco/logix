@@ -104,3 +104,20 @@
 		}
 	}( container ) );
 } )();
+const mobileMenu = document.querySelector( '.mobile-menu' );
+const mobileToggle = document.querySelector( '.mobile-toggle' );
+mobileToggle.addEventListener('click', (e) => {
+  console.log('test');
+  if ( ! mobileToggle.classList.contains( 'focus' ) ) {
+    e.preventDefault();
+    mobileToggle.classList.add( 'focus' );
+  } else {
+    mobileToggle.classList.remove( 'focus' );
+  }
+  if ( ! mobileMenu.classList.contains( 'open' ) ) {
+    e.preventDefault();
+    mobileMenu.classList.add( 'open' );
+  } else {
+    mobileMenu.classList.remove( 'open' );
+  }
+});

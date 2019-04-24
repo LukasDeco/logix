@@ -1,8 +1,8 @@
-div.logix-main-content {
+.logix-main-content {
   display: flex;
   flex-direction: column;
   flex: 4;
-    div.logix-content-title {
+    .logix-content-title {
       display: flex;
       flex-direction: column;
         h1 {
@@ -10,7 +10,7 @@ div.logix-main-content {
           color: $wine-red;
           font-weight: $heavy-font-weight;
           font-family: FranklinGothicDemiItalic;
-          margin-bottom: 5px;
+          margin-bottom: 18px;
           margin-top: 0px;
           line-height: 48px;
         }
@@ -26,7 +26,31 @@ div.logix-main-content {
         }
     }
 
-  div.solution-page-area {
+  .solution-page-area {
     font-size: 13pt;
   }
+}
+
+.logix-content-title {
+  display: flex;
+  flex-direction: column;
+    h1 {
+      font-size: 55px;
+      color: $wine-red;
+      font-weight: $heavy-font-weight;
+      font-family: FranklinGothicDemiItalic;
+      margin-bottom: 15px;
+      margin-top: 0px;
+      line-height: 48px;
+    }
+
+    h2 {
+      font-size: 26px;
+      color: $wine-red;
+      margin-top: -10px;
+    }
+
+    p {
+      color: $arctic-blue;
+    }
 }

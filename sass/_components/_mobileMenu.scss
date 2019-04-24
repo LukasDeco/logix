@@ -1,0 +1,48 @@
+.mobile-menu{
+  position: absolute;
+  top: 76px;
+  bottom: 0;
+  left: 0;
+  background: $white;
+  color: $wine-red;
+  z-index: 10;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: .5s ease-out;
+    .menu-menu-1-container {
+      background: $white;
+      color: $wine-red;
+      height: calc(100vh - 76px);
+      width: 100%;
+    }
+    ul.menu li  {
+      overflow: hidden;
+          a {
+        	color: $dark-grey;
+        	transition: .5s;
+        	position: relative;
+        	overflow: hidden;
+          text-decoration: none;
+          list-style: none;
+        	&:hover {
+        		color: $wine-red;
+        		&::after{
+        		left:0;
+        		}
+        	}
+        	&::after {
+        	content: "";
+        	height: 2px;
+        	width: 100%;
+        	background: $wine-red;
+        	left:-100%;
+        	bottom: 0;
+        	position: absolute;
+        	transition: .25s;
+        	}
+        }
+      }
+}
+.mobile-menu.open{
+  transform: none;
+}

@@ -25,7 +25,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-container">
-			<div class="site-branding">	
+			<div class="site-branding">
 				<?php if ( get_theme_mod( 'logix_logo' ) ) : ?>
 					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'logix_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
 				<?php else : ?>
@@ -37,10 +37,13 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'logix' ); ?></button>
+				<button class="mobile-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span></span>
+				</button>
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 			<div class="lx-contact-icons"></div>
+			<div class="mobile-menu"><?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?></div>
 		</div>
 	</header><!-- #masthead -->
 
