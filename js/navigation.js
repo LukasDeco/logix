@@ -117,7 +117,9 @@ mobileToggle.addEventListener('click', (e) => {
   if ( ! mobileMenu.classList.contains( 'open' ) ) {
     e.preventDefault();
     mobileMenu.classList.add( 'open' );
+    document.querySelector( 'body' ).classList.add('mobile-open');
   } else {
     mobileMenu.classList.remove( 'open' );
+    document.querySelector( 'body' ).classList.remove('mobile-open');
   }
 });

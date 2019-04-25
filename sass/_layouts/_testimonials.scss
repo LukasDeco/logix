@@ -12,7 +12,7 @@ div.testimonials-section {
 				div.hidden {
 					display: none !important;
 				}
-				
+
 				div.customer-quote {
 					display: flex;
 					flex-direction: column;
@@ -24,7 +24,7 @@ div.testimonials-section {
 					position: relative;
 					transition: .25s;
 					opacity: 0;
-					
+
 						p.customer-text {
 							color: $arctic-blue;
 							font-size: $large-font-size;
@@ -32,7 +32,7 @@ div.testimonials-section {
 							margin-bottom: 8px;
 							overflow: hidden;
 						}
-						
+
 						p.customer-title {
 							color: $arctic-blue;
 							font-size: $medium-font-size;
@@ -40,9 +40,9 @@ div.testimonials-section {
 								span {
 										font-size: 11pt;
 									}
-							
+
 						}
-						
+
 						&:before {
 							content: '';
 							border-left: 20px solid transparent;
@@ -53,7 +53,7 @@ div.testimonials-section {
 							bottom: -18px;
 						}
 				}
-				
+
 				div.title {
 					display: flex;
 					flex: 1;
@@ -63,9 +63,9 @@ div.testimonials-section {
 					max-width: 170px;
 					padding-top: 10px;
 				}
-				
+
 		}
-		
+
 		div.logo-strip {
 			display: flex;
 			height: 70px;
@@ -96,7 +96,7 @@ div.testimonials-section {
 				div.selected-logo {
 					opacity: 1;
 				}
-			
+
 		}
-		
+
 }

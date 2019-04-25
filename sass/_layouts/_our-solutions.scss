@@ -9,12 +9,12 @@ div.our-solutions {
 					font-family: FranklinGothicBook;
 					font-size: $medium-font-size;
 				}
-				
+
 		div.solutions-menu {
 			display: flex;
 			justify-content: space-between;
-
 			margin-top: 20px;
+			flex-wrap: wrap;
 				h3 {
 					color: $arctic-blue;
 					position: relative;
@@ -32,7 +32,7 @@ div.our-solutions {
 							left: 0;
 						}
 				}
-				
+
 				ul {
 					list-style: none;
 						li {
@@ -43,11 +43,11 @@ div.our-solutions {
 										&:hover {
 											color: $wine-red;
 										}
-										
+
 										&:visited {
 											color: $wine-red;
 										}
-								
+
 								}
 							ul li a {
 								font-family: Kievit;

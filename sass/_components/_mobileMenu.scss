@@ -14,6 +14,7 @@
       color: $wine-red;
       height: calc(100vh - 76px);
       width: 100%;
+      z-index: 10
     }
     ul.menu li  {
       overflow: hidden;
@@ -42,7 +43,41 @@
         	}
         }
       }
+
+      // &:after {
+      //   content: '';
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   right: 0;
+      //   bottom: 0;
+      //   height: 100vh;
+      //   background: #333333;
+      //   z-index: 5;
+      // }
 }
 .mobile-menu.open{
   transform: none;
+}
+
+body {
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background: #333333;
+    z-index: 5;
+    opacity: 0;
+    transition: .25s;
+  }
+}
+
+body.mobile-open {
+  &:after {
+    opacity: 0.5;
+  }
 }
