@@ -101,6 +101,10 @@ Lukas Conant made the actual Logix theme built on top of the Underscores theme!
 	background: linear-gradient($white, $sky-blue);
 }
 
+.top-margin-small {
+	margin-top: 15px
+}
+
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;

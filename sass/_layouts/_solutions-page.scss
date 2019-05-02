@@ -45,7 +45,7 @@ div.solution-page {
 				font-size: 18px;
 				p {
           color: $arctic-blue;
-					font-size: 18px;
+					font-size: 22px;
         }
 
 					.has-red-divider-uptop {
@@ -60,9 +60,12 @@ div.solution-page {
 		div.solution-sidebar {
 			display: flex;
 			flex-direction: column;
-			padding: 0px 45px 0px 0px;
+			padding: 0px;
 			flex: 2;
 			margin-top: 60px;
+				@include breakpoint(500px){
+					padding: 0px 45px 0px 0px;
+				}
 				.has-red-divider-uptop {
 					font-size: 24px;
 				}
