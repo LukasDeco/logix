@@ -14,7 +14,7 @@ get_header(); ?>
 		<div class="hero-section solutions-archive-hero" style="background-image:url(<?php echo $thumb_url; ?>);">
 			<div class="hero-container">
 				<div class="hero-title">
-					<h2><?php echo $solutions_type; ?> Solutions</h2>
+					<h2><?php echo $solutions_type; ?></h2>
 				</div>
 				<div class="hero-empty">
 				</div>

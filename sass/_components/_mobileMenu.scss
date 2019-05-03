@@ -60,24 +60,24 @@
   transform: none;
 }
 
-body {
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    background: #333333;
-    z-index: 5;
-    opacity: 0;
-    transition: .25s;
-  }
-}
-
-body.mobile-open {
-  &:after {
-    opacity: 0.5;
-  }
-}
+// body {
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     height: 100vh;
+//     background: #333333;
+//     z-index: 5;
+//     opacity: 0;
+//     transition: .25s;
+//   }
+// }
+//
+// body.mobile-open {
+//   &:after {
+//     opacity: 0.5;
+//   }
+// }

@@ -1080,7 +1080,7 @@ div.solution-page {
       /* line 46, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .solution-page-area p {
         color: #5e8ab4;
-        font-size: 18px; }
+        font-size: 22px; }
       /* line 51, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .solution-page-area .has-red-divider-uptop {
         font-size: 24px; }
@@ -1775,24 +1775,6 @@ span.file-icon {
 /* line 59, sass/_components/_mobileMenu.scss */
 .mobile-menu.open {
   transform: none; }
-
-/* line 64, sass/_components/_mobileMenu.scss */
-body:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100vh;
-  background: #333333;
-  z-index: 5;
-  opacity: 0;
-  transition: .25s; }
-
-/* line 80, sass/_components/_mobileMenu.scss */
-body.mobile-open:after {
-  opacity: 0.5; }
 
 @font-face {
   font-family: "CALIBRI";
