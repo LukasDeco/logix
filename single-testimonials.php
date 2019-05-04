@@ -21,7 +21,7 @@ get_header(); ?>
                 <img src=<?php the_field('customer_company_logo') ?> >
               </div>
   						<div class="solution-quote">
-  							<p><?php the_field('Quote') ?></p>
+  							<p><?php the_field('quote') ?></p>
   						</div>
   							<div class="customer-info">
   								<p><?php the_field('customer_name') ?><br>
@@ -70,7 +70,8 @@ get_header(); ?>
                 ?>
                 <div class="read-more-document">
                   <a href="<?php echo $url ?>" >
-                    Read More <span class="file-icon"><?php echo $type ?></span>
+                    <span class="read-more">Read More </span>
+                    <span class="file-icon"><?php echo $type ?></span>
                   </a>
                 </div>
               <?php } ?>

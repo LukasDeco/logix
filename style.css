@@ -1481,7 +1481,11 @@ span.file-icon {
 
 /* line 37, sass/_components/_resources-list.scss */
 .read-more-document a {
+  text-decoration: none;
   color: #5e8ab4; }
+  /* line 40, sass/_components/_resources-list.scss */
+  .read-more-document a .read-more {
+    text-decoration: underline; }
 
 /* line 1, sass/_components/_quotes.scss */
 .logix-quote {

@@ -41,7 +41,18 @@ get_header(); ?>
 				</div>
 				<div class="logix-mini-menu-section">
 					<div>
-						<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => '14', 'submenu' => 'Industries Served' ) ); ?>
+						<?php
+						$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'full_profile', 'meta_value' => true ) );
+						if ( $loop->have_posts() ) :
+							while ( $loop->have_posts() ) : $loop->the_post(); ?>
+								<div class="item">
+									<a href="<?php the_permalink(); ?>" >
+										<?php the_title(); ?>
+									</a>
+								</div>
+					<?php endwhile;
+								endif;
+								wp_reset_postdata(); ?>
 					</div>
 				</div>
 			</div>
