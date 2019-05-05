@@ -18,19 +18,18 @@ get_header(); ?>
 		</div>
 		<div class="logix-page-content">
 			<div class="testimonials-section">
-
-
 				<div class="quote-and-title">
 					<?php
 
-						$loop = new WP_Query( array( 'post_type' => 'testimonials' ) );
+						$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'full_profile', 'meta_value' => true ) );
 						if ( $loop->have_posts() ) :
 							while ( $loop->have_posts() ) : $loop->the_post();
 							$testimonial_id = get_the_ID();
 						?>
 					<div class="customer-quote hidden" id="quote-<?php  echo $testimonial_id?>">
 						<p class="customer-text"><?php the_field('quote'); ?></p>
-						<p class="customer-title"><?php the_field('customer_name'); ?><br><span><?php the_field('customer_company_title'); ?></span></p>
+						<p class="customer-title"><?php the_field('customer_name'); ?><br><span><?php the_field('customer_company'); ?></span>
+							<br><span><?php the_field('customer_title'); ?></span></p>
 					</div>
 					 <?php endwhile;
 					  endif;

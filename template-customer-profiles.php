@@ -35,24 +35,27 @@ get_header(); ?>
 				<img src="<?php the_field('image_one'); ?>" />
 				<img src="<?php the_field('image_two'); ?>" />
 			</div>
-			<div class="logix-mini-menu has-red-divider-uptop">
+			<div class="logix-mini-menu has-red-divider-uptop top-margin">
 				<div class="title">
 					Customer Profiles
 				</div>
 				<div class="logix-mini-menu-section">
 					<div>
-						<?php
-						$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'full_profile', 'meta_value' => true ) );
-						if ( $loop->have_posts() ) :
-							while ( $loop->have_posts() ) : $loop->the_post(); ?>
-								<div class="item">
-									<a href="<?php the_permalink(); ?>" >
-										<?php the_title(); ?>
-									</a>
-								</div>
-					<?php endwhile;
-								endif;
-								wp_reset_postdata(); ?>
+						<ul class="customer-profiles-list">
+							<?php
+							$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'full_profile', 'meta_value' => true, 'orderby'=> 'title', 'order' => 'ASC' ) );
+							if ( $loop->have_posts() ) :
+								while ( $loop->have_posts() ) : $loop->the_post(); ?>
+									<li class="item">
+										<a href="<?php the_permalink(); ?>" >
+											<?php the_title(); ?>
+										</a>
+									</li>
+								<?php endwhile;
+									endif;
+									wp_reset_postdata(); ?>
+						</ul>
+
 					</div>
 				</div>
 			</div>
