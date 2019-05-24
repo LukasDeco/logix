@@ -27,7 +27,7 @@ get_header(); ?>
 		</div>
 		<div class="our-solutions solutions-archive has-red-divider-uptop">
 			<div class="title">
-				Our <?php echo $solutions_type; ?> Solutions
+				Our <?php echo $solutions_type; ?>
 			</div>
 			<div class="solutions-list">
 				<div class="solutions-menu">

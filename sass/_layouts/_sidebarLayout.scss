@@ -93,6 +93,10 @@ div.logix-page-sidebar-content {
         }
         .main-content {
           margin-bottom: 20px;
+          padding: 0 15px;
+          @include breakpoint(500px){
+            padding: 0px;
+          }
         }
         div.title-area {
           display: flex;

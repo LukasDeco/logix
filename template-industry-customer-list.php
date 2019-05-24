@@ -38,7 +38,7 @@ get_header(); ?>
 
 				<div class="columned-menu top-margin">
 					<div class="column">
-						<div class="titled-section">
+						<div class="titled-section" id="coldStorageAndDistribution">
 							<h3>
 								Cold Storage & Grocery Distribution
 							</h3>
@@ -47,15 +47,23 @@ get_header(); ?>
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
+											<?php
+											$profile = get_post_meta($post->ID, 'full_profile', true);
+											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
 											</a>
+											<?php } else { ?>
+												<a  class="no-profile">
+													<?php the_title(); ?>
+												</a>
+											<?php } ?>
 										</div>
 							<?php endwhile;
 				 					  endif;
 				 						wp_reset_postdata(); ?>
 						</div>
-						<div class="titled-section">
+						<div class="titled-section" id="fruitAndVegetableProcessors">
 							<h3>
 								Fruit & Vegetable Processors
 							</h3>
@@ -64,15 +72,23 @@ get_header(); ?>
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
+											<?php
+											$profile = get_post_meta($post->ID, 'full_profile', true);
+											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
 											</a>
+											<?php } else { ?>
+												<a  class="no-profile">
+													<?php the_title(); ?>
+												</a>
+											<?php } ?>
 										</div>
 							<?php endwhile;
 				 					  endif;
 				 						wp_reset_postdata(); ?>
 						</div>
-						<div class="titled-section">
+						<div class="titled-section" id="iceRinks">
 							<h3>
 								Ice Rinks
 							</3>
@@ -81,9 +97,17 @@ get_header(); ?>
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
+											<?php
+											$profile = get_post_meta($post->ID, 'full_profile', true);
+											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
 											</a>
+											<?php } else { ?>
+												<a  class="no-profile">
+													<?php the_title(); ?>
+												</a>
+											<?php } ?>
 										</div>
 							<?php endwhile;
 				 					  endif;
@@ -91,24 +115,32 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="column">
-						<div class="titled-section">
+						<div class="titled-section" id="foodBeverageProcessors">
 							<h3>
 								Food & Beverage Processors
 							</h3>
 							<?php
-								$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'customer_industry', 'meta_value' => 'Food and Beverage Processors' ) );
+								$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'customer_industry', 'meta_value' => 'Food & Beverage Processors' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
+											<?php
+											$profile = get_post_meta($post->ID, 'full_profile', true);
+											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
 											</a>
+											<?php } else { ?>
+												<a  class="no-profile">
+													<?php the_title(); ?>
+												</a>
+											<?php } ?>
 										</div>
 							<?php endwhile;
 				 					  endif;
 				 						wp_reset_postdata(); ?>
 						</div>
-						<div class="titled-section">
+						<div class="titled-section" id="breweriesDistribution">
 							<h3>
 								Breweries & Distribution
 							</h3>
@@ -117,9 +149,17 @@ get_header(); ?>
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
+											<?php
+											$profile = get_post_meta($post->ID, 'full_profile', true);
+											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
 											</a>
+											<?php } else { ?>
+												<a  class="no-profile">
+													<?php the_title(); ?>
+												</a>
+											<?php } ?>
 										</div>
 							<?php endwhile;
 				 					  endif;
@@ -127,7 +167,7 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="column">
-						<div class="titled-section">
+						<div class="titled-section" id="meatSeafoodProcessors">
 							<h3>
 							Meat & Seafood Processors
 						</h3>
@@ -136,15 +176,23 @@ get_header(); ?>
 							if ( $loop->have_posts() ) :
 								while ( $loop->have_posts() ) : $loop->the_post(); ?>
 									<div class="item">
+										<?php
+										$profile = get_post_meta($post->ID, 'full_profile', true);
+										if($profile) { ?>
 										<a href="<?php the_permalink(); ?>" >
 											<?php the_title(); ?>
 										</a>
+										<?php } else { ?>
+											<a  class="no-profile">
+												<?php the_title(); ?>
+											</a>
+										<?php } ?>
 									</div>
 						<?php endwhile;
 									endif;
 									wp_reset_postdata(); ?>
 						</div>
-						<div class="titled-section">
+						<div class="titled-section" id="wineries">
 							<h3>
 								Wineries
 							</h3>
@@ -153,9 +201,17 @@ get_header(); ?>
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
+											<?php
+											$profile = get_post_meta($post->ID, 'full_profile', true);
+											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
 											</a>
+											<?php } else { ?>
+												<a  class="no-profile">
+													<?php the_title(); ?>
+												</a>
+											<?php } ?>
 										</div>
 							<?php endwhile;
 				 					  endif;

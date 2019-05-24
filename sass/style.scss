@@ -69,6 +69,7 @@ Lukas Conant made the actual Logix theme built on top of the Underscores theme!
 @import "_layouts/logixMiniMenu";
 @import "_layouts/generalLayout";
 @import "_layouts/customer-profiles";
+@import "_layouts/logixAnimations";
 
 @import "_components/links";
 @import "_components/divider";
@@ -83,6 +84,7 @@ Lukas Conant made the actual Logix theme built on top of the Underscores theme!
 @import "_components/logixStatement";
 @import "_components/mobileToggle";
 @import "_components/mobileMenu";
+@import "_components/redFontListItem";
 
 @include font-face(CALIBRI, fonts/CALIBRI, null, null, 'ttf');
 @include font-face(CALIBRIB, fonts/CALIBRIB, null, null, 'ttf');
@@ -104,6 +106,18 @@ Lukas Conant made the actual Logix theme built on top of the Underscores theme!
 
 .top-margin-small {
 	margin-top: 15px
+}
+
+.no-top-margin {
+	margin-top: 0px !important;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.display-none {
+	display: none;
 }
 
 html {

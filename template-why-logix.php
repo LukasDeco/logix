@@ -19,20 +19,20 @@ get_header(); ?>
 			<div class="sidebar">
 				<?php the_field('sidebar_area'); ?>
 			</div>
-			<div class="solutions-archive-content main-section">
+			<div class="solutions-archive-content main-section no-top-margin">
 				<div class="main-content">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<?php the_content(); ?>
 					<?php endwhile; endif; ?>
 				</div>
-				<div class="our-solutions solutions-archive has-red-divider-uptop">
+				<div class="our-solutions solutions-archive logix-mini-menu has-red-divider-uptop">
 					<div class="title">
 						Why Logix
 					</div>
-					<div class="solutions-list">
-						<div class="solutions-menu">
+					<div class="logix-mini-menu-section">
+						<div class="">
+								<h3>Our Advantage</h3>
 									<ul class="menu">
-										<h3>Our Advantage</h3>
 										<?php if(!get_field('our_advantage_1_link')) {
 												//do nothing!
 										}
@@ -76,9 +76,9 @@ get_header(); ?>
 									</ul>
 
 						</div>
-						<div class="solutions-menu">
+						<div class="">
+							<h3>Our Process</h3>
 									<ul class="menu">
-										<h3>Our Process</h3>
 										<?php if(!get_field('our_process_1_link')) {
 												//do nothing!
 										}

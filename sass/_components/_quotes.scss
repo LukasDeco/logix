@@ -13,11 +13,12 @@
     .solution-quote {
       width: 100%;
       text-indent: -10px;
-      font-size: 16px;
+      font-size: $large-font-size;
+      font-family: FranklinGothicBook;
     }
     .customer-info {
       font-family: FranklinGothicBookCondensed;
-      font-size: 14px;
+      font-size: $large-font-size;
     }
     .customer-logo {
       max-width: 200px;

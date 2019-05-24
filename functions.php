@@ -168,6 +168,10 @@ function logix_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	if (is_page_template()) {
+		wp_enqueue_script( 'industry-list-filter', get_template_directory_uri() . '/js/industry-list-filter.js', array(), '20151216', true );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'logix_scripts' );
 
