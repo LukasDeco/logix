@@ -17,6 +17,7 @@ footer.site-footer {
 			flex: 1;
 			display: flex;
 			flex-direction: column;
+			max-height: 300px;
 				div.site-branding {
 					flex: 1
 				}
@@ -53,7 +54,10 @@ footer.site-footer {
 				    flex-flow: column wrap;
 				    justify-content: flex-start;
 				    align-items: flex-start;
-				    height: 275px;
+						height: 300px;
+						@media(max-width: 500px) {
+							height: auto;
+						}
 						li{
 							display: flex;
 							flex-direction: column;

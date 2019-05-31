@@ -31,6 +31,33 @@ get_header(); ?>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<?php the_content(); ?>
 					<?php endwhile; endif; ?>
+					<?php
+					$forward_link = get_field('forward_link', false, false);
+					$back_link = get_field('backward_link', false, false);
+
+					if($back_link || $forward_link) { ?>
+						<div class="back-forward-links">
+					<?php }
+
+					if(!$back_link) {
+						//do nothing
+					}
+					else { ?>
+
+						<a href="<?php echo get_the_permalink($back_link); ?>">< <?php echo get_the_title($back_link); ?></a>
+					<?php }
+					if(!$forward_link) {
+						//do nothing
+					}
+					else { ?>
+						<a href="<?php echo get_the_permalink($forward_link); ?>"><?php echo get_the_title($forward_link); ?> ></a>
+					<?php }
+
+					if($back_link || $forward_link) { ?>
+					</div>
+					<?php }
+					?>
+
 				</div>
 			</div>
 		</div>

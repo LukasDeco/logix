@@ -8,7 +8,7 @@ get_header(); ?>
 		<div class="hero-section solutions-archive-hero" style="background-image:url(<?php echo $background_image; ?>);">
 			<div class="hero-container">
 				<div class="hero-title">
-					<h2>Resource Center</h2>
+					<h2>Downloads</h2>
 				</div>
 				<div class="hero-empty">
 				</div>
@@ -103,7 +103,9 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="has-red-divider-uptop">
-					Our Resources
+					<div class="title">
+						Our Downloads
+					</div>
 				</div>
 				<div class="resource-center-list">
 				<?php $args = array(

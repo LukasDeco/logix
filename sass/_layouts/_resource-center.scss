@@ -33,7 +33,7 @@ div.resources-here {
 		div.resource-select {
 			display: flex;
 			flex: 1;
-			height: 40px;
+			min-height: 40px;
 			max-width: 450px;
 			min-width: 300px;
 

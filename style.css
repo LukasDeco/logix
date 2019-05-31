@@ -220,79 +220,84 @@ footer.site-footer {
     color: RGB(173, 6, 23);
     flex: 1;
     display: flex;
-    flex-direction: column; }
-    /* line 20, sass/_layouts/_foot.scss */
+    flex-direction: column;
+    max-height: 300px; }
+    /* line 21, sass/_layouts/_foot.scss */
     footer.site-footer div.site-info div.site-branding {
       flex: 1; }
-    /* line 23, sass/_layouts/_foot.scss */
+    /* line 24, sass/_layouts/_foot.scss */
     footer.site-footer div.site-info div.logix-contact-info {
       flex: 3;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       margin-bottom: 70px; }
-      /* line 29, sass/_layouts/_foot.scss */
+      /* line 30, sass/_layouts/_foot.scss */
       footer.site-footer div.site-info div.logix-contact-info div {
         display: flex;
         align-items: center;
         font-family: FranklinGothicBook;
         font-size: 14pt; }
-        /* line 34, sass/_layouts/_foot.scss */
+        /* line 35, sass/_layouts/_foot.scss */
         footer.site-footer div.site-info div.logix-contact-info div a {
           text-decoration: none;
           color: RGB(173, 6, 23); }
-      /* line 40, sass/_layouts/_foot.scss */
+      /* line 41, sass/_layouts/_foot.scss */
       footer.site-footer div.site-info div.logix-contact-info .address {
         font-size: 11pt; }
-  /* line 45, sass/_layouts/_foot.scss */
+  /* line 46, sass/_layouts/_foot.scss */
   footer.site-footer div.site-footer-nav {
     display: flex;
     flex: 5; }
-    /* line 48, sass/_layouts/_foot.scss */
+    /* line 49, sass/_layouts/_foot.scss */
     footer.site-footer div.site-footer-nav .menu-menu-1-container {
       flex: 1; }
-    /* line 51, sass/_layouts/_foot.scss */
+    /* line 52, sass/_layouts/_foot.scss */
     footer.site-footer div.site-footer-nav ul {
       display: flex;
       flex-flow: column wrap;
       justify-content: flex-start;
       align-items: flex-start;
-      height: 275px; }
-      /* line 57, sass/_layouts/_foot.scss */
+      height: 300px; }
+      @media (max-width: 500px) {
+        /* line 52, sass/_layouts/_foot.scss */
+        footer.site-footer div.site-footer-nav ul {
+          height: auto; } }
+      /* line 61, sass/_layouts/_foot.scss */
       footer.site-footer div.site-footer-nav ul li {
         display: flex;
         flex-direction: column;
         margin: 10px;
         min-width: 175px;
         max-width: 175px; }
-        /* line 63, sass/_layouts/_foot.scss */
+        /* line 67, sass/_layouts/_foot.scss */
         footer.site-footer div.site-footer-nav ul li a {
           margin-bottom: 8px;
           text-decoration: none;
           color: #5e8ab4;
           font-family: KievitMedium; }
-          /* line 68, sass/_layouts/_foot.scss */
+          /* line 72, sass/_layouts/_foot.scss */
           footer.site-footer div.site-footer-nav ul li a:hover {
             font-weight: 600; }
-        /* line 72, sass/_layouts/_foot.scss */
+        /* line 76, sass/_layouts/_foot.scss */
         footer.site-footer div.site-footer-nav ul li ul {
           display: flex;
           flex-direction: column;
           margin-left: 0px;
           flex-wrap: nowrap;
           height: auto; }
-          /* line 78, sass/_layouts/_foot.scss */
+          /* line 82, sass/_layouts/_foot.scss */
           footer.site-footer div.site-footer-nav ul li ul li {
             margin: 1px;
             margin-left: 0px; }
-            /* line 81, sass/_layouts/_foot.scss */
+            /* line 85, sass/_layouts/_foot.scss */
             footer.site-footer div.site-footer-nav ul li ul li a {
               font-family: Kievit;
               margin-bottom: 0px; }
-              /* line 84, sass/_layouts/_foot.scss */
+              /* line 88, sass/_layouts/_foot.scss */
               footer.site-footer div.site-footer-nav ul li ul li a:hover {
                 font-weight: 600; }
-            /* line 88, sass/_layouts/_foot.scss */
+            /* line 92, sass/_layouts/_foot.scss */
             footer.site-footer div.site-footer-nav ul li ul li ul {
               margin-left: 20px; }
 
@@ -486,7 +491,7 @@ div.resources-here {
   div.resources-here div.resource-select {
     display: flex;
     flex: 1;
-    height: 40px;
+    min-height: 40px;
     max-width: 450px;
     min-width: 300px;
     border: 1px solid #b0b1b1;
@@ -1207,19 +1212,29 @@ div.logix-page-sidebar-content {
       div.logix-page-sidebar-content div.main-section {
         margin-right: 30px; } }
     /* line 94, sass/_layouts/_sidebarLayout.scss */
+    div.logix-page-sidebar-content div.main-section .back-forward-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      /* line 98, sass/_layouts/_sidebarLayout.scss */
+      div.logix-page-sidebar-content div.main-section .back-forward-links a {
+        color: RGB(173, 6, 23);
+        text-decoration: none;
+        font-family: FranklinGothicBookCondensed; }
+    /* line 104, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section .main-content {
       margin-bottom: 20px;
       padding: 0 15px; }
       @media (min-width: 500px) {
-        /* line 94, sass/_layouts/_sidebarLayout.scss */
+        /* line 104, sass/_layouts/_sidebarLayout.scss */
         div.logix-page-sidebar-content div.main-section .main-content {
           padding: 0px; } }
-    /* line 101, sass/_layouts/_sidebarLayout.scss */
+    /* line 111, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section div.title-area {
       display: flex;
       flex-direction: column;
       margin-bottom: 40px; }
-      /* line 105, sass/_layouts/_sidebarLayout.scss */
+      /* line 115, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h1 {
         font-size: 62pt;
         color: RGB(173, 6, 23);
@@ -1228,19 +1243,19 @@ div.logix-page-sidebar-content {
         margin-bottom: 30px;
         letter-spacing: 2px;
         line-height: 80px; }
-      /* line 115, sass/_layouts/_sidebarLayout.scss */
+      /* line 125, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h2 {
         font-size: 32pt;
         color: #5e8ab4;
         margin-top: -25px; }
-      /* line 121, sass/_layouts/_sidebarLayout.scss */
+      /* line 131, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h5 {
         font-size: 24px;
         color: #5e8ab4; }
-    /* line 127, sass/_layouts/_sidebarLayout.scss */
+    /* line 137, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section div.page-area {
       font-size: 24px; }
-  /* line 132, sass/_layouts/_sidebarLayout.scss */
+  /* line 142, sass/_layouts/_sidebarLayout.scss */
   div.logix-page-sidebar-content div.sidebar {
     display: flex;
     flex-direction: column;
@@ -1251,11 +1266,11 @@ div.logix-page-sidebar-content {
     color: #758592;
     padding: 0px 15px;
     font-size: 24px; }
-    /* line 142, sass/_layouts/_sidebarLayout.scss */
+    /* line 152, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.sidebar h4 {
       font-size: 24px; }
     @media (min-width: 500px) {
-      /* line 132, sass/_layouts/_sidebarLayout.scss */
+      /* line 142, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.sidebar {
         justify-content: flex-start;
         align-items: inherit;
@@ -1346,11 +1361,7 @@ div.logix-mini-menu {
   margin-bottom: 40px;
   max-width: 1175px;
   width: 100%;
-  flex-direction: row; }
-  @media (min-width: 500px) {
-    /* line 8, sass/_layouts/_generalLayout.scss */
-    .general-page {
-      flex-direction: column; } }
+  flex-direction: column; }
 
 /* line 2, sass/_layouts/_customer-profiles.scss */
 .logix-mini-menu .logix-mini-menu-section ul.customer-profiles-list {
@@ -1516,10 +1527,13 @@ div ul.nav-menu li a {
 
 /* line 1, sass/_components/_divider.scss */
 .has-red-divider-uptop {
-  border-top: 6px solid RGB(173, 6, 23);
+  border-top: 4px solid RGB(173, 6, 23);
   color: RGB(173, 6, 23);
   padding-top: 10px;
   font-family: FranklinGothicBookCondensed; }
+  /* line 6, sass/_components/_divider.scss */
+  .has-red-divider-uptop .title {
+    font-size: 24px; }
 
 /* line 1, sass/_components/_contact-icons.scss */
 div.lx-contact-icons {

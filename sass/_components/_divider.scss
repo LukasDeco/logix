@@ -1,6 +1,9 @@
 .has-red-divider-uptop {
-	border-top: 6px solid $wine-red;
+	border-top: 4px solid $wine-red;
 	color: $wine-red;
 	padding-top: 10px;
 	font-family: FranklinGothicBookCondensed;
+	.title {
+		font-size: 24px;
+	}
 }

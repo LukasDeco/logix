@@ -10,8 +10,5 @@
   	margin-bottom: 40px;
   	max-width: 1175px;
   	width: 100%;
-  	flex-direction: row;
-  	@include breakpoint(500px){
-  		flex-direction: column;
-  	}
+  	flex-direction: column;
 }
