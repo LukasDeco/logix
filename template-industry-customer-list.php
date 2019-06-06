@@ -43,7 +43,11 @@ get_header(); ?>
 								Cold Storage & Grocery Distribution
 							</h3>
 							<?php
-								$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'customer_industry', 'meta_value' => 'Cold Storage & Grocery Distribution' ) );
+								$loop = new WP_Query( array(
+									'post_type' => 'testimonials',
+									'meta_key' => 'customer_industry',
+									'meta_value' => 'Cold Storage & Grocery Distribution',
+									'posts_per_page'         => '20' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -68,7 +72,11 @@ get_header(); ?>
 								Fruit & Vegetable Processors
 							</h3>
 							<?php
-								$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'customer_industry', 'meta_value' => 'Fruit & Vegetable Processors' ) );
+								$loop = new WP_Query( array(
+									'post_type' => 'testimonials',
+									'meta_key' => 'customer_industry',
+									'meta_value' => 'Fruit & Vegetable Processors',
+									'posts_per_page'         => '20' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -93,7 +101,11 @@ get_header(); ?>
 								Ice Rinks
 							</3>
 							<?php
-								$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'customer_industry', 'meta_value' => 'Ice Rinks' ) );
+								$loop = new WP_Query( array(
+									'post_type' => 'testimonials',
+									'meta_key' => 'customer_industry',
+									'meta_value' => 'Ice Rinks',
+									'posts_per_page'         => '20' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -120,7 +132,11 @@ get_header(); ?>
 								Food & Beverage Processors
 							</h3>
 							<?php
-								$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'customer_industry', 'meta_value' => 'Food & Beverage Processors' ) );
+								$loop = new WP_Query( array(
+									'post_type' => 'testimonials',
+									'meta_key' => 'customer_industry',
+									'meta_value' => 'Food & Beverage Processors',
+									'posts_per_page'         => '20' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -145,7 +161,11 @@ get_header(); ?>
 								Breweries & Distribution
 							</h3>
 							<?php
-								$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'customer_industry', 'meta_value' => 'Breweries & Distribution' ) );
+								$loop = new WP_Query( array(
+									'post_type' => 'testimonials',
+									'meta_key' => 'customer_industry',
+									'meta_value' => 'Breweries & Distribution',
+									'posts_per_page'         => '20' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">

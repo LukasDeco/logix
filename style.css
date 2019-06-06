@@ -1065,7 +1065,7 @@ div.solution-page {
         font-size: 75px;
         color: RGB(173, 6, 23);
         font-weight: 700;
-        font-family: KievitBoldItalic;
+        font-family: FranklinGothicDemiItalic;
         margin-bottom: 20px;
         letter-spacing: 2px;
         line-height: 80px; }
@@ -1150,7 +1150,7 @@ div.solution-page {
         font-size: 62pt;
         color: RGB(173, 6, 23);
         font-weight: 700;
-        font-family: KievitBoldItalic;
+        font-family: FranklinGothicDemiItalic;
         margin-bottom: 30px;
         letter-spacing: 2px;
         line-height: 80px; }
@@ -1292,20 +1292,19 @@ div.logix-mini-menu {
   div.logix-mini-menu div.title {
     color: RGB(173, 6, 23);
     flex: 2;
-    font-family: FranklinGothicBook;
-    font-size: 24px;
-    font-weight: bold; }
-  /* line 18, sass/_layouts/_logixMiniMenu.scss */
+    font-family: FranklinGothicBookCondensed;
+    font-size: 24px; }
+  /* line 17, sass/_layouts/_logixMiniMenu.scss */
   div.logix-mini-menu div.logix-mini-menu-section {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     flex-direction: column; }
     @media (min-width: 500px) {
-      /* line 18, sass/_layouts/_logixMiniMenu.scss */
+      /* line 17, sass/_layouts/_logixMiniMenu.scss */
       div.logix-mini-menu div.logix-mini-menu-section {
         flex-direction: row; } }
-    /* line 26, sass/_layouts/_logixMiniMenu.scss */
+    /* line 25, sass/_layouts/_logixMiniMenu.scss */
     div.logix-mini-menu div.logix-mini-menu-section h3 {
       color: #5e8ab4;
       position: relative;
@@ -1314,7 +1313,7 @@ div.logix-mini-menu {
       font-size: 37px;
       display: flex;
       align-items: center; }
-      /* line 34, sass/_layouts/_logixMiniMenu.scss */
+      /* line 33, sass/_layouts/_logixMiniMenu.scss */
       div.logix-mini-menu div.logix-mini-menu-section h3:before {
         content: '';
         border-top: 15px solid transparent;
@@ -1322,28 +1321,28 @@ div.logix-mini-menu {
         border-left: 15px solid #5e8ab4;
         position: absolute;
         left: 0; }
-      /* line 42, sass/_layouts/_logixMiniMenu.scss */
+      /* line 41, sass/_layouts/_logixMiniMenu.scss */
       div.logix-mini-menu div.logix-mini-menu-section h3 a {
         color: inherit;
         text-decoration: none; }
-    /* line 48, sass/_layouts/_logixMiniMenu.scss */
+    /* line 47, sass/_layouts/_logixMiniMenu.scss */
     div.logix-mini-menu div.logix-mini-menu-section ul {
       list-style: none;
       margin-left: 30px; }
-      /* line 51, sass/_layouts/_logixMiniMenu.scss */
+      /* line 50, sass/_layouts/_logixMiniMenu.scss */
       div.logix-mini-menu div.logix-mini-menu-section ul li {
         font-size: 20px;
         font-family: FranklinGothicBook; }
-        /* line 54, sass/_layouts/_logixMiniMenu.scss */
+        /* line 53, sass/_layouts/_logixMiniMenu.scss */
         div.logix-mini-menu div.logix-mini-menu-section ul li a {
           color: #758592; }
-          /* line 56, sass/_layouts/_logixMiniMenu.scss */
+          /* line 55, sass/_layouts/_logixMiniMenu.scss */
           div.logix-mini-menu div.logix-mini-menu-section ul li a:hover {
             color: RGB(173, 6, 23); }
-          /* line 60, sass/_layouts/_logixMiniMenu.scss */
+          /* line 59, sass/_layouts/_logixMiniMenu.scss */
           div.logix-mini-menu div.logix-mini-menu-section ul li a:visited {
             color: RGB(173, 6, 23); }
-        /* line 65, sass/_layouts/_logixMiniMenu.scss */
+        /* line 64, sass/_layouts/_logixMiniMenu.scss */
         div.logix-mini-menu div.logix-mini-menu-section ul li ul li a {
           font-family: Kievit;
           font-size: 11pt; }
@@ -1530,8 +1529,9 @@ div ul.nav-menu li a {
   border-top: 4px solid RGB(173, 6, 23);
   color: RGB(173, 6, 23);
   padding-top: 10px;
-  font-family: FranklinGothicBookCondensed; }
-  /* line 6, sass/_components/_divider.scss */
+  font-family: FranklinGothicBookCondensed;
+  font-size: 24px; }
+  /* line 7, sass/_components/_divider.scss */
   .has-red-divider-uptop .title {
     font-size: 24px; }
 
