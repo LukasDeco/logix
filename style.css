@@ -1100,7 +1100,7 @@ div.solution-page {
     flex-direction: column;
     padding: 0px;
     flex: 2;
-    margin-top: 60px; }
+    margin-top: 200px; }
     @media (min-width: 500px) {
       /* line 60, sass/_layouts/_solutions-page.scss */
       div.solution-page div.solution-sidebar {
@@ -1644,27 +1644,26 @@ span.file-icon {
   justify-content: center;
   width: 100%;
   color: #758592;
-  font-size: 24px;
-  margin-top: 60px; }
+  font-size: 24px; }
   @media (min-width: 500px) {
     /* line 1, sass/_components/_quotes.scss */
     .logix-quote {
       align-items: flex-start; } }
-  /* line 13, sass/_components/_quotes.scss */
+  /* line 12, sass/_components/_quotes.scss */
   .logix-quote .solution-quote {
     width: 100%;
     text-indent: -10px;
     font-size: 24px;
     font-family: FranklinGothicBook; }
-  /* line 19, sass/_components/_quotes.scss */
+  /* line 18, sass/_components/_quotes.scss */
   .logix-quote .customer-info {
     font-family: FranklinGothicBookCondensed;
     font-size: 24px; }
-  /* line 23, sass/_components/_quotes.scss */
+  /* line 22, sass/_components/_quotes.scss */
   .logix-quote .customer-logo {
     max-width: 200px; }
 
-/* line 28, sass/_components/_quotes.scss */
+/* line 27, sass/_components/_quotes.scss */
 .quote-icon {
   height: auto; }
 
@@ -1803,6 +1802,10 @@ span.file-icon {
     font-family: Kievit;
     color: RGB(173, 6, 23);
     font-size: 24px; }
+  /* line 12, sass/_components/_logixStatement.scss */
+  .logix-statement .statement {
+    font-size: 24px;
+    color: #758592; }
 
 /* line 1, sass/_components/_mobileToggle.scss */
 .mobile-toggle {

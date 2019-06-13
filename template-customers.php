@@ -35,11 +35,11 @@ get_header(); ?>
     			</div>
         	<div class="logix-mini-menu-section">
 						<div>
-							<h3><a href="#">Industries Served</a></h3>
+							<h3><a href="<?php the_field('industries_served_link') ?>">Industries Served</a></h3>
 							<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => '14', 'submenu' => 'Industries Served' ) ); ?>
 						</div>
 						<div>
-							<h3><a href="#">Customer Profiles</a></h3>
+							<h3><a href="<?php the_field('customer_profiles_link') ?>">Customer Profiles</a></h3>
 							<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => '14', 'submenu' => 'Customer Profiles' ) ); ?>
 						</div>
 					</div>

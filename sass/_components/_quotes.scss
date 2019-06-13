@@ -6,7 +6,6 @@
   width: 100%;
   color: $grey-blue;
   font-size: $large-font-size;
-  margin-top: 60px;
     @include breakpoint(500px){
       align-items: flex-start;
     }

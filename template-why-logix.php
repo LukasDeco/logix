@@ -31,7 +31,7 @@ get_header(); ?>
 					</div>
 					<div class="logix-mini-menu-section">
 						<div class="">
-								<h3>Our Advantage</h3>
+								<h3><a href="<?php the_field('our_advantage_link') ?>">Our Advantage</a></h3>
 									<ul class="menu">
 										<?php if(!get_field('our_advantage_1_link')) {
 												//do nothing!
@@ -87,7 +87,7 @@ get_header(); ?>
 
 						</div>
 						<div class="">
-							<h3>Our Process</h3>
+							<h3><a href="<?php the_field('our_process_link') ?>">Our Process</a></h3>
 									<ul class="menu">
 										<?php if(!get_field('our_process_1_link')) {
 												//do nothing!
