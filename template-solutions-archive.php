@@ -16,8 +16,6 @@ get_header(); ?>
 				<div class="hero-title">
 					<h2><?php echo $solutions_type; ?></h2>
 				</div>
-				<div class="hero-empty">
-				</div>
 			</div>
 		</div>
 		<div class="solutions-archive-content">

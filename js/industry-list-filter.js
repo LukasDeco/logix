@@ -29,6 +29,15 @@
 
     }
 
+    if(industryArray.includes('dairies')) {
+      //show food and beverage
+      $('#dairies').removeClass('display-none');
+      setTimeout(function() {
+        $('#dairies').removeClass('hidden');
+      }, 200);
+
+    }
+
     if(industryArray.includes('meatSeafood')) {
       //show meat and seafood
       $('#meatSeafoodProcessors').removeClass('display-none');

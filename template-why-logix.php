@@ -73,6 +73,16 @@ get_header(); ?>
 											<a href="<?php echo get_the_permalink($link_id); ?>"><?php echo get_the_title($link_id); ?></a>
 										</li>
 										<?php } ?>
+										<?php if(!get_field('our_advantage_5_link')) {
+												//do nothing!
+										}
+													else {
+														$link_id = get_field('our_advantage_5_link', false, false);
+										?>
+										<li class="solution-archive-item">
+											<a href="<?php echo get_the_permalink($link_id); ?>"><?php echo get_the_title($link_id); ?></a>
+										</li>
+										<?php } ?>
 									</ul>
 
 						</div>
@@ -114,6 +124,16 @@ get_header(); ?>
 										}
 													else {
 														$link_id = get_field('our_process_4_link', false, false);
+										?>
+										<li class="solution-archive-item">
+											<a href="<?php echo get_the_permalink($link_id); ?>"><?php echo get_the_title($link_id); ?></a>
+										</li>
+										<?php } ?>
+										<?php if(!get_field('our_process_5_link')) {
+												//do nothing!
+										}
+													else {
+														$link_id = get_field('our_process_5_link', false, false);
 										?>
 										<li class="solution-archive-item">
 											<a href="<?php echo get_the_permalink($link_id); ?>"><?php echo get_the_title($link_id); ?></a>

@@ -421,17 +421,16 @@ div.testimonials-section {
       display: flex;
       flex: 1;
       color: RGB(173, 6, 23);
-      font-size: 14px;
-      font-family: FranklinGothicBook;
-      max-width: 170px;
+      font-size: 24px;
+      max-width: 250px;
       padding-top: 10px; }
-  /* line 69, sass/_layouts/_testimonials.scss */
+  /* line 68, sass/_layouts/_testimonials.scss */
   div.testimonials-section div.logo-strip {
     display: flex;
     height: 70px;
     width: 100%;
     overflow: hidden; }
-    /* line 75, sass/_layouts/_testimonials.scss */
+    /* line 74, sass/_layouts/_testimonials.scss */
     div.testimonials-section div.logo-strip div.logo {
       display: flex;
       min-width: 112.5px;
@@ -440,19 +439,19 @@ div.testimonials-section {
       cursor: pointer;
       opacity: .4;
       transition: .5s; }
-      /* line 83, sass/_layouts/_testimonials.scss */
+      /* line 82, sass/_layouts/_testimonials.scss */
       div.testimonials-section div.logo-strip div.logo.compat-object-fit {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center; }
-        /* line 87, sass/_layouts/_testimonials.scss */
+        /* line 86, sass/_layouts/_testimonials.scss */
         div.testimonials-section div.logo-strip div.logo.compat-object-fit img {
           opacity: 0; }
-      /* line 91, sass/_layouts/_testimonials.scss */
+      /* line 90, sass/_layouts/_testimonials.scss */
       div.testimonials-section div.logo-strip div.logo img {
         object-fit: contain;
         flex-basis: 112.5px; }
-    /* line 96, sass/_layouts/_testimonials.scss */
+    /* line 95, sass/_layouts/_testimonials.scss */
     div.testimonials-section div.logo-strip div.selected-logo {
       opacity: 1; }
 
@@ -740,14 +739,14 @@ div.key-benefits-section {
     div.key-benefits-section div.kb-first-level div.title {
       color: RGB(173, 6, 23);
       flex: 1;
-      font-size: 12pt;
-      font-family: FranklinGothicBook; }
-    /* line 19, sass/_layouts/_key-benefits.scss */
+      font-family: FranklinGothicBookCondensed; }
+    /* line 18, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-first-level div.kb-icons {
       display: flex;
       flex: 2;
       justify-content: flex-start;
       align-items: flex-start;
+      flex-wrap: wrap;
       margin-top: 20px;
       min-height: 200px; }
       /* line 29, sass/_layouts/_key-benefits.scss */
@@ -794,7 +793,7 @@ div.key-benefits-section {
         /* line 83, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-first-level div.kb-icons div.kb-icon p {
           color: #5e8ab4;
-          font-size: 12pt;
+          font-size: 24px;
           text-align: center;
           width: 100px;
           transition: .25s;
@@ -803,21 +802,23 @@ div.key-benefits-section {
   /* line 100, sass/_layouts/_key-benefits.scss */
   div.key-benefits-section div.kb-second-level {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     margin-top: 20px;
     min-height: 250px; }
-    /* line 105, sass/_layouts/_key-benefits.scss */
+    /* line 106, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-second-level div.title-and-contact {
       display: flex;
       flex-direction: column;
+      min-width: 300px;
       flex: 1; }
-      /* line 109, sass/_layouts/_key-benefits.scss */
+      /* line 111, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-second-level div.title-and-contact div.hidden {
         display: none !important; }
-      /* line 113, sass/_layouts/_key-benefits.scss */
+      /* line 115, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-second-level div.title-and-contact div.title {
         opacity: 0; }
-        /* line 115, sass/_layouts/_key-benefits.scss */
+        /* line 117, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-second-level div.title-and-contact div.title h3 {
           font-family: KievitBold;
           color: #5e8ab4;
@@ -826,72 +827,73 @@ div.key-benefits-section {
           margin-top: 0px;
           transition: .5s;
           line-height: 1; }
-      /* line 125, sass/_layouts/_key-benefits.scss */
+      /* line 127, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-second-level div.title-and-contact div.contact {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-family: FranklinGothicBook; }
-        /* line 130, sass/_layouts/_key-benefits.scss */
+        font-family: FranklinGothicBookCondensed; }
+        /* line 132, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-second-level div.title-and-contact div.contact p {
           color: RGB(173, 6, 23);
           margin-left: 10px;
           margin-bottom: 0px;
-          font-size: 10pt;
-          padding-right: 76px;
+          font-size: 22px;
+          padding-right: 18px;
           transition: .5s; }
-    /* line 144, sass/_layouts/_key-benefits.scss */
+    /* line 146, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-second-level div.kb-paragraph {
       display: flex;
-      flex: 2; }
-      /* line 147, sass/_layouts/_key-benefits.scss */
+      flex: 2;
+      min-width: 300px; }
+      /* line 150, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-second-level div.kb-paragraph p {
         opacity: 0;
         color: #5e8ab4;
-        font-size: 13pt;
+        font-size: 20px;
         font-family: FranklinGothicBook;
         margin-bottom: 0px;
         transition: .5s; }
-      /* line 155, sass/_layouts/_key-benefits.scss */
+      /* line 158, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-second-level div.kb-paragraph p.hidden {
         display: none !important; }
-  /* line 163, sass/_layouts/_key-benefits.scss */
+  /* line 166, sass/_layouts/_key-benefits.scss */
   div.key-benefits-section div.kb-third-level {
     display: flex;
     margin-bottom: 20px;
     min-height: 270px; }
-    /* line 167, sass/_layouts/_key-benefits.scss */
+    /* line 170, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-third-level div.third-level-empty {
       flex: 1; }
-    /* line 170, sass/_layouts/_key-benefits.scss */
+    /* line 173, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-third-level div.hidden {
       display: none !important; }
-    /* line 174, sass/_layouts/_key-benefits.scss */
+    /* line 177, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-third-level div.testimonial {
       display: flex;
       flex-direction: column;
       flex: 2;
       transition: .5s;
       opacity: 0; }
-      /* line 180, sass/_layouts/_key-benefits.scss */
+      /* line 183, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-third-level div.testimonial div.text {
         color: #5e8ab4;
         font-size: 24px;
         font-family: KievitItalic;
         margin-bottom: 10px; }
-      /* line 187, sass/_layouts/_key-benefits.scss */
+      /* line 190, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-third-level div.testimonial div.customer-info p {
         color: #5e8ab4;
         font-size: 13pt;
         margin-bottom: 0px;
         font-family: FranklinGothicBook; }
-        /* line 192, sass/_layouts/_key-benefits.scss */
+        /* line 195, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-third-level div.testimonial div.customer-info p span {
           font-size: 11pt; }
-      /* line 196, sass/_layouts/_key-benefits.scss */
+      /* line 199, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-third-level div.testimonial div.customer-info div.customer-logo {
         width: 20%; }
-        /* line 198, sass/_layouts/_key-benefits.scss */
+        /* line 201, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-third-level div.testimonial div.customer-info div.customer-logo img {
           object-fit: contain; }
 
@@ -923,54 +925,57 @@ div.key-benefits-section {
 div.our-solutions {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding-top: 10px; }
-  /* line 6, sass/_layouts/_our-solutions.scss */
+  width: 66%;
+  padding-top: 10px;
+  align-self: flex-end; }
+  @media (max-width: 500px) {
+    /* line 1, sass/_layouts/_our-solutions.scss */
+    div.our-solutions {
+      width: 100%; } }
+  /* line 10, sass/_layouts/_our-solutions.scss */
   div.our-solutions div.title {
     color: RGB(173, 6, 23);
-    flex: 2;
-    font-family: FranklinGothicBook;
-    font-size: 13pt; }
-  /* line 13, sass/_layouts/_our-solutions.scss */
+    flex: 2; }
+  /* line 15, sass/_layouts/_our-solutions.scss */
   div.our-solutions div.solutions-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 20px;
     flex-wrap: wrap; }
-    /* line 18, sass/_layouts/_our-solutions.scss */
+    /* line 20, sass/_layouts/_our-solutions.scss */
     div.our-solutions div.solutions-menu h3 {
       color: #5e8ab4;
       position: relative;
-      padding-left: 30px;
       font-family: KievitBold;
-      font-size: 37pt;
+      font-size: 37px;
       display: flex;
       align-items: center; }
-      /* line 26, sass/_layouts/_our-solutions.scss */
+      /* line 27, sass/_layouts/_our-solutions.scss */
       div.our-solutions div.solutions-menu h3:before {
         content: '';
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
         border-left: 20px solid #5e8ab4;
         position: absolute;
-        left: 0; }
-    /* line 36, sass/_layouts/_our-solutions.scss */
+        left: -30px; }
+    /* line 37, sass/_layouts/_our-solutions.scss */
     div.our-solutions div.solutions-menu ul {
-      list-style: none; }
-      /* line 38, sass/_layouts/_our-solutions.scss */
+      list-style: none;
+      margin-left: 0px; }
+      /* line 40, sass/_layouts/_our-solutions.scss */
       div.our-solutions div.solutions-menu ul li {
-        font-size: 13pt;
-        font-family: KievitMedium; }
-        /* line 41, sass/_layouts/_our-solutions.scss */
+        font-size: 20px;
+        font-family: FranklinGothicBook; }
+        /* line 43, sass/_layouts/_our-solutions.scss */
         div.our-solutions div.solutions-menu ul li a {
           color: #5e8ab4; }
-          /* line 43, sass/_layouts/_our-solutions.scss */
+          /* line 45, sass/_layouts/_our-solutions.scss */
           div.our-solutions div.solutions-menu ul li a:hover {
             color: RGB(173, 6, 23); }
-          /* line 47, sass/_layouts/_our-solutions.scss */
+          /* line 49, sass/_layouts/_our-solutions.scss */
           div.our-solutions div.solutions-menu ul li a:visited {
             color: RGB(173, 6, 23); }
-        /* line 52, sass/_layouts/_our-solutions.scss */
+        /* line 54, sass/_layouts/_our-solutions.scss */
         div.our-solutions div.solutions-menu ul li ul li a {
           font-family: Kievit;
           font-size: 11pt; }
@@ -1081,11 +1086,11 @@ div.solution-page {
         color: #5e8ab4; }
     /* line 44, sass/_layouts/_solutions-page.scss */
     div.solution-page .solution-main-content .solution-page-area {
-      font-size: 18px; }
+      font-size: 24px; }
       /* line 46, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .solution-page-area p {
         color: #5e8ab4;
-        font-size: 22px; }
+        font-size: 24px; }
       /* line 51, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .solution-page-area .has-red-divider-uptop {
         font-size: 24px; }
@@ -1548,7 +1553,7 @@ div.lx-contact-icons {
     color: RGB(173, 6, 23); }
     /* line 11, sass/_components/_contact-icons.scss */
     div.lx-contact-icons a i {
-      font-size: 26px; }
+      font-size: 36px; }
   /* line 17, sass/_components/_contact-icons.scss */
   div.lx-contact-icons p.divider {
     width: 1px;
@@ -1899,8 +1904,10 @@ span.file-icon {
     z-index: 10; }
   /* line 19, sass/_components/_mobileMenu.scss */
   .mobile-menu ul.menu li {
-    overflow: hidden; }
-    /* line 21, sass/_components/_mobileMenu.scss */
+    overflow: hidden;
+    font-size: 20px;
+    margin-bottom: 10px; }
+    /* line 23, sass/_components/_mobileMenu.scss */
     .mobile-menu ul.menu li a {
       color: #242021;
       transition: .5s;
@@ -1908,13 +1915,13 @@ span.file-icon {
       overflow: hidden;
       text-decoration: none;
       list-style: none; }
-      /* line 28, sass/_components/_mobileMenu.scss */
+      /* line 30, sass/_components/_mobileMenu.scss */
       .mobile-menu ul.menu li a:hover {
         color: RGB(173, 6, 23); }
-        /* line 30, sass/_components/_mobileMenu.scss */
+        /* line 32, sass/_components/_mobileMenu.scss */
         .mobile-menu ul.menu li a:hover::after {
           left: 0; }
-      /* line 34, sass/_components/_mobileMenu.scss */
+      /* line 36, sass/_components/_mobileMenu.scss */
       .mobile-menu ul.menu li a::after {
         content: "";
         height: 2px;
@@ -1925,7 +1932,7 @@ span.file-icon {
         position: absolute;
         transition: .25s; }
 
-/* line 59, sass/_components/_mobileMenu.scss */
+/* line 61, sass/_components/_mobileMenu.scss */
 .mobile-menu.open {
   transform: none; }
 
@@ -1936,7 +1943,7 @@ span.file-icon {
   font-size: 24px; }
   /* line 5, sass/_components/_redFontListItem.scss */
   .red-large-font-list-item .large-text {
-    font-family: KievitMedium;
+    font-family: FranklinGothicBook;
     font-size: 100px;
     margin-right: 20px; }
 

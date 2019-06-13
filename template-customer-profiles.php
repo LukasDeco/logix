@@ -9,7 +9,7 @@ $thumb_url = $thumb_url_array[0];
 
 get_header(); ?>
 
-<div class="logix-page blue-gradient" >
+<div class="logix-page" >
 	<div class="logix-page-sidebar-title">
 		<div class="sidebar">
 		</div>

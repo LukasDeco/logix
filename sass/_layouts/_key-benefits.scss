@@ -10,39 +10,39 @@ div.key-benefits-section {
 				div.title {
 					color: $wine-red;
 					flex: 1;
-					font-size: $base-font-size;
-					font-family: FranklinGothicBook;
+					font-family: FranklinGothicBookCondensed;
 				}
-				
-				
-				
+
+
+
 				div.kb-icons {
 					display: flex;
 					flex: 2;
 					justify-content: flex-start;
 					align-items: flex-start;
+					flex-wrap: wrap;
 					margin-top: 20px;
 					min-height: 200px;
-					
+
 						div.selected-kb {
-							
+
 								div.icon {
 									background: $deep-blue !important;
 									color: $sky-blue !important;
-									
+
 								}
-								
+
 								p {
 									color: $deep-blue !important;
-									
+
 								}
-								
+
 								i {
 									-webkit-animation: toRightFromLeft 0.3s forwards;
 									-moz-animation: toRightFromLeft 0.3s forwards;
 									animation: toRightFromLeft 0.3s forwards;
 								}
-								
+
 						}
 						div.kb-icon {
 							display: flex;
@@ -51,9 +51,9 @@ div.key-benefits-section {
 							justify-content: center;
 							flex: 1;
 							cursor: pointer;
-								
-								
-							
+
+
+
 								div.icon {
 									display: flex;
 									justify-content: center;
@@ -64,51 +64,53 @@ div.key-benefits-section {
 									font-size: 70px;
 									min-width: 100px;
 									min-height: 100px;
-									
+
 									transition: .25s;
 									overflow: hidden;
 									position: relative;
-									
+
 										&:hover {
 											background: $sky-blue-solid;
 										}
-									
+
 										i {
 											position: absolute;
 											font-family: 'logix-font';
-										}	
-										
-									
+										}
+
+
 								}
 								p {
 									color: $deep-blue;
-									font-size: $base-font-size;
+									font-size: 24px;
 									text-align: center;
 									width: 100px;
 									transition: .25s;
 									font-family: Kievit;
 									margin-top: 10px;
 								}
-							
-						
-							
+
+
+
 						}
-					
+
 				}
 		}
-		
+
 		div.kb-second-level {
 			display: flex;
+			flex-wrap: wrap;
 			margin-bottom: 20px;
 			margin-top: 20px;
 			min-height: 250px;
 				div.title-and-contact {
 					display: flex;
 					flex-direction: column;
+					min-width: 300px;
 					flex: 1;
 						div.hidden {
 							display: none !important;
-							
+
 						}
 						div.title {
 							opacity: 0;
@@ -119,47 +121,48 @@ div.key-benefits-section {
 								margin-bottom: 20px;
 								margin-top: 0px;
 								transition: .5s;
-								line-height: 1; 
+								line-height: 1;
 							}
 						}
 						div.contact {
 							display: flex;
 							justify-content: space-around;
 							align-items: center;
-							font-family: FranklinGothicBook;
+							font-family: FranklinGothicBookCondensed;
 								p {
 									color: $wine-red;
 									margin-left: 10px;
 									margin-bottom: 0px;
-									font-size: 10pt;
-									padding-right: 76px;
+									font-size: 22px;
+									padding-right: 18px;
 									transition: .5s;
-								}	
+								}
 						}
-						
-						
-						
+
+
+
 				}
-				
+
 				div.kb-paragraph {
 							display: flex;
 							flex: 2;
+							min-width: 300px;
 								p {
 									opacity: 0;
 									color: $arctic-blue;
-									font-size: $medium-font-size;
+									font-size: 20px;
 									font-family: FranklinGothicBook;
 									margin-bottom: 0px;
 									transition: .5s;
 								}
 								p.hidden {
 									display: none !important;
-								
+
 								}
 						}
-				
+
 		}
-		
+
 		div.kb-third-level {
 			display: flex;
 			margin-bottom: 20px;
@@ -169,7 +172,7 @@ div.key-benefits-section {
 				}
 				div.hidden {
 							display: none !important;
-							
+
 						}
 				div.testimonial {
 					display: flex;
@@ -199,7 +202,7 @@ div.key-benefits-section {
 									object-fit: contain;
 								}
 							}
-							
+
 						}
 				}
 		}

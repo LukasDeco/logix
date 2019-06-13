@@ -1,26 +1,27 @@
 div.our-solutions {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 66%;
 	padding-top: 10px;
+	align-self: flex-end;
+	@media(max-width: 500px) {
+		width: 100%;
+	}
 		div.title {
 					color: $wine-red;
 					flex: 2;
-					font-family: FranklinGothicBook;
-					font-size: $medium-font-size;
 				}
 
 		div.solutions-menu {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			margin-top: 20px;
 			flex-wrap: wrap;
 				h3 {
 					color: $arctic-blue;
 					position: relative;
-					padding-left: 30px;
 					font-family: KievitBold;
-					font-size: $bigger-header-font-size;
+					font-size: 37px;
 					display: flex;
 					align-items: center;
 						&:before {
@@ -29,15 +30,16 @@ div.our-solutions {
 							border-bottom: 20px solid transparent;
 							border-left: 20px solid $arctic-blue;
 							position: absolute;
-							left: 0;
+							left: -30px;
 						}
 				}
 
 				ul {
 					list-style: none;
+					margin-left: 0px;
 						li {
-							font-size: $medium-font-size;
-							font-family: KievitMedium;
+							font-size: 20px;
+							font-family: FranklinGothicBook;
 								a {
 									color: $arctic-blue;
 										&:hover {

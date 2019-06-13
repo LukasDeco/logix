@@ -9,7 +9,7 @@ $thumb_url = $thumb_url_array[0];
 
 get_header(); ?>
 
-	<div class="logix-page blue-gradient" >
+	<div class="logix-page" >
 		<div class="logix-page-sidebar-title">
 			<div class="sidebar">
 			</div>
@@ -99,13 +99,13 @@ get_header(); ?>
 						<div class="titled-section" id="iceRinks">
 							<h3>
 								Ice Rinks
-							</3>
+							</h3>
 							<?php
 								$loop = new WP_Query( array(
 									'post_type' => 'testimonials',
 									'meta_key' => 'customer_industry',
 									'meta_value' => 'Ice Rinks',
-									'posts_per_page'         => '20' ) );
+									'posts_per_page' => '20' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -165,6 +165,35 @@ get_header(); ?>
 									'post_type' => 'testimonials',
 									'meta_key' => 'customer_industry',
 									'meta_value' => 'Breweries & Distribution',
+									'posts_per_page'         => '20' ) );
+								if ( $loop->have_posts() ) :
+									while ( $loop->have_posts() ) : $loop->the_post(); ?>
+										<div class="item">
+											<?php
+											$profile = get_post_meta($post->ID, 'full_profile', true);
+											if($profile) { ?>
+											<a href="<?php the_permalink(); ?>" >
+												<?php the_title(); ?>
+											</a>
+											<?php } else { ?>
+												<a  class="no-profile">
+													<?php the_title(); ?>
+												</a>
+											<?php } ?>
+										</div>
+							<?php endwhile;
+				 					  endif;
+				 						wp_reset_postdata(); ?>
+						</div>
+						<div class="titled-section" id="dairies">
+							<h3>
+								Dairies
+							</h3>
+							<?php
+								$loop = new WP_Query( array(
+									'post_type' => 'testimonials',
+									'meta_key' => 'customer_industry',
+									'meta_value' => 'Dairies',
 									'posts_per_page'         => '20' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
