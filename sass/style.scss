@@ -99,6 +99,20 @@ Lukas Conant made the actual Logix theme built on top of the Underscores theme!
 @include font-face(FranklinGothicBookCondensed, fonts/FranklinGothicBookCondensed, null, null, 'otf');
 @include font-face(FranklinGothicDemiItalic, fonts/franklin-gothic-demi-italic, null, null, 'ttf');
 
+input[type="submit"].wpcf7-submit {
+	background: #be1212;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 15px;
+}
+
+.wpcf7 input, textarea, select {
+	width: 100%;
+	@media(max-width: 500px) {
+		max-width: 310px;
+	}
+}
 
 .blue-gradient {
 	background: linear-gradient($white, $sky-blue);

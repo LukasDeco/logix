@@ -6,10 +6,16 @@ footer.site-footer {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+		@media(max-width: 500px) {
+			flex-direction: column;
+		}
 		.footer-content{
 			max-width: 1366px;
 			display: flex;
 			flex-wrap: wrap;
+			@media(max-width: 500px) {
+				flex-direction: column;
+			}
 		}
 
 		div.site-info{
