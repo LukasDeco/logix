@@ -6,6 +6,7 @@ div.logix-page div.solutions-archive-hero.hero-section {
 
 div.solutions-archive-content {
 	display: flex;
+	flex-direction: column;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color: $arctic-blue;

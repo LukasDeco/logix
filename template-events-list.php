@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Solutions Archive*/
+/* Template Name: Events Page*/
 
 $solutions_type = ucfirst(get_field('solutions_type'));
 $solutions_type_slug = str_replace(" ", "-",strtolower($solutions_type));
@@ -18,33 +18,52 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-		<div class="solutions-archive-content">
+		<div class="solutions-archive-content flex-column">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php the_content(); ?>
 			<?php endwhile; endif; ?>
-		</div>
-		<div class="our-solutions solutions-archive has-red-divider-uptop">
-			<div class="title">
-				Our Events
-			</div>
-			<div class="events-list">
-					<?php
-					$args = array( 'post_type' => 'events', 'orderby' => 'title', 'order' => 'ASC' );
-					$loop = new WP_Query( $args ) ;
-						if ( $loop->have_posts() ) :
-							while ( $loop->have_posts() ) : $loop->the_post();
 
-							$post_type = get_post_type();
-							$post_id = get_the_ID();
-							?>
-								<?php
-									endwhile;
-									endif;
-									wp_reset_postdata();
+			<div class="events-list-container">
+				<div class="has-red-divider-uptop">
+					<div class="title">
+						Our Events
+					</div>
+				</div>
+				<div class="events-list">
+						<?php
+						$args = array( 'post_type' => 'events', 'orderby' => 'title', 'order' => 'ASC' );
+						$loop = new WP_Query( $args ) ;
+							if ( $loop->have_posts() ) :
+								while ( $loop->have_posts() ) : $loop->the_post();
+
+								$post_type = get_post_type();
+								$post_id = get_the_ID();
 								?>
+									<div class="event">
+										<p class="event-date-header"><?php the_field('event_month'); ?> <?php the_field('event_year'); ?></p>
+										<h3 class="event-title"><?php the_title(); ?></h3>
+										<p><?php the_field('event_venue'); ?></p>
+										<p class="learn-more">
 
+											<?php the_field('for_more_information_text'); ?>
+
+
+											
+										</p>
+
+										<hr>
+									</div>
+									<?php
+										endwhile;
+										endif;
+										wp_reset_postdata();
+									?>
+
+				</div>
 			</div>
 		</div>
+
+	</div>
 
 
 <?php
