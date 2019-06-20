@@ -26,29 +26,35 @@ get_header(); ?>
 			<div class="events-list-container">
 				<div class="has-red-divider-uptop">
 					<div class="title">
-						Our Events
+						Upcoming Events
 					</div>
 				</div>
 				<div class="events-list">
 						<?php
-						$args = array( 'post_type' => 'events', 'orderby' => 'title', 'order' => 'ASC' );
+						$args = array(
+							'post_type' => 'events',
+							'meta_key' => 'event_date',
+							'orderby' => 'meta_value',
+							'order' => 'ASC',
+							'meta_key'   => 'is_active',
+		  				'meta_value' => true );
 						$loop = new WP_Query( $args ) ;
 							if ( $loop->have_posts() ) :
 								while ( $loop->have_posts() ) : $loop->the_post();
 
 								$post_type = get_post_type();
 								$post_id = get_the_ID();
+								$date = get_field('event_date', false, false);
+								// make date object
+								$date = new DateTime($date);
 								?>
 									<div class="event">
-										<p class="event-date-header"><?php the_field('event_month'); ?> <?php the_field('event_year'); ?></p>
+										<p class="event-date-header"><?php echo $date->format('F'); ?> <?php echo $date->format('Y'); ?></p>
 										<h3 class="event-title"><?php the_title(); ?></h3>
 										<p><?php the_field('event_venue'); ?></p>
+										<p><?php echo $date->format('F'); ?> <?php echo $date->format('j'); ?></p>
 										<p class="learn-more">
-
 											<?php the_field('for_more_information_text'); ?>
-
-
-											
 										</p>
 
 										<hr>
