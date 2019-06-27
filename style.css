@@ -383,39 +383,38 @@ div.testimonials-section {
     display: flex;
     min-height: 305px;
     max-height: 305px;
-    overflow: hidden;
     justify-content: space-between; }
-    /* line 12, sass/_layouts/_testimonials.scss */
+    /* line 11, sass/_layouts/_testimonials.scss */
     div.testimonials-section div.quote-and-title div.hidden {
       display: none !important; }
-    /* line 16, sass/_layouts/_testimonials.scss */
+    /* line 14, sass/_layouts/_testimonials.scss */
     div.testimonials-section div.quote-and-title div.customer-quote {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       flex: 4;
-      max-width: 555px;
+      max-width: 700px;
       margin-top: 20px;
       margin-bottom: 30px;
       position: relative;
       transition: .25s;
       opacity: 0; }
-      /* line 28, sass/_layouts/_testimonials.scss */
+      /* line 25, sass/_layouts/_testimonials.scss */
       div.testimonials-section div.quote-and-title div.customer-quote p.customer-text {
         color: #5e8ab4;
         font-size: 24px;
         font-family: FranklinGothicBook;
         margin-bottom: 8px;
-        overflow: hidden; }
-      /* line 36, sass/_layouts/_testimonials.scss */
+        text-indent: -10px; }
+      /* line 33, sass/_layouts/_testimonials.scss */
       div.testimonials-section div.quote-and-title div.customer-quote p.customer-title {
         color: #5e8ab4;
         font-size: 13pt;
         font-family: FranklinGothicBook; }
-        /* line 40, sass/_layouts/_testimonials.scss */
+        /* line 37, sass/_layouts/_testimonials.scss */
         div.testimonials-section div.quote-and-title div.customer-quote p.customer-title span {
           font-size: 11pt; }
-      /* line 46, sass/_layouts/_testimonials.scss */
+      /* line 43, sass/_layouts/_testimonials.scss */
       div.testimonials-section div.quote-and-title div.customer-quote:before {
         content: '';
         border-left: 20px solid transparent;
@@ -424,7 +423,7 @@ div.testimonials-section {
         position: absolute;
         left: 30px;
         bottom: -18px; }
-    /* line 57, sass/_layouts/_testimonials.scss */
+    /* line 54, sass/_layouts/_testimonials.scss */
     div.testimonials-section div.quote-and-title div.title {
       display: flex;
       flex: 1;
@@ -432,34 +431,34 @@ div.testimonials-section {
       font-size: 24px;
       max-width: 250px;
       padding-top: 10px; }
-  /* line 68, sass/_layouts/_testimonials.scss */
+  /* line 65, sass/_layouts/_testimonials.scss */
   div.testimonials-section div.logo-strip {
     display: flex;
     height: 70px;
     width: 100%;
     overflow: hidden; }
-    /* line 74, sass/_layouts/_testimonials.scss */
+    /* line 71, sass/_layouts/_testimonials.scss */
     div.testimonials-section div.logo-strip div.logo {
       display: flex;
-      min-width: 112.5px;
-      max-width: 112.5px;
+      min-width: 200px;
+      max-width: 200px;
       padding: 5px;
       cursor: pointer;
       opacity: .4;
       transition: .5s; }
-      /* line 82, sass/_layouts/_testimonials.scss */
+      /* line 79, sass/_layouts/_testimonials.scss */
       div.testimonials-section div.logo-strip div.logo.compat-object-fit {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center; }
-        /* line 86, sass/_layouts/_testimonials.scss */
+        /* line 83, sass/_layouts/_testimonials.scss */
         div.testimonials-section div.logo-strip div.logo.compat-object-fit img {
           opacity: 0; }
-      /* line 90, sass/_layouts/_testimonials.scss */
+      /* line 87, sass/_layouts/_testimonials.scss */
       div.testimonials-section div.logo-strip div.logo img {
         object-fit: contain;
-        flex-basis: 112.5px; }
-    /* line 95, sass/_layouts/_testimonials.scss */
+        flex-basis: 200px; }
+    /* line 92, sass/_layouts/_testimonials.scss */
     div.testimonials-section div.logo-strip div.selected-logo {
       opacity: 1; }
 
@@ -858,7 +857,7 @@ div.key-benefits-section {
       div.key-benefits-section div.kb-second-level div.kb-paragraph p {
         opacity: 0;
         color: #5e8ab4;
-        font-size: 20px;
+        font-size: 24px;
         font-family: FranklinGothicBook;
         margin-bottom: 0px;
         transition: .5s; }
@@ -903,6 +902,7 @@ div.key-benefits-section {
         width: 20%; }
         /* line 201, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-third-level div.testimonial div.customer-info div.customer-logo img {
+          width: 100%;
           object-fit: contain; }
 
 @-webkit-keyframes toRightFromLeft {
@@ -947,10 +947,17 @@ div.our-solutions {
   /* line 15, sass/_layouts/_our-solutions.scss */
   div.our-solutions div.solutions-menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     margin-top: 20px;
-    flex-wrap: wrap; }
-    /* line 20, sass/_layouts/_our-solutions.scss */
+    flex-wrap: wrap;
+    margin-left: 30px; }
+    /* line 21, sass/_layouts/_our-solutions.scss */
+    div.our-solutions div.solutions-menu div {
+      margin-right: 60px; }
+    /* line 24, sass/_layouts/_our-solutions.scss */
+    div.our-solutions div.solutions-menu a {
+      text-decoration: none; }
+    /* line 27, sass/_layouts/_our-solutions.scss */
     div.our-solutions div.solutions-menu h3 {
       color: #5e8ab4;
       position: relative;
@@ -958,7 +965,7 @@ div.our-solutions {
       font-size: 37px;
       display: flex;
       align-items: center; }
-      /* line 27, sass/_layouts/_our-solutions.scss */
+      /* line 34, sass/_layouts/_our-solutions.scss */
       div.our-solutions div.solutions-menu h3:before {
         content: '';
         border-top: 20px solid transparent;
@@ -966,27 +973,26 @@ div.our-solutions {
         border-left: 20px solid #5e8ab4;
         position: absolute;
         left: -30px; }
-    /* line 37, sass/_layouts/_our-solutions.scss */
+    /* line 44, sass/_layouts/_our-solutions.scss */
     div.our-solutions div.solutions-menu ul {
       list-style: none;
       margin-left: 0px; }
-      /* line 40, sass/_layouts/_our-solutions.scss */
+      /* line 47, sass/_layouts/_our-solutions.scss */
       div.our-solutions div.solutions-menu ul li {
-        font-size: 20px;
-        font-family: FranklinGothicBook; }
-        /* line 43, sass/_layouts/_our-solutions.scss */
+        font-size: 22px;
+        font-family: KievitMedium; }
+        /* line 50, sass/_layouts/_our-solutions.scss */
         div.our-solutions div.solutions-menu ul li a {
           color: #5e8ab4; }
-          /* line 45, sass/_layouts/_our-solutions.scss */
+          /* line 52, sass/_layouts/_our-solutions.scss */
           div.our-solutions div.solutions-menu ul li a:hover {
             color: RGB(173, 6, 23); }
-          /* line 49, sass/_layouts/_our-solutions.scss */
+          /* line 56, sass/_layouts/_our-solutions.scss */
           div.our-solutions div.solutions-menu ul li a:visited {
             color: RGB(173, 6, 23); }
-        /* line 54, sass/_layouts/_our-solutions.scss */
+        /* line 61, sass/_layouts/_our-solutions.scss */
         div.our-solutions div.solutions-menu ul li ul li a {
-          font-family: Kievit;
-          font-size: 11pt; }
+          margin-left: 20px; }
 
 /* line 1, sass/_layouts/_solutions-archive.scss */
 div.logix-page div.solutions-archive-hero.hero-section {
@@ -1004,48 +1010,49 @@ div.solutions-archive-content {
   width: 100%;
   max-width: 912px;
   line-height: 1.2; }
-  /* line 17, sass/_layouts/_solutions-archive.scss */
+  /* line 18, sass/_layouts/_solutions-archive.scss */
   div.solutions-archive-content p {
     max-width: 700px;
+    margin-left: 260px;
     font-size: 28px; }
 
-/* line 23, sass/_layouts/_solutions-archive.scss */
+/* line 25, sass/_layouts/_solutions-archive.scss */
 div.solutions-archive {
   min-height: 300px;
   max-width: 912px;
   width: 100%;
   display: flex;
   align-content: flex-start; }
-  /* line 29, sass/_layouts/_solutions-archive.scss */
+  /* line 31, sass/_layouts/_solutions-archive.scss */
   div.solutions-archive div.title {
     max-height: 40px;
     font-size: 24px; }
-  /* line 33, sass/_layouts/_solutions-archive.scss */
+  /* line 35, sass/_layouts/_solutions-archive.scss */
   div.solutions-archive ul {
     margin-left: 0px;
     font-size: 20pt; }
-    /* line 36, sass/_layouts/_solutions-archive.scss */
+    /* line 38, sass/_layouts/_solutions-archive.scss */
     div.solutions-archive ul ul {
       margin-left: 20px; }
-  /* line 41, sass/_layouts/_solutions-archive.scss */
+  /* line 43, sass/_layouts/_solutions-archive.scss */
   div.solutions-archive div.solutions-list {
     display: flex;
     min-height: 300px; }
-    /* line 44, sass/_layouts/_solutions-archive.scss */
+    /* line 46, sass/_layouts/_solutions-archive.scss */
     div.solutions-archive div.solutions-list div.solution-image {
       max-height: 300px;
       margin-top: 20px;
       flex: 2;
       display: flex;
       overflow: hidden; }
-      /* line 50, sass/_layouts/_solutions-archive.scss */
+      /* line 52, sass/_layouts/_solutions-archive.scss */
       div.solutions-archive div.solutions-list div.solution-image img {
         object-fit: contain;
         height: unset; }
-    /* line 55, sass/_layouts/_solutions-archive.scss */
+    /* line 57, sass/_layouts/_solutions-archive.scss */
     div.solutions-archive div.solutions-list div.solutions-menu {
       flex: 1; }
-      /* line 59, sass/_layouts/_solutions-archive.scss */
+      /* line 61, sass/_layouts/_solutions-archive.scss */
       div.solutions-archive div.solutions-list div.solutions-menu ul li a {
         font-size: 20pt; }
 
@@ -1076,13 +1083,13 @@ div.solution-page {
       margin-bottom: 40px; }
       /* line 22, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .title-area h1 {
-        font-size: 75px;
+        font-size: 55px;
         color: RGB(173, 6, 23);
         font-weight: 700;
         font-family: FranklinGothicDemiItalic;
         margin-bottom: 20px;
         letter-spacing: 2px;
-        line-height: 80px; }
+        line-height: 72px; }
       /* line 31, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .title-area h2 {
         font-size: 26px;

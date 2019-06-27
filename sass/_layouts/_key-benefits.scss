@@ -150,7 +150,7 @@ div.key-benefits-section {
 								p {
 									opacity: 0;
 									color: $arctic-blue;
-									font-size: 20px;
+									font-size: 24px;
 									font-family: FranklinGothicBook;
 									margin-bottom: 0px;
 									transition: .5s;
@@ -199,6 +199,7 @@ div.key-benefits-section {
 							div.customer-logo {
 								width: 20%;
 								img {
+									width: 100%;
 									object-fit: contain;
 								}
 							}

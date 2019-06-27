@@ -174,11 +174,16 @@ get_header(); ?>
 				</div>
 				<div class="solutions-menu">
 					<div class="product-solutions">
-						<h3>Product Solutions</h3>
+						<a href="/product-solutions-archive">
+							<h3>Product Solutions</h3>
+						</a>
+
 						<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => '2', 'submenu' => 'Product Solutions' ) ); ?>
 					</div>
 					<div class="engineered-solutions">
-						<h3>Engineered Solutions</h3>
+						<a href="/engineered-solutions-archive">
+							<h3>Engineered Solutions</h3>
+						</a>
 						<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => '2', 'submenu' => 'Engineered Solutions' ) ); ?>
 					</div>
 				</div>

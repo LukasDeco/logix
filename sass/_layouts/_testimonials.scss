@@ -7,30 +7,27 @@ div.testimonials-section {
 			display: flex;
 			min-height: 305px;
 			max-height: 305px;
-			overflow: hidden;
 			justify-content: space-between;
 				div.hidden {
 					display: none !important;
 				}
-
 				div.customer-quote {
 					display: flex;
 					flex-direction: column;
 					justify-content: flex-end;
 					flex: 4;
-					max-width: 555px;
+					max-width: 700px;
 					margin-top: 20px;
 					margin-bottom: 30px;
 					position: relative;
 					transition: .25s;
 					opacity: 0;
-
 						p.customer-text {
 							color: $arctic-blue;
 							font-size: $large-font-size;
 							font-family: FranklinGothicBook;
 							margin-bottom: 8px;
-							overflow: hidden;
+							text-indent: -10px;
 						}
 
 						p.customer-title {
@@ -73,8 +70,8 @@ div.testimonials-section {
 
 				div.logo {
 					display: flex;
-					min-width: 112.5px;
-					max-width: 112.5px;
+					min-width: 200px;
+					max-width: 200px;
 					padding: 5px;
 					cursor: pointer;
 					opacity: .4;
@@ -89,7 +86,7 @@ div.testimonials-section {
 						  }
 						img {
 							object-fit: contain;
-							flex-basis: 112.5px;
+							flex-basis: 200px;
 						}
 				}
 				div.selected-logo {
