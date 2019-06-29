@@ -28,13 +28,28 @@ div.solutions-archive {
 	width: 100%;
 	display: flex;
 	align-content: flex-start;
+	padding-left: 260px;
 		div.title {
 			max-height: 40px;
 			font-size: 24px;
 		}
-	ul {
+	ul.menu {
 		margin-left: 0px;
-		font-size: 20pt;
+		font-size: 22px;
+		font-family: KievitMedium;
+		list-style: none;
+			a {
+				color: $arctic-blue;
+				text-decoration: none;
+					&:hover {
+						color: $wine-red;
+					}
+
+					&:visited {
+						color: $wine-red;
+					}
+
+			}
 			ul {
 				margin-left: 20px;
 

@@ -20,7 +20,7 @@ get_header(); ?>
 						</div>
 						<div class="solution-main-content">
 							<div class="title-area">
-								<h1 style="font-size:<?php the_field('title_size'); ?>;" ><?php the_title(); ?></h1>
+								<h1 style="font-size:<?php the_field('title_size'); ?>; line-height: <?php the_field('title_line_height'); ?>" ><?php the_title(); ?></h1>
 								<h2><?php the_field('sub_title'); ?></h2>
 								<h5>
 									<?php the_field('sub_paragraph'); ?>

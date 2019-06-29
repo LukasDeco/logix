@@ -952,7 +952,7 @@ div.our-solutions {
     flex-wrap: wrap;
     margin-left: 30px; }
     /* line 21, sass/_layouts/_our-solutions.scss */
-    div.our-solutions div.solutions-menu div {
+    div.our-solutions div.solutions-menu .product-solutions {
       margin-right: 60px; }
     /* line 24, sass/_layouts/_our-solutions.scss */
     div.our-solutions div.solutions-menu a {
@@ -1022,37 +1022,50 @@ div.solutions-archive {
   max-width: 912px;
   width: 100%;
   display: flex;
-  align-content: flex-start; }
-  /* line 31, sass/_layouts/_solutions-archive.scss */
+  align-content: flex-start;
+  padding-left: 260px; }
+  /* line 32, sass/_layouts/_solutions-archive.scss */
   div.solutions-archive div.title {
     max-height: 40px;
     font-size: 24px; }
-  /* line 35, sass/_layouts/_solutions-archive.scss */
-  div.solutions-archive ul {
+  /* line 36, sass/_layouts/_solutions-archive.scss */
+  div.solutions-archive ul.menu {
     margin-left: 0px;
-    font-size: 20pt; }
-    /* line 38, sass/_layouts/_solutions-archive.scss */
-    div.solutions-archive ul ul {
+    font-size: 22px;
+    font-family: KievitMedium;
+    list-style: none; }
+    /* line 41, sass/_layouts/_solutions-archive.scss */
+    div.solutions-archive ul.menu a {
+      color: #5e8ab4;
+      text-decoration: none; }
+      /* line 44, sass/_layouts/_solutions-archive.scss */
+      div.solutions-archive ul.menu a:hover {
+        color: RGB(173, 6, 23); }
+      /* line 48, sass/_layouts/_solutions-archive.scss */
+      div.solutions-archive ul.menu a:visited {
+        color: RGB(173, 6, 23); }
+    /* line 53, sass/_layouts/_solutions-archive.scss */
+    div.solutions-archive ul.menu ul {
       margin-left: 20px; }
-  /* line 43, sass/_layouts/_solutions-archive.scss */
+  /* line 58, sass/_layouts/_solutions-archive.scss */
   div.solutions-archive div.solutions-list {
     display: flex;
     min-height: 300px; }
-    /* line 46, sass/_layouts/_solutions-archive.scss */
+    /* line 61, sass/_layouts/_solutions-archive.scss */
     div.solutions-archive div.solutions-list div.solution-image {
       max-height: 300px;
       margin-top: 20px;
       flex: 2;
       display: flex;
       overflow: hidden; }
-      /* line 52, sass/_layouts/_solutions-archive.scss */
+      /* line 67, sass/_layouts/_solutions-archive.scss */
       div.solutions-archive div.solutions-list div.solution-image img {
         object-fit: contain;
         height: unset; }
-    /* line 57, sass/_layouts/_solutions-archive.scss */
+    /* line 72, sass/_layouts/_solutions-archive.scss */
     div.solutions-archive div.solutions-list div.solutions-menu {
       flex: 1; }
-      /* line 61, sass/_layouts/_solutions-archive.scss */
+      /* line 76, sass/_layouts/_solutions-archive.scss */
       div.solutions-archive div.solutions-list div.solutions-menu ul li a {
         font-size: 20pt; }
 
