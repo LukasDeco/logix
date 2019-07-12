@@ -24,7 +24,7 @@ div.solution-page {
 							color: $wine-red;
 							font-weight: $heavy-font-weight;
 							font-family: FranklinGothicDemiItalic;
-							margin-bottom: 20px;
+							margin-bottom: 35px;
 							letter-spacing: 2px;
 							line-height: 72px;
 						}
@@ -73,6 +73,9 @@ div.solution-page {
 				.has-red-divider-uptop {
 					font-size: 24px;
 				}
+		}
+		.solution-sidebar.customer-testimonial-page {
+			margin-top: 60px;
 		}
 
 	}

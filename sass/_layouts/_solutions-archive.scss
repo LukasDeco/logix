@@ -13,23 +13,35 @@ div.solutions-archive-content {
 	color: $arctic-blue;
 	font-size: 20pt;
 	width: 100%;
-	max-width: 912px;
+	max-width: 1175px;
 	line-height: 1.2;
 		p {
 			max-width: 700px;
-			margin-left: 260px;
+			margin-left: 390px;
 			font-size: 28px;
+			@media(max-width: 500px) {
+				margin-left: 0px;
+			}
 		}
 }
 
+div.solutions-archive-content.why-logix {
+	p {
+		margin-left: 0px;
+	}
+}
+
+
 div.solutions-archive {
 	min-height: 300px;
-	max-width: 912px;
+	max-width: 1175px;
 	width: 100%;
 	display: flex;
 	align-content: flex-start;
-	paddings Projects
-	-left: 260px;
+	padding-left: 390px;
+	@media(max-width: 500px) {
+		padding-left: 0px;
+	}
 		div.title {
 			max-height: 40px;
 			font-size: 24px;
@@ -59,6 +71,7 @@ div.solutions-archive {
 		div.solutions-list {
 			display: flex;
 			min-height: 300px;
+			margin-top: 20px;
 				div.solution-image {
 					max-height: 300px;
 					margin-top: 20px;

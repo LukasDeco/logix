@@ -147,17 +147,15 @@ div.key-benefits-section {
 							display: flex;
 							flex: 2;
 							min-width: 300px;
+								.hidden {
+									display: none !important;
+								}
 								p {
-									opacity: 0;
 									color: $arctic-blue;
 									font-size: 24px;
 									font-family: FranklinGothicBook;
 									margin-bottom: 0px;
 									transition: .5s;
-								}
-								p.hidden {
-									display: none !important;
-
 								}
 						}
 

@@ -19,8 +19,8 @@ get_header(); ?>
 			<div class="sidebar">
 				<?php the_field('sidebar_area'); ?>
 			</div>
-			<div class="solutions-archive-content main-section no-top-margin">
-				<div class="main-content">
+			<div class="solutions-archive-content main-section no-top-margin why-logix">
+				<div class="main-content ">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<?php the_content(); ?>
 					<?php endwhile; endif; ?>

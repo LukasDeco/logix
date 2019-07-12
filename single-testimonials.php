@@ -15,7 +15,7 @@ get_header(); ?>
       <?php
         while ( have_posts() ) : the_post(); ?>
         <div class="solution-page">
-          <div class="solution-sidebar">
+          <div class="solution-sidebar customer-testimonial-page">
             <div class="logix-quote">
   						<div class="customer-logo">
                 <img src=<?php the_field('customer_company_logo') ?> >

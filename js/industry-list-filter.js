@@ -76,7 +76,7 @@
 
     if(industryArray.includes('iceRinks')) {
       //show ice rinks
-      $('#wineries').removeClass('display-none');
+      $('#iceRinks').removeClass('display-none');
       setTimeout(function() {
         $('#iceRinks').removeClass('hidden');
       }, 200);

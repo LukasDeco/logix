@@ -117,15 +117,18 @@ get_header(); ?>
 					<div class="kb-paragraph">
 						<?php
 
-						$kb_loop = new WP_Query( array( 'post_type' => 'key-benefits' ) );
+						$kb_loop = new WP_Query( array(
+							'post_type' => 'key-benefits',
+							'orderby'   => 'title',
+	        		'order' => 'DESC' ) );
 						if ( $kb_loop->have_posts() ) :
 							while ( $kb_loop->have_posts() ) : $kb_loop->the_post();
 							$kb_id = get_the_ID();
 
 						?>
-						<p id="benefit-paragraph-<?php echo $kb_id; ?>" class="hidden kb-paragraph-single" >
+						<div id="benefit-paragraph-<?php echo $kb_id; ?>" class="hidden kb-paragraph-single" >
 							<?php the_field('key_benefit_description'); ?>
-						</p>
+						</div>
 						<?php
 							endwhile;
 						endif;
@@ -137,7 +140,6 @@ get_header(); ?>
 					<div class="third-level-empty">
 					</div>
 					<?php
-						$kb_loop = new WP_Query( array( 'post_type' => 'key-benefits' ) );
 						if ( $kb_loop->have_posts() ) :
 							while ( $kb_loop->have_posts() ) : $kb_loop->the_post();
 							$kb_id = get_the_ID();
