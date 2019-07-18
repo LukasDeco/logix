@@ -2000,29 +2000,42 @@ span.file-icon {
   font-size: 24px; }
   /* line 5, sass/_components/_redFontListItem.scss */
   .red-large-font-list-item .large-text {
-    font-family: FranklinGothicBook;
-    font-size: 100px;
-    margin-right: 20px; }
+    font-family: FranklinGothicDemiItalic;
+    font-size: 80px;
+    margin-right: 20px;
+    line-height: 80px; }
 
 /* line 1, sass/_components/_events.scss */
-.events-list {
-  margin-top: 60px; }
+.events-list-container {
+  display: flex;
+  justify-content: flex-end; }
 
-/* line 5, sass/_components/_events.scss */
+/* line 6, sass/_components/_events.scss */
+.events-list {
+  margin-top: 60px;
+  width: 750px; }
+
+/* line 11, sass/_components/_events.scss */
 .event {
   margin-top: 20px; }
-  /* line 7, sass/_components/_events.scss */
+  /* line 13, sass/_components/_events.scss */
+  .event p {
+    margin-left: 0px !important; }
+  /* line 16, sass/_components/_events.scss */
   .event .event-date-header {
     font-family: KievitBold;
     font-size: 26px;
-    margin-bottom: 20px; }
-  /* line 12, sass/_components/_events.scss */
+    margin-bottom: 20px;
+    margin-left: 0px; }
+  /* line 22, sass/_components/_events.scss */
   .event .event-title {
     font-family: FranklinGothicBookCondensed;
-    font-size: 30px; }
-  /* line 16, sass/_components/_events.scss */
+    font-size: 30px;
+    margin-left: 0px; }
+  /* line 27, sass/_components/_events.scss */
   .event .learn-more {
-    font-style: italic; }
+    font-style: italic;
+    margin-left: 0px; }
 
 @font-face {
   font-family: "CALIBRI";

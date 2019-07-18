@@ -10,7 +10,7 @@ $thumb_url = $thumb_url_array[0];
 
 get_header(); ?>
 
-	<div class="logix-page blue-gradient">
+	<div class="logix-page">
 		<div class="hero-section solutions-archive-hero" style="background-image:url(<?php echo $thumb_url; ?>);">
 			<div class="hero-container">
 				<div class="hero-title">
@@ -24,11 +24,6 @@ get_header(); ?>
 			<?php endwhile; endif; ?>
 
 			<div class="events-list-container">
-				<div class="has-red-divider-uptop">
-					<div class="title">
-						Upcoming Events
-					</div>
-				</div>
 				<div class="events-list">
 						<?php
 						$args = array(

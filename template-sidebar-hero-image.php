@@ -29,6 +29,10 @@ get_header(); ?>
     				<?php the_content(); ?>
     			<?php endwhile; endif; ?>
     		</div>
+				<div class="img-row">
+					<img src="<?php the_field('image_one'); ?>" />
+					<img src="<?php the_field('image_two'); ?>" />
+				</div>
 		  </div>
 		</div>
 	</div>

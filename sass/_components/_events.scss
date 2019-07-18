@@ -1,19 +1,31 @@
+.events-list-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .events-list {
   margin-top: 60px;
+  width: 750px;
 }
 
 .event {
   margin-top: 20px;
+  p {
+    margin-left: 0px !important;
+  }
   .event-date-header {
     font-family: KievitBold;
     font-size: 26px;
     margin-bottom: 20px;
+  margin-left: 0px;
   }
   .event-title {
     font-family: FranklinGothicBookCondensed;
     font-size: 30px;
+    margin-left: 0px;
   }
   .learn-more {
     font-style: italic;
+    margin-left: 0px;
   }
 }
