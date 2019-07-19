@@ -1715,7 +1715,7 @@ span.file-icon {
     font-size: 24px; }
   /* line 22, sass/_components/_quotes.scss */
   .logix-quote .customer-logo {
-    max-width: 100%; }
+    width: 80%; }
 
 /* line 27, sass/_components/_quotes.scss */
 .quote-icon {
