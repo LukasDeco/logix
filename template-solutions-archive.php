@@ -32,17 +32,21 @@ get_header(); ?>
 					<div class="solutions-menu">
 								<ul class="menu">
 						<?php
-						$args = array( 'post_type' => $solutions_type_slug, 'orderby' => 'title', 'order' => 'ASC' );
+						$args = array(
+							'post_type' => $solutions_type_slug,
+							'orderby' => 'menu_order',
+							'order' => 'ASC');
 						$loop = new WP_Query( $args ) ;
 							if ( $loop->have_posts() ) :
 								while ( $loop->have_posts() ) : $loop->the_post();
 
 								$post_type = get_post_type();
 								$post_id = get_the_ID();
+								$item_class = get_post_meta($post_id, 'sub_item', true) ? 'solution-archive-item sub-item' : 'solution-archive-item';
 								?>
 
 
-									<li class="solution-archive-item" id="<?php echo $post_type; ?>-<?php echo $post_id; ?>">
+									<li class="<?php echo $item_class ?>" id="<?php echo $post_type; ?>-<?php echo $post_id; ?>">
 										<a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a>
 									</li>
 									<?php

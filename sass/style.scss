@@ -99,6 +99,11 @@ Lukas Conant made the actual Logix theme built on top of the Underscores theme!
 @include font-face(FranklinGothicBook, fonts/ITCFranklinGothicStd-Book, null, null, 'otf');
 @include font-face(FranklinGothicBookCondensed, fonts/FranklinGothicBookCondensed, null, null, 'otf');
 @include font-face(FranklinGothicDemiItalic, fonts/franklin-gothic-demi-italic, null, null, 'ttf');
+@font-face{
+		font-family:"FranklinGothicDemi";
+		src:url("fonts/5386814/56229b74-3d24-4a87-a10b-04a2a38550bc.eot?#iefix");
+		src:url("fonts/5386814/56229b74-3d24-4a87-a10b-04a2a38550bc.eot?#iefix") format("eot"),url("fonts/5386814/8ec24b3a-2acd-4650-a65b-9d15fb59cf95.woff2") format("woff2"),url("fonts/5386814/f439c6dc-7290-4bcf-a9aa-b1caf6285799.woff") format("woff"),url("fonts/5386814/c3b825ad-d47b-4924-b367-5cfce02cbfcf.ttf") format("truetype");
+}
 
 input[type="submit"].wpcf7-submit {
 	background: #be1212;

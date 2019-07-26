@@ -40,19 +40,25 @@ get_header(); ?>
 								$post_type = get_post_type();
 								$post_id = get_the_ID();
 								$date = get_field('event_date', false, false);
+								$end_date = get_field('end_date', false, false);
 								// make date object
 								$date = new DateTime($date);
+								$end_date = new DateTime($end_date);
+								$date_formatted = $date->format('F') . " " . $date->format('j');
+								$end_date_formatted = $end_date->format('F') . " " . $end_date->format('j');
+								$date_display = get_field('multiple_day_event', false, false) ? $date_formatted . " - " . $end_date_formatted : $date_formatted;
+									// $date->format('F') . " " . $date->format('j') . " - " . $end_date->format('F') . " " . $end_date->format('j');
 								?>
 									<div class="event">
-										<p class="event-date-header"><?php echo $date->format('F'); ?> <?php echo $date->format('Y'); ?></p>
+										<p class="event-date-header"><?php echo strtoupper($date->format('F')); ?> <?php echo $date->format('Y'); ?></p>
 										<h3 class="event-title"><?php the_title(); ?></h3>
-										<p><?php the_field('event_venue'); ?></p>
-										<p><?php echo $date->format('F'); ?> <?php echo $date->format('j'); ?></p>
+										<p class="event-venue"><?php the_field('event_venue'); ?></p>
+										<p><?php echo $date_display; ?></p>
 										<p class="learn-more">
 											<?php the_field('for_more_information_text'); ?>
 										</p>
 
-										<hr>
+										<div class="has-red-divider-uptop"></div>
 									</div>
 									<?php
 										endwhile;

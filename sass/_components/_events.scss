@@ -4,7 +4,6 @@
 }
 
 .events-list {
-  margin-top: 60px;
   width: 750px;
 }
 
@@ -17,13 +16,18 @@
     font-family: KievitBold;
     font-size: 26px;
     margin-bottom: 20px;
-  margin-left: 0px;
+    margin-left: 0px;
+    font-family: FranklinGothicDemi;
+    letter-spacing: 10px;
   }
   .event-title {
-    font-family: FranklinGothicBookCondensed;
+    font-family: KievitBold;
     font-size: 30px;
     margin-left: 0px;
     color: $wine-red;
+  }
+  .event-venue {
+    font-family: FranklinGothicDemiItalic;
   }
   .learn-more {
     font-style: italic;

@@ -46,20 +46,16 @@ div.logix-mini-menu {
 
 				ul {
 					list-style: none;
-					margin-left: 0px;
+					margin-left: 30px;
 						li {
-							font-size: $medium-large-font-size;
-							font-family: FranklinGothicBook;
+							font-size: 22px;
+							font-family: KievitMedium;
 								a {
-									color: $grey-blue;
+									color: $wine-red;
+									text-decoration: none;
 										&:hover {
-											color: $wine-red;
+											opacity: 0.7;
 										}
-
-										&:visited {
-											color: $wine-red;
-										}
-
 								}
 							ul li a {
 								font-family: Kievit;

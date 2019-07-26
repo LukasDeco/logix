@@ -13,6 +13,10 @@ div.resource-center-content {
 
 	p {
 			max-width: 760px;
+			margin-left: 390px;
+			@media(max-width: 600px) {
+				margin-left: 0px;
+			}
 		}
 }
 
