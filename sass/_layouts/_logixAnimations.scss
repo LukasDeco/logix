@@ -1,13 +1,25 @@
+.logix-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logix-animation-container {
+  min-width: 600px;
+  min-height: 400px;
+}
+
 .screw_animation {position:relative; margin:0 auto 15px auto; width:318px; height:200px; top:0px;left:0px}
 .airunit_animation {width:395px; margin:0 auto 15px auto; position:relative;top:0px;left:0px}
 .condenser_animation {width:288px; margin:0 auto 15px auto; position:relative;top:0px;left:0px;}
 #home_wrapper{position:relative; height:650px;}
 
 #engine_icon { position: relative; width: 375px; padding: 10px; border: 1px solid #ccc; margin-left: 5px; text-align: center; }
-#engine_icon_ani1 {position: absolute; top: 87px; left: 31px; }
-#engine_icon_ani2 {position: absolute; top: 35px; left: 271px; }
-#engine_icon_ani3 {position: absolute; top: 35px; left: 310px; }
-#engine_icon_ani4 {position: absolute; top: 94px; left: 335px; }
+#engine_icon_ani1 {position: absolute; top: 86px; left: 30px; }
+#engine_icon_ani2 {position: absolute; top: 33px; left: 256px; }
+#engine_icon_ani3 {position: absolute; top: 33px; left: 290px; }
+#engine_icon_ani4 {position: absolute; top: 91px; left: 317px; }
 
 #ice_rink { position: relative; width: 300px; padding: 5px; border: 1px solid #ccc; margin: 25px 0 20px 179px; text-align: center; }
 #ice_rink_ani1 {position: absolute; top: 101px; left: 133px; }
@@ -17,3 +29,8 @@
 #winery_ani1 {position: absolute; top: 45px; left: 123px; }
 #winery_ani2 {position: absolute; top: 45px; left: 226px; }
 #winery_ani3 {position: absolute; top: 35px; left: 282px; z-index: 100; }
+
+.view-animation {
+  color: $wine-red;
+  font-weight: 500;
+}

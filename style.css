@@ -1442,6 +1442,18 @@ div.logix-mini-menu {
   margin-left: 0px; }
 
 /* line 1, sass/_layouts/_logixAnimations.scss */
+.logix-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/* line 8, sass/_layouts/_logixAnimations.scss */
+.logix-animation-container {
+  min-width: 600px;
+  min-height: 400px; }
+
+/* line 13, sass/_layouts/_logixAnimations.scss */
 .screw_animation {
   position: relative;
   margin: 0 auto 15px auto;
@@ -1450,7 +1462,7 @@ div.logix-mini-menu {
   top: 0px;
   left: 0px; }
 
-/* line 2, sass/_layouts/_logixAnimations.scss */
+/* line 14, sass/_layouts/_logixAnimations.scss */
 .airunit_animation {
   width: 395px;
   margin: 0 auto 15px auto;
@@ -1458,7 +1470,7 @@ div.logix-mini-menu {
   top: 0px;
   left: 0px; }
 
-/* line 3, sass/_layouts/_logixAnimations.scss */
+/* line 15, sass/_layouts/_logixAnimations.scss */
 .condenser_animation {
   width: 288px;
   margin: 0 auto 15px auto;
@@ -1466,12 +1478,12 @@ div.logix-mini-menu {
   top: 0px;
   left: 0px; }
 
-/* line 4, sass/_layouts/_logixAnimations.scss */
+/* line 16, sass/_layouts/_logixAnimations.scss */
 #home_wrapper {
   position: relative;
   height: 650px; }
 
-/* line 6, sass/_layouts/_logixAnimations.scss */
+/* line 18, sass/_layouts/_logixAnimations.scss */
 #engine_icon {
   position: relative;
   width: 375px;
@@ -1480,31 +1492,31 @@ div.logix-mini-menu {
   margin-left: 5px;
   text-align: center; }
 
-/* line 7, sass/_layouts/_logixAnimations.scss */
+/* line 19, sass/_layouts/_logixAnimations.scss */
 #engine_icon_ani1 {
   position: absolute;
-  top: 87px;
-  left: 31px; }
+  top: 86px;
+  left: 30px; }
 
-/* line 8, sass/_layouts/_logixAnimations.scss */
+/* line 20, sass/_layouts/_logixAnimations.scss */
 #engine_icon_ani2 {
   position: absolute;
-  top: 35px;
-  left: 271px; }
+  top: 33px;
+  left: 256px; }
 
-/* line 9, sass/_layouts/_logixAnimations.scss */
+/* line 21, sass/_layouts/_logixAnimations.scss */
 #engine_icon_ani3 {
   position: absolute;
-  top: 35px;
-  left: 310px; }
+  top: 33px;
+  left: 290px; }
 
-/* line 10, sass/_layouts/_logixAnimations.scss */
+/* line 22, sass/_layouts/_logixAnimations.scss */
 #engine_icon_ani4 {
   position: absolute;
-  top: 94px;
-  left: 335px; }
+  top: 91px;
+  left: 317px; }
 
-/* line 12, sass/_layouts/_logixAnimations.scss */
+/* line 24, sass/_layouts/_logixAnimations.scss */
 #ice_rink {
   position: relative;
   width: 300px;
@@ -1513,19 +1525,19 @@ div.logix-mini-menu {
   margin: 25px 0 20px 179px;
   text-align: center; }
 
-/* line 13, sass/_layouts/_logixAnimations.scss */
+/* line 25, sass/_layouts/_logixAnimations.scss */
 #ice_rink_ani1 {
   position: absolute;
   top: 101px;
   left: 133px; }
 
-/* line 14, sass/_layouts/_logixAnimations.scss */
+/* line 26, sass/_layouts/_logixAnimations.scss */
 #ice_rink_ani2 {
   position: absolute;
   top: 101px;
   left: 234px; }
 
-/* line 16, sass/_layouts/_logixAnimations.scss */
+/* line 28, sass/_layouts/_logixAnimations.scss */
 #winery {
   position: relative;
   width: 300px;
@@ -1534,24 +1546,29 @@ div.logix-mini-menu {
   margin: 25px 0 20px 179px;
   text-align: center; }
 
-/* line 17, sass/_layouts/_logixAnimations.scss */
+/* line 29, sass/_layouts/_logixAnimations.scss */
 #winery_ani1 {
   position: absolute;
   top: 45px;
   left: 123px; }
 
-/* line 18, sass/_layouts/_logixAnimations.scss */
+/* line 30, sass/_layouts/_logixAnimations.scss */
 #winery_ani2 {
   position: absolute;
   top: 45px;
   left: 226px; }
 
-/* line 19, sass/_layouts/_logixAnimations.scss */
+/* line 31, sass/_layouts/_logixAnimations.scss */
 #winery_ani3 {
   position: absolute;
   top: 35px;
   left: 282px;
   z-index: 100; }
+
+/* line 33, sass/_layouts/_logixAnimations.scss */
+.view-animation {
+  color: RGB(173, 6, 23);
+  font-weight: 500; }
 
 /* line 1, sass/_components/_links.scss */
 a.link-one {
