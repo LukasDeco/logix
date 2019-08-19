@@ -1,35 +1,41 @@
 <?php
 /**
- * The template for displaying all single posts
+ * Single Post
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package Logix
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="logix-page" >
+	<div class="logix-page-sidebar-title">
+		<div class="sidebar">
+		</div>
+		<div class="logix-content-title main-section">
+			<h1 style="font-size:<?php the_field('title_size'); ?>;" ><?php the_title(); ?></h1>
+			<h2><?php the_field('sub_title'); ?></h2>
+		</div>
+	</div>
+	<div class="logix-page-sidebar-content">
+		<div class="sidebar">
+			<?php the_field('sidebar_area'); ?>
+		</div>
+		<div class="main-section">
+			<div class="logix-main-content">
+				<div class="solution-page-area">
+					<p>
+						<?php the_field('sub_paragraph'); ?>
+					</p>
+					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+						<?php the_content(); ?>
+					<?php endwhile; endif; ?>
 
-		<?php
-		while ( have_posts() ) : the_post();
-
-			get_template_part( 'template-parts/content', get_post_format() );
-
-			the_post_navigation();
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <?php
-get_sidebar();
 get_footer();
