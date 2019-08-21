@@ -1283,35 +1283,37 @@ div.logix-page-sidebar-content {
     flex-direction: column;
     flex: 5;
     max-width: 750px;
-    font-size: 26px; }
+    font-size: 26px;
+    padding: 16px; }
     @media (min-width: 500px) {
       /* line 87, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section {
-        margin-right: 30px; } }
-    /* line 96, sass/_layouts/_sidebarLayout.scss */
+        margin-right: 30px;
+        padding: 0px; } }
+    /* line 98, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section .back-forward-links {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      /* line 100, sass/_layouts/_sidebarLayout.scss */
+      /* line 102, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section .back-forward-links a {
         color: RGB(173, 6, 23);
         text-decoration: none;
         font-family: FranklinGothicBookCondensed; }
-    /* line 106, sass/_layouts/_sidebarLayout.scss */
+    /* line 108, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section .main-content {
       margin-bottom: 20px;
       padding: 0 15px; }
       @media (min-width: 500px) {
-        /* line 106, sass/_layouts/_sidebarLayout.scss */
+        /* line 108, sass/_layouts/_sidebarLayout.scss */
         div.logix-page-sidebar-content div.main-section .main-content {
           padding: 0px; } }
-    /* line 113, sass/_layouts/_sidebarLayout.scss */
+    /* line 115, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section div.title-area {
       display: flex;
       flex-direction: column;
       margin-bottom: 40px; }
-      /* line 117, sass/_layouts/_sidebarLayout.scss */
+      /* line 119, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h1 {
         font-size: 62pt;
         color: RGB(173, 6, 23);
@@ -1320,19 +1322,19 @@ div.logix-page-sidebar-content {
         margin-bottom: 30px;
         letter-spacing: 2px;
         line-height: 80px; }
-      /* line 127, sass/_layouts/_sidebarLayout.scss */
+      /* line 129, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h2 {
         font-size: 32pt;
         color: #5e8ab4;
         margin-top: -25px; }
-      /* line 133, sass/_layouts/_sidebarLayout.scss */
+      /* line 135, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h5 {
         font-size: 24px;
         color: #5e8ab4; }
-    /* line 139, sass/_layouts/_sidebarLayout.scss */
+    /* line 141, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section div.page-area {
       font-size: 24px; }
-  /* line 144, sass/_layouts/_sidebarLayout.scss */
+  /* line 146, sass/_layouts/_sidebarLayout.scss */
   div.logix-page-sidebar-content div.sidebar {
     display: flex;
     flex-direction: column;
@@ -1343,11 +1345,11 @@ div.logix-page-sidebar-content {
     color: #758592;
     padding: 0px 15px;
     font-size: 24px; }
-    /* line 154, sass/_layouts/_sidebarLayout.scss */
+    /* line 156, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.sidebar h4 {
       font-size: 24px; }
     @media (min-width: 500px) {
-      /* line 144, sass/_layouts/_sidebarLayout.scss */
+      /* line 146, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.sidebar {
         justify-content: flex-start;
         align-items: inherit;
@@ -1927,7 +1929,7 @@ span.file-icon {
     top: calc(50% - 1.5px); }
   /* line 21, sass/_components/_mobileToggle.scss */
   .mobile-toggle:before {
-    transition: .5s ease-out;
+    transition: .25s ease-out;
     height: 3px;
     width: 30px;
     background: RGB(173, 6, 23);
@@ -1985,7 +1987,7 @@ span.file-icon {
 /* line 1, sass/_components/_mobileMenu.scss */
 .mobile-menu {
   position: absolute;
-  top: 76px;
+  top: 73px;
   bottom: 0;
   left: 0;
   background: #ffffff;
@@ -1993,34 +1995,37 @@ span.file-icon {
   z-index: 10;
   width: 100%;
   transform: translateX(-100%);
-  transition: .5s ease-out; }
-  /* line 12, sass/_components/_mobileMenu.scss */
+  transition: .5s ease-out;
+  height: calc(100vh - 73px); }
+  /* line 13, sass/_components/_mobileMenu.scss */
   .mobile-menu .menu-menu-1-container {
     background: #ffffff;
     color: RGB(173, 6, 23);
     height: calc(100vh - 76px);
     width: 100%;
     z-index: 10; }
-  /* line 19, sass/_components/_mobileMenu.scss */
+  /* line 20, sass/_components/_mobileMenu.scss */
   .mobile-menu ul.menu li {
     overflow: hidden;
     font-size: 20px;
     margin-bottom: 10px; }
-    /* line 23, sass/_components/_mobileMenu.scss */
+    /* line 24, sass/_components/_mobileMenu.scss */
     .mobile-menu ul.menu li a {
-      color: #242021;
+      color: RGB(173, 6, 23);
       transition: .5s;
       position: relative;
       overflow: hidden;
       text-decoration: none;
-      list-style: none; }
-      /* line 30, sass/_components/_mobileMenu.scss */
+      list-style: none;
+      font-size: 22px;
+      font-family: KievitMedium; }
+      /* line 33, sass/_components/_mobileMenu.scss */
       .mobile-menu ul.menu li a:hover {
-        color: RGB(173, 6, 23); }
-        /* line 32, sass/_components/_mobileMenu.scss */
+        opacity: 0.7; }
+        /* line 35, sass/_components/_mobileMenu.scss */
         .mobile-menu ul.menu li a:hover::after {
           left: 0; }
-      /* line 36, sass/_components/_mobileMenu.scss */
+      /* line 39, sass/_components/_mobileMenu.scss */
       .mobile-menu ul.menu li a::after {
         content: "";
         height: 2px;
@@ -2030,8 +2035,11 @@ span.file-icon {
         bottom: 0;
         position: absolute;
         transition: .25s; }
+    /* line 50, sass/_components/_mobileMenu.scss */
+    .mobile-menu ul.menu li .sub-menu li {
+      font-size: 18px; }
 
-/* line 61, sass/_components/_mobileMenu.scss */
+/* line 67, sass/_components/_mobileMenu.scss */
 .mobile-menu.open {
   transform: none; }
 
@@ -2084,11 +2092,14 @@ span.file-icon {
     font-style: italic;
     margin-left: 0px; }
 
-/* line 2, sass/_components/_newsArticles.scss */
-.news-article .news-preview p {
-  margin-bottom: 10px;
-  font-size: 26px;
-  color: #5e8ab4; }
+/* line 1, sass/_components/_newsArticles.scss */
+.news-article {
+  margin-bottom: 40px; }
+  /* line 3, sass/_components/_newsArticles.scss */
+  .news-article .news-preview p {
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #5e8ab4; }
 
 @font-face {
   font-family: "CALIBRI";
