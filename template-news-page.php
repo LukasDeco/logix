@@ -33,16 +33,23 @@ get_header(); ?>
           if ( $loop->have_posts() ) :
           while ( $loop->have_posts() ) : $loop->the_post();?>
 					<div class="news-article">
-	          <div class="news-title red-large-font-list-item">
-	            <span class="large-text"><?php
-
-	            $date = new DateTime(get_the_date());
-	            echo $date->format('F, Y');
-
-	            ?></span>
-	            <?php the_title(); ?>
-	          </div>
+						<div class="article-head">
+							<?php $img_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+							<img src="<?php echo $img_url; ?>" class="news-image">
+							<div class="article-info">
+			          <div class="news-title">
+			            <?php the_title(); ?>
+			          </div>
+								<div class="news-date">
+									<?php
+									$date = new DateTime(get_the_date());
+									echo $date->format('F, Y');
+									?>
+								</div>
+							</div>
+						</div>
 						<div class="news-preview">
+
 								<?php the_excerpt(); ?>
 								<a href="<?php the_permalink(); ?>">
 									Learn More
