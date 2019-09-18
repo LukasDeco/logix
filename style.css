@@ -225,7 +225,7 @@ footer.site-footer {
         flex-direction: column; } }
   /* line 21, sass/_layouts/_foot.scss */
   footer.site-footer div.site-info {
-    color: RGB(173, 6, 23);
+    color: #ad0617;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -249,7 +249,7 @@ footer.site-footer {
         /* line 41, sass/_layouts/_foot.scss */
         footer.site-footer div.site-info div.logix-contact-info div a {
           text-decoration: none;
-          color: RGB(173, 6, 23); }
+          color: #ad0617; }
       /* line 47, sass/_layouts/_foot.scss */
       footer.site-footer div.site-info div.logix-contact-info .address {
         font-size: 11pt; }
@@ -427,7 +427,7 @@ div.testimonials-section {
     div.testimonials-section div.quote-and-title div.title {
       display: flex;
       flex: 1;
-      color: RGB(173, 6, 23);
+      color: #ad0617;
       font-size: 24px;
       max-width: 250px;
       padding-top: 10px; }
@@ -519,7 +519,7 @@ div.resources-here {
       right: 16px;
       top: 50%;
       margin-top: -6px;
-      border-color: RGB(173, 6, 23) transparent;
+      border-color: #ad0617 transparent;
       border-width: 6px 6px 0 6px;
       margin-top: -3px;
       border-style: solid; }
@@ -565,7 +565,7 @@ div.resources-here {
           border: 1px solid #9e9e9e; }
   /* line 108, sass/_layouts/_resource-center.scss */
   div.resources-here div.resource-select.active {
-    border: 1px solid RGB(173, 6, 23); }
+    border: 1px solid #ad0617; }
     /* line 110, sass/_layouts/_resource-center.scss */
     div.resources-here div.resource-select.active ul.resource-dropdown {
       opacity: 1;
@@ -610,7 +610,7 @@ div.resources-here {
           max-width: 40px;
           border: none;
           background: linear-gradient(#fdfdfd, #eff0f0);
-          color: RGB(173, 6, 23);
+          color: #ad0617;
           font-size: 30px;
           padding: 0px;
           border-radius: 0px; }
@@ -679,14 +679,14 @@ div.resource-center-list {
         font-size: 11px; }
   /* line 229, sass/_layouts/_resource-center.scss */
   div.resource-center-list div.loader {
-    color: RGB(173, 6, 23);
+    color: #ad0617;
     font-size: 11px;
     text-indent: -99999em;
     margin: 55px auto;
     position: relative;
     width: 10em;
     height: 10em;
-    box-shadow: inset 0 0 0 1em RGB(173, 6, 23);
+    box-shadow: inset 0 0 0 1em #ad0617;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
@@ -749,7 +749,7 @@ div.key-benefits-section {
     justify-content: space-between; }
     /* line 10, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-first-level div.title {
-      color: RGB(173, 6, 23);
+      color: #ad0617;
       flex: 1;
       font-family: FranklinGothicBookCondensed; }
     /* line 18, sass/_layouts/_key-benefits.scss */
@@ -847,7 +847,7 @@ div.key-benefits-section {
         font-family: FranklinGothicBookCondensed; }
         /* line 132, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-second-level div.title-and-contact div.contact p {
-          color: RGB(173, 6, 23);
+          color: #ad0617;
           margin-left: 10px;
           margin-bottom: 0px;
           font-size: 22px;
@@ -946,7 +946,7 @@ div.our-solutions {
       width: 100%; } }
   /* line 10, sass/_layouts/_our-solutions.scss */
   div.our-solutions div.title {
-    color: RGB(173, 6, 23);
+    color: #ad0617;
     flex: 2; }
   /* line 15, sass/_layouts/_our-solutions.scss */
   div.our-solutions div.solutions-menu {
@@ -990,10 +990,10 @@ div.our-solutions {
           color: #5e8ab4; }
           /* line 52, sass/_layouts/_our-solutions.scss */
           div.our-solutions div.solutions-menu ul li a:hover {
-            color: RGB(173, 6, 23); }
+            color: #ad0617; }
           /* line 56, sass/_layouts/_our-solutions.scss */
           div.our-solutions div.solutions-menu ul li a:visited {
-            color: RGB(173, 6, 23); }
+            color: #ad0617; }
         /* line 61, sass/_layouts/_our-solutions.scss */
         div.our-solutions div.solutions-menu ul li ul li a {
           margin-left: 20px; }
@@ -1056,10 +1056,10 @@ div.solutions-archive {
       text-decoration: none; }
       /* line 57, sass/_layouts/_solutions-archive.scss */
       div.solutions-archive ul.menu a:hover {
-        color: RGB(173, 6, 23); }
+        color: #ad0617; }
       /* line 61, sass/_layouts/_solutions-archive.scss */
       div.solutions-archive ul.menu a:visited {
-        color: RGB(173, 6, 23); }
+        color: #ad0617; }
     /* line 66, sass/_layouts/_solutions-archive.scss */
     div.solutions-archive ul.menu ul {
       margin-left: 20px; }
@@ -1127,7 +1127,7 @@ div.solution-page {
       /* line 22, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .title-area h1 {
         font-size: 55px;
-        color: RGB(173, 6, 23);
+        color: #ad0617;
         font-weight: 700;
         font-family: FranklinGothicDemiItalic;
         margin-bottom: 35px;
@@ -1136,7 +1136,7 @@ div.solution-page {
       /* line 31, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .title-area h2 {
         font-size: 26px;
-        color: RGB(173, 6, 23);
+        color: #ad0617;
         margin-top: -25px;
         margin-bottom: 25px; }
       /* line 38, sass/_layouts/_solutions-page.scss */
@@ -1225,7 +1225,7 @@ div.solution-page {
       /* line 28, sass/_layouts/_sidebarLayout.scss */
       .logix-page-sidebar-title div.main-section div.title-area h1 {
         font-size: 62pt;
-        color: RGB(173, 6, 23);
+        color: #ad0617;
         font-weight: 700;
         font-family: FranklinGothicDemiItalic;
         margin-bottom: 30px;
@@ -1297,7 +1297,7 @@ div.logix-page-sidebar-content {
       align-items: center; }
       /* line 102, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section .back-forward-links a {
-        color: RGB(173, 6, 23);
+        color: #ad0617;
         text-decoration: none;
         font-family: FranklinGothicBookCondensed; }
     /* line 108, sass/_layouts/_sidebarLayout.scss */
@@ -1316,7 +1316,7 @@ div.logix-page-sidebar-content {
       /* line 119, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h1 {
         font-size: 62pt;
-        color: RGB(173, 6, 23);
+        color: #ad0617;
         font-weight: 700;
         font-family: KievitBoldItalic;
         margin-bottom: 30px;
@@ -1369,7 +1369,7 @@ div.logix-mini-menu {
       padding-top: 10px; } }
   /* line 10, sass/_layouts/_logixMiniMenu.scss */
   div.logix-mini-menu div.title {
-    color: RGB(173, 6, 23);
+    color: #ad0617;
     flex: 2;
     font-family: FranklinGothicBookCondensed;
     font-size: 24px; }
@@ -1414,7 +1414,7 @@ div.logix-mini-menu {
         font-family: KievitMedium; }
         /* line 53, sass/_layouts/_logixMiniMenu.scss */
         div.logix-mini-menu div.logix-mini-menu-section ul li a {
-          color: RGB(173, 6, 23);
+          color: #ad0617;
           text-decoration: none; }
           /* line 56, sass/_layouts/_logixMiniMenu.scss */
           div.logix-mini-menu div.logix-mini-menu-section ul li a:hover {
@@ -1569,7 +1569,7 @@ div.logix-mini-menu {
 
 /* line 33, sass/_layouts/_logixAnimations.scss */
 .view-animation {
-  color: RGB(173, 6, 23);
+  color: #ad0617;
   font-weight: 500; }
 
 /* line 1, sass/_components/_links.scss */
@@ -1580,7 +1580,7 @@ a.link-one {
   overflow: hidden; }
   /* line 6, sass/_components/_links.scss */
   a.link-one:hover {
-    color: RGB(173, 6, 23); }
+    color: #ad0617; }
     /* line 8, sass/_components/_links.scss */
     a.link-one:hover::after {
       left: 0; }
@@ -1589,7 +1589,7 @@ a.link-one {
     content: "";
     height: 2px;
     width: 100%;
-    background: RGB(173, 6, 23);
+    background: #ad0617;
     left: -100%;
     bottom: 0;
     position: absolute;
@@ -1603,7 +1603,7 @@ div ul.nav-menu li a {
   overflow: hidden; }
   /* line 29, sass/_components/_links.scss */
   div ul.nav-menu li a:hover {
-    color: RGB(173, 6, 23); }
+    color: #ad0617; }
     /* line 31, sass/_components/_links.scss */
     div ul.nav-menu li a:hover::after {
       left: 0; }
@@ -1612,7 +1612,7 @@ div ul.nav-menu li a {
     content: "";
     height: 2px;
     width: 100%;
-    background: RGB(173, 6, 23);
+    background: #ad0617;
     left: -100%;
     bottom: 0;
     position: absolute;
@@ -1620,8 +1620,8 @@ div ul.nav-menu li a {
 
 /* line 1, sass/_components/_divider.scss */
 .has-red-divider-uptop {
-  border-top: 4px solid RGB(173, 6, 23);
-  color: RGB(173, 6, 23);
+  border-top: 4px solid #ad0617;
+  color: #ad0617;
   padding-top: 10px;
   font-family: FranklinGothicBookCondensed;
   font-size: 24px; }
@@ -1634,12 +1634,12 @@ div.lx-contact-icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: RGB(173, 6, 23);
+  color: #ad0617;
   min-width: 100px; }
   /* line 7, sass/_components/_contact-icons.scss */
   div.lx-contact-icons a {
     text-decoration: none;
-    color: RGB(173, 6, 23); }
+    color: #ad0617; }
     /* line 11, sass/_components/_contact-icons.scss */
     div.lx-contact-icons a i {
       font-size: 36px; }
@@ -1647,7 +1647,7 @@ div.lx-contact-icons {
   div.lx-contact-icons p.divider {
     width: 1px;
     height: 30px;
-    background: RGB(173, 6, 23);
+    background: #ad0617;
     margin-bottom: 0px;
     margin-left: 0px !important;
     padding-right: 0px !important; }
@@ -1661,7 +1661,7 @@ span.arctic-blue {
 a.solution-diagram-link {
   display: flex;
   flex-direction: column;
-  border: 2px solid RGB(173, 6, 23);
+  border: 2px solid #ad0617;
   border-radius: 4px;
   text-decoration: none;
   padding: 15px; }
@@ -1672,7 +1672,7 @@ img.solution-diagram {
 
 /* line 18, sass/_components/_solution-diagram.scss */
 p.solution-diagram-text {
-  color: RGB(173, 6, 23);
+  color: #ad0617;
   text-decoration: none;
   font-size: 13pt;
   display: flex;
@@ -1698,10 +1698,10 @@ div.resources-list {
     margin-bottom: 5px; }
   /* line 12, sass/_components/_resources-list.scss */
   div.resources-list span.file-icon {
-    color: RGB(173, 6, 23);
+    color: #ad0617;
     padding-right: 5px;
     padding-left: 5px;
-    border: 1px solid RGB(173, 6, 23);
+    border: 1px solid #ad0617;
     margin-right: 5px; }
   /* line 20, sass/_components/_resources-list.scss */
   div.resources-list a {
@@ -1777,7 +1777,7 @@ span.file-icon {
     /* line 8, sass/_components/_logixTitleArea.scss */
     .logix-main-content .logix-content-title h1 {
       font-size: 55px;
-      color: RGB(173, 6, 23);
+      color: #ad0617;
       font-weight: 700;
       font-family: FranklinGothicDemiItalic;
       margin-bottom: 18px;
@@ -1786,7 +1786,7 @@ span.file-icon {
     /* line 18, sass/_components/_logixTitleArea.scss */
     .logix-main-content .logix-content-title h2 {
       font-size: 26px;
-      color: RGB(173, 6, 23);
+      color: #ad0617;
       margin-top: -10px; }
     /* line 24, sass/_components/_logixTitleArea.scss */
     .logix-main-content .logix-content-title p {
@@ -1802,7 +1802,7 @@ span.file-icon {
   /* line 37, sass/_components/_logixTitleArea.scss */
   .logix-content-title h1 {
     font-size: 55px;
-    color: RGB(173, 6, 23);
+    color: #ad0617;
     font-weight: 700;
     font-family: FranklinGothicDemiItalic;
     margin-bottom: 15px;
@@ -1811,7 +1811,7 @@ span.file-icon {
   /* line 47, sass/_components/_logixTitleArea.scss */
   .logix-content-title h2 {
     font-size: 26px;
-    color: RGB(173, 6, 23);
+    color: #ad0617;
     margin-top: -10px; }
   /* line 53, sass/_components/_logixTitleArea.scss */
   .logix-content-title p {
@@ -1857,10 +1857,10 @@ span.file-icon {
         content: "";
         height: 2px;
         width: 60px;
-        background: RGB(173, 6, 23); }
+        background: #ad0617; }
       /* line 24, sass/_components/_columnedMenu.scss */
       .columned-menu .column .titled-section h3 {
-        color: RGB(173, 6, 23);
+        color: #ad0617;
         margin-bottom: 34px;
         font-size: 18px;
         font-family: FranklinGothicBook; }
@@ -1899,7 +1899,7 @@ span.file-icon {
   /* line 7, sass/_components/_logixStatement.scss */
   .logix-statement .statement-title {
     font-family: Kievit;
-    color: RGB(173, 6, 23);
+    color: #ad0617;
     font-size: 24px; }
   /* line 12, sass/_components/_logixStatement.scss */
   .logix-statement .statement {
@@ -1925,7 +1925,7 @@ span.file-icon {
   .mobile-toggle span {
     height: 3px;
     width: 30px;
-    background: RGB(173, 6, 23);
+    background: #ad0617;
     position: absolute;
     top: calc(50% - 1.5px); }
   /* line 21, sass/_components/_mobileToggle.scss */
@@ -1933,7 +1933,7 @@ span.file-icon {
     transition: .25s ease-out;
     height: 3px;
     width: 30px;
-    background: RGB(173, 6, 23);
+    background: #ad0617;
     content: '';
     position: absolute;
     top: 3px; }
@@ -1942,7 +1942,7 @@ span.file-icon {
     transition: .5s ease-out;
     height: 3px;
     width: 30px;
-    background: RGB(173, 6, 23);
+    background: #ad0617;
     content: '';
     position: absolute;
     bottom: 3px; }
@@ -1962,13 +1962,13 @@ span.file-icon {
     height: 3px;
     width: 30px;
     opacity: 0;
-    background: RGB(173, 6, 23);
+    background: #ad0617;
     position: absolute; }
   /* line 57, sass/_components/_mobileToggle.scss */
   .mobile-toggle.focus:before {
     height: 3px;
     width: 30px;
-    background: RGB(173, 6, 23);
+    background: #ad0617;
     content: '';
     position: absolute;
     top: 0;
@@ -1978,7 +1978,7 @@ span.file-icon {
   .mobile-toggle.focus:after {
     height: 3px;
     width: 30px;
-    background: RGB(173, 6, 23);
+    background: #ad0617;
     content: '';
     position: absolute;
     bottom: 0;
@@ -1992,7 +1992,7 @@ span.file-icon {
   bottom: 0;
   left: 0;
   background: #ffffff;
-  color: RGB(173, 6, 23);
+  color: #ad0617;
   z-index: 10;
   width: 100%;
   transform: translateX(-100%);
@@ -2001,7 +2001,7 @@ span.file-icon {
   /* line 13, sass/_components/_mobileMenu.scss */
   .mobile-menu .menu-menu-1-container {
     background: #ffffff;
-    color: RGB(173, 6, 23);
+    color: #ad0617;
     height: calc(100vh - 76px);
     width: 100%;
     z-index: 10; }
@@ -2012,7 +2012,7 @@ span.file-icon {
     margin-bottom: 10px; }
     /* line 24, sass/_components/_mobileMenu.scss */
     .mobile-menu ul.menu li a {
-      color: RGB(173, 6, 23);
+      color: #ad0617;
       transition: .5s;
       position: relative;
       overflow: hidden;
@@ -2031,7 +2031,7 @@ span.file-icon {
         content: "";
         height: 2px;
         width: 100%;
-        background: RGB(173, 6, 23);
+        background: #ad0617;
         left: -100%;
         bottom: 0;
         position: absolute;
@@ -2046,7 +2046,7 @@ span.file-icon {
 
 /* line 1, sass/_components/_redFontListItem.scss */
 .red-large-font-list-item {
-  color: RGB(173, 6, 23);
+  color: #ad0617;
   font-family: FranklinGothicBookCondensed;
   font-size: 24px; }
   /* line 5, sass/_components/_redFontListItem.scss */
@@ -2063,7 +2063,7 @@ span.file-icon {
 
 /* line 6, sass/_components/_events.scss */
 .events-list {
-  width: 750px; }
+  width: 775px; }
 
 /* line 10, sass/_components/_events.scss */
 .event {
@@ -2084,7 +2084,7 @@ span.file-icon {
     font-family: KievitBold;
     font-size: 30px;
     margin-left: 0px;
-    color: RGB(173, 6, 23); }
+    color: #ad0617; }
   /* line 29, sass/_components/_events.scss */
   .event .event-venue {
     font-family: FranklinGothicDemiItalic; }
@@ -2102,27 +2102,29 @@ span.file-icon {
     /* line 5, sass/_components/_newsArticles.scss */
     .news-article .article-head .news-image {
       height: 125px;
-      display: inline; }
-    /* line 9, sass/_components/_newsArticles.scss */
+      display: inline;
+      margin-right: 10px; }
+    /* line 10, sass/_components/_newsArticles.scss */
     .news-article .article-head .article-info {
       flex: 1;
       display: flex;
       flex-direction: column; }
-      /* line 13, sass/_components/_newsArticles.scss */
+      /* line 14, sass/_components/_newsArticles.scss */
       .news-article .article-head .article-info .news-title {
-        color: RGB(173, 6, 23);
+        color: #ad0617;
         font-size: 24px;
-        float: right; }
-      /* line 18, sass/_components/_newsArticles.scss */
+        float: right;
+        font-family: FranklinGothicDemi; }
+      /* line 20, sass/_components/_newsArticles.scss */
       .news-article .article-head .article-info .news-date {
         font-weight: 600;
         font-style: italic;
         color: #5e8ab4; }
-  /* line 26, sass/_components/_newsArticles.scss */
+  /* line 28, sass/_components/_newsArticles.scss */
   .news-article .news-preview {
     color: #5e8ab4;
     font-size: 26px; }
-    /* line 30, sass/_components/_newsArticles.scss */
+    /* line 32, sass/_components/_newsArticles.scss */
     .news-article .news-preview p {
       margin-bottom: 10px;
       display: inline; }

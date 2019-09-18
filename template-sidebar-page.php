@@ -14,7 +14,7 @@ get_header(); ?>
 		<div class="sidebar">
 		</div>
 		<div class="logix-content-title main-section">
-			<h1 style="font-size:<?php the_field('title_size'); ?>;" ><?php the_title(); ?></h1>
+			<h1 style="font-size:<?php the_field('title_size'); ?>; line-height: <?php the_field('title_size'); ?>;" ><?php the_title(); ?></h1>
 			<h2><?php the_field('sub_title'); ?></h2>
 		</div>
 	</div>

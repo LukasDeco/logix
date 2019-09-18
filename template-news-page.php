@@ -27,7 +27,8 @@ get_header(); ?>
 				<div class="news-links">
           <?php
           $args = array(
-            'order' => 'ASC',
+						'orderby' => 'date',
+            'order' => 'DESC',
             'post_status' => 'publish');
           $loop = new WP_Query( $args ) ;
           if ( $loop->have_posts() ) :
