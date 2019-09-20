@@ -94,13 +94,13 @@ get_header(); ?>
 					<div class="title-and-contact">
 						<?php
 
-						$kb_loop = new WP_Query( array( 'post_type' => 'key-benefits' ) );
+						$kb_loop = new WP_Query( array( 'post_type' => 'key-benefits', 'orderby' => 'menu_order' ) );
 						if ( $kb_loop->have_posts() ) :
 							while ( $kb_loop->have_posts() ) : $kb_loop->the_post();
 							$kb_id = get_the_ID();
 
 						?>
-						<div id="benefit-title-<?php echo $kb_id; ?>" class="title hidden">
+						<div id="benefit-title-<?php echo $kb_id; ?>" class="benefit-title hidden">
 							<h3><?php the_title();?></h3>
 						</div>
 

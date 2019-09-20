@@ -3,8 +3,8 @@
 
 	$('div.kb-icons div.kb-icon').first().addClass('selected-kb');
 
-	$('div.title-and-contact div.title').first().removeClass('hidden');
-	$('div.title-and-contact div.title').first().css({'opacity' : '1'});
+	$('div.title-and-contact div.benefit-title').first().removeClass('hidden');
+	$('div.title-and-contact div.benefit-title').first().css({'opacity' : '1'});
 
 	$('div.kb-paragraph-single').first().removeClass('hidden');
 	$('div.kb-paragraph-single').first().css({'opacity' : '1'});
@@ -20,8 +20,8 @@
 		var kb_id_trim = kb_id.substr(13);
 
 
-		$('.kb-second-level div.title').addClass('hidden');
-		$('.kb-second-level div.title').css({'opacity' : '0'});
+		$('.kb-second-level div.benefit-title').addClass('hidden');
+		$('.kb-second-level div.benefit-title').css({'opacity' : '0'});
 
 		$('div.kb-paragraph-single').addClass('hidden');
 		$('div.kb-paragraph-single').css({'opacity' : '0'});

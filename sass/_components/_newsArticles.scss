@@ -5,7 +5,7 @@
     .news-image {
       height: 125px;
       display: inline;
-      margin-right: 10px;
+      margin-right: 15px;
     }
     .article-info {
       flex: 1;
@@ -13,7 +13,7 @@
       flex-direction: column;
       .news-title {
         color: $wine-red;
-        font-size: 24px;;
+        font-size: 34px;
         float: right;
         font-family: FranklinGothicDemi;
       }

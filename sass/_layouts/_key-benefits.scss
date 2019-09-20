@@ -12,9 +12,6 @@ div.key-benefits-section {
 					flex: 1;
 					font-family: FranklinGothicBookCondensed;
 				}
-
-
-
 				div.kb-icons {
 					display: flex;
 					flex: 2;
@@ -23,20 +20,14 @@ div.key-benefits-section {
 					flex-wrap: wrap;
 					margin-top: 20px;
 					min-height: 200px;
-
 						div.selected-kb {
-
 								div.icon {
 									background: $deep-blue !important;
 									color: $sky-blue !important;
-
 								}
-
 								p {
 									color: $deep-blue !important;
-
 								}
-
 								i {
 									-webkit-animation: toRightFromLeft 0.3s forwards;
 									-moz-animation: toRightFromLeft 0.3s forwards;
@@ -51,9 +42,6 @@ div.key-benefits-section {
 							justify-content: center;
 							flex: 1;
 							cursor: pointer;
-
-
-
 								div.icon {
 									display: flex;
 									justify-content: center;
@@ -112,7 +100,7 @@ div.key-benefits-section {
 							display: none !important;
 
 						}
-						div.title {
+						div.benefit-title {
 							opacity: 0;
 							h3 {
 								font-family: KievitBold;

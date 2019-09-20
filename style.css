@@ -679,49 +679,26 @@ div.resource-center-list {
         font-size: 11px; }
   /* line 229, sass/_layouts/_resource-center.scss */
   div.resource-center-list div.loader {
-    color: #ad0617;
-    font-size: 11px;
-    text-indent: -99999em;
-    margin: 55px auto;
-    position: relative;
+    display: inline-block;
     width: 10em;
-    height: 10em;
-    box-shadow: inset 0 0 0 1em #ad0617;
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    border-radius: 50%; }
-    /* line 242, sass/_layouts/_resource-center.scss */
-    div.resource-center-list div.loader:before {
-      border-radius: 50%;
-      position: absolute;
-      content: '';
-      width: 5.2em;
-      height: 10.2em;
-      background: #ffffff;
-      border-radius: 10.2em 0 0 10.2em;
-      top: -0.1em;
-      left: -0.1em;
-      -webkit-transform-origin: 5.2em 5.1em;
-      transform-origin: 5.2em 5.1em;
-      -webkit-animation: load2 2s infinite ease 1.5s;
-      animation: load2 2s infinite ease 1.5s; }
-    /* line 257, sass/_layouts/_resource-center.scss */
+    height: 10em; }
+    /* line 233, sass/_layouts/_resource-center.scss */
     div.resource-center-list div.loader:after {
+      content: " ";
+      display: block;
+      width: 10em;
+      height: 10em;
+      margin: 1px;
       border-radius: 50%;
-      position: absolute;
-      content: '';
-      width: 5.2em;
-      height: 10.2em;
-      background: #ffffff;
-      border-radius: 0 10.2em 10.2em 0;
-      top: -0.1em;
-      left: 5.1em;
-      -webkit-transform-origin: 0px 5.1em;
-      transform-origin: 0px 5.1em;
-      -webkit-animation: load2 2s infinite ease;
-      animation: load2 2s infinite ease; }
+      border: 10px solid #fff;
+      border-color: #ad0617 transparent #ad0617 transparent;
+      animation: lds-dual-ring 1.2s linear infinite; }
 
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 @-webkit-keyframes load2 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -752,7 +729,7 @@ div.key-benefits-section {
       color: #ad0617;
       flex: 1;
       font-family: FranklinGothicBookCondensed; }
-    /* line 18, sass/_layouts/_key-benefits.scss */
+    /* line 15, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-first-level div.kb-icons {
       display: flex;
       flex: 2;
@@ -761,19 +738,19 @@ div.key-benefits-section {
       flex-wrap: wrap;
       margin-top: 20px;
       min-height: 200px; }
-      /* line 29, sass/_layouts/_key-benefits.scss */
+      /* line 24, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-first-level div.kb-icons div.selected-kb div.icon {
         background: #5e8ab4 !important;
         color: #C5D9E7 !important; }
-      /* line 35, sass/_layouts/_key-benefits.scss */
+      /* line 28, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-first-level div.kb-icons div.selected-kb p {
         color: #5e8ab4 !important; }
-      /* line 40, sass/_layouts/_key-benefits.scss */
+      /* line 31, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-first-level div.kb-icons div.selected-kb i {
         -webkit-animation: toRightFromLeft 0.3s forwards;
         -moz-animation: toRightFromLeft 0.3s forwards;
         animation: toRightFromLeft 0.3s forwards; }
-      /* line 47, sass/_layouts/_key-benefits.scss */
+      /* line 38, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-first-level div.kb-icons div.kb-icon {
         display: flex;
         flex-direction: column;
@@ -781,7 +758,7 @@ div.key-benefits-section {
         justify-content: center;
         flex: 1;
         cursor: pointer; }
-        /* line 57, sass/_layouts/_key-benefits.scss */
+        /* line 45, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-first-level div.kb-icons div.kb-icon div.icon {
           display: flex;
           justify-content: center;
@@ -795,14 +772,14 @@ div.key-benefits-section {
           transition: .25s;
           overflow: hidden;
           position: relative; }
-          /* line 72, sass/_layouts/_key-benefits.scss */
+          /* line 60, sass/_layouts/_key-benefits.scss */
           div.key-benefits-section div.kb-first-level div.kb-icons div.kb-icon div.icon:hover {
             background: #c7d4e0; }
-          /* line 76, sass/_layouts/_key-benefits.scss */
+          /* line 64, sass/_layouts/_key-benefits.scss */
           div.key-benefits-section div.kb-first-level div.kb-icons div.kb-icon div.icon i {
             position: absolute;
             font-family: 'logix-font'; }
-        /* line 83, sass/_layouts/_key-benefits.scss */
+        /* line 71, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-first-level div.kb-icons div.kb-icon p {
           color: #5e8ab4;
           font-size: 24px;
@@ -811,27 +788,27 @@ div.key-benefits-section {
           transition: .25s;
           font-family: Kievit;
           margin-top: 10px; }
-  /* line 100, sass/_layouts/_key-benefits.scss */
+  /* line 88, sass/_layouts/_key-benefits.scss */
   div.key-benefits-section div.kb-second-level {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
     margin-top: 20px;
     min-height: 250px; }
-    /* line 106, sass/_layouts/_key-benefits.scss */
+    /* line 94, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-second-level div.title-and-contact {
       display: flex;
       flex-direction: column;
       min-width: 300px;
       flex: 1; }
-      /* line 111, sass/_layouts/_key-benefits.scss */
+      /* line 99, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-second-level div.title-and-contact div.hidden {
         display: none !important; }
-      /* line 115, sass/_layouts/_key-benefits.scss */
-      div.key-benefits-section div.kb-second-level div.title-and-contact div.title {
+      /* line 103, sass/_layouts/_key-benefits.scss */
+      div.key-benefits-section div.kb-second-level div.title-and-contact div.benefit-title {
         opacity: 0; }
-        /* line 117, sass/_layouts/_key-benefits.scss */
-        div.key-benefits-section div.kb-second-level div.title-and-contact div.title h3 {
+        /* line 105, sass/_layouts/_key-benefits.scss */
+        div.key-benefits-section div.kb-second-level div.title-and-contact div.benefit-title h3 {
           font-family: KievitBold;
           color: #5e8ab4;
           font-size: 37pt;
@@ -839,13 +816,13 @@ div.key-benefits-section {
           margin-top: 0px;
           transition: .5s;
           line-height: 1; }
-      /* line 127, sass/_layouts/_key-benefits.scss */
+      /* line 115, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-second-level div.title-and-contact div.contact {
         display: flex;
         justify-content: space-around;
         align-items: center;
         font-family: FranklinGothicBookCondensed; }
-        /* line 132, sass/_layouts/_key-benefits.scss */
+        /* line 120, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-second-level div.title-and-contact div.contact p {
           color: #ad0617;
           margin-left: 10px;
@@ -853,58 +830,58 @@ div.key-benefits-section {
           font-size: 22px;
           padding-right: 18px;
           transition: .5s; }
-    /* line 146, sass/_layouts/_key-benefits.scss */
+    /* line 134, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-second-level div.kb-paragraph {
       display: flex;
       flex: 2;
       min-width: 300px; }
-      /* line 150, sass/_layouts/_key-benefits.scss */
+      /* line 138, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-second-level div.kb-paragraph .hidden {
         display: none !important; }
-      /* line 153, sass/_layouts/_key-benefits.scss */
+      /* line 141, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-second-level div.kb-paragraph p {
         color: #5e8ab4;
         font-size: 24px;
         font-family: FranklinGothicBook;
         margin-bottom: 0px;
         transition: .5s; }
-  /* line 164, sass/_layouts/_key-benefits.scss */
+  /* line 152, sass/_layouts/_key-benefits.scss */
   div.key-benefits-section div.kb-third-level {
     display: flex;
     margin-bottom: 20px;
     min-height: 270px; }
-    /* line 168, sass/_layouts/_key-benefits.scss */
+    /* line 156, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-third-level div.third-level-empty {
       flex: 1; }
-    /* line 171, sass/_layouts/_key-benefits.scss */
+    /* line 159, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-third-level div.hidden {
       display: none !important; }
-    /* line 175, sass/_layouts/_key-benefits.scss */
+    /* line 163, sass/_layouts/_key-benefits.scss */
     div.key-benefits-section div.kb-third-level div.testimonial {
       display: flex;
       flex-direction: column;
       flex: 2;
       transition: .5s;
       opacity: 0; }
-      /* line 181, sass/_layouts/_key-benefits.scss */
+      /* line 169, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-third-level div.testimonial div.text {
         color: #5e8ab4;
         font-size: 24px;
         font-family: KievitItalic;
         margin-bottom: 10px; }
-      /* line 188, sass/_layouts/_key-benefits.scss */
+      /* line 176, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-third-level div.testimonial div.customer-info p {
         color: #5e8ab4;
         font-size: 13pt;
         margin-bottom: 0px;
         font-family: FranklinGothicBook; }
-        /* line 193, sass/_layouts/_key-benefits.scss */
+        /* line 181, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-third-level div.testimonial div.customer-info p span {
           font-size: 11pt; }
-      /* line 197, sass/_layouts/_key-benefits.scss */
+      /* line 185, sass/_layouts/_key-benefits.scss */
       div.key-benefits-section div.kb-third-level div.testimonial div.customer-info div.customer-logo {
         width: 20%; }
-        /* line 199, sass/_layouts/_key-benefits.scss */
+        /* line 187, sass/_layouts/_key-benefits.scss */
         div.key-benefits-section div.kb-third-level div.testimonial div.customer-info div.customer-logo img {
           width: 100%;
           object-fit: contain; }
@@ -2004,13 +1981,14 @@ span.file-icon {
     color: #ad0617;
     height: calc(100vh - 76px);
     width: 100%;
-    z-index: 10; }
-  /* line 20, sass/_components/_mobileMenu.scss */
+    z-index: 10;
+    overflow-y: scroll; }
+  /* line 21, sass/_components/_mobileMenu.scss */
   .mobile-menu ul.menu li {
     overflow: hidden;
     font-size: 20px;
     margin-bottom: 10px; }
-    /* line 24, sass/_components/_mobileMenu.scss */
+    /* line 25, sass/_components/_mobileMenu.scss */
     .mobile-menu ul.menu li a {
       color: #ad0617;
       transition: .5s;
@@ -2020,13 +1998,13 @@ span.file-icon {
       list-style: none;
       font-size: 22px;
       font-family: KievitMedium; }
-      /* line 33, sass/_components/_mobileMenu.scss */
+      /* line 34, sass/_components/_mobileMenu.scss */
       .mobile-menu ul.menu li a:hover {
         opacity: 0.7; }
-        /* line 35, sass/_components/_mobileMenu.scss */
+        /* line 36, sass/_components/_mobileMenu.scss */
         .mobile-menu ul.menu li a:hover::after {
           left: 0; }
-      /* line 39, sass/_components/_mobileMenu.scss */
+      /* line 40, sass/_components/_mobileMenu.scss */
       .mobile-menu ul.menu li a::after {
         content: "";
         height: 2px;
@@ -2036,11 +2014,11 @@ span.file-icon {
         bottom: 0;
         position: absolute;
         transition: .25s; }
-    /* line 50, sass/_components/_mobileMenu.scss */
+    /* line 51, sass/_components/_mobileMenu.scss */
     .mobile-menu ul.menu li .sub-menu li {
       font-size: 18px; }
 
-/* line 67, sass/_components/_mobileMenu.scss */
+/* line 68, sass/_components/_mobileMenu.scss */
 .mobile-menu.open {
   transform: none; }
 
@@ -2103,7 +2081,7 @@ span.file-icon {
     .news-article .article-head .news-image {
       height: 125px;
       display: inline;
-      margin-right: 10px; }
+      margin-right: 15px; }
     /* line 10, sass/_components/_newsArticles.scss */
     .news-article .article-head .article-info {
       flex: 1;
@@ -2112,7 +2090,7 @@ span.file-icon {
       /* line 14, sass/_components/_newsArticles.scss */
       .news-article .article-head .article-info .news-title {
         color: #ad0617;
-        font-size: 24px;
+        font-size: 34px;
         float: right;
         font-family: FranklinGothicDemi; }
       /* line 20, sass/_components/_newsArticles.scss */
