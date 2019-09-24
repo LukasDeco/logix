@@ -121,8 +121,12 @@ function logix_scripts() {
 	wp_enqueue_style( 'md-icons', get_template_directory_uri() . '/vendors/MaterialDesign/css/materialdesignicons.min.css');
 	wp_enqueue_style( 'lgx-icons', get_template_directory_uri() . '/vendors/logix-icons/style.css');
 
+	wp_enqueue_style( 'slick-styles', get_template_directory_uri() . '/vendors/slick/slick/slick.css');
+	wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/vendors/slick/slick/slick-theme.css');
 
 
+
+	wp_register_script( 'slick', get_template_directory_uri() . '/vendors/slick/slick/slick.js', 'jquery', '1.1', true );
 	wp_register_script( 'slick-testimonial-logos', get_template_directory_uri() . '/js/slick-testimonial-logos.js', 'jquery', '1.1', true );
 	//wp_enqueue_script('slick-testimonial-logos');
 
@@ -138,6 +142,8 @@ function logix_scripts() {
 	wp_register_script( 'ie-object-fit-img', get_template_directory_uri() . '/js/ie-object-fit-img.js', 'jquery', '1.1', true );
 
 
+	wp_enqueue_script('slick');
+	wp_enqueue_script('slick-testimonial-logos');
 	wp_enqueue_script('contact-icons');
 	wp_enqueue_script('logo-strip');
 	wp_enqueue_script('key-benefits');

@@ -10,6 +10,7 @@ footer.site-footer {
 			flex-direction: column;
 		}
 		.footer-content{
+			width: 100%;
 			max-width: 1366px;
 			display: flex;
 			flex-wrap: wrap;
@@ -25,7 +26,8 @@ footer.site-footer {
 			flex-direction: column;
 			max-height: 300px;
 				div.site-branding {
-					flex: 1
+					flex: 1;
+					max-width: 200px;
 				}
 				div.logix-contact-info{
 					flex: 3;
@@ -61,6 +63,7 @@ footer.site-footer {
 				    justify-content: flex-start;
 				    align-items: flex-start;
 						height: 300px;
+						margin-left: 0px;
 						@media(max-width: 500px) {
 							height: auto;
 						}

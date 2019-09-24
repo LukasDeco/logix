@@ -8,6 +8,10 @@ div.testimonials-section {
 			min-height: 305px;
 			max-height: 305px;
 			justify-content: space-between;
+			@media(max-width: 500px) {
+				flex-direction: column-reverse;
+				max-height: initial;
+			}
 				div.hidden {
 					display: none !important;
 				}
@@ -58,6 +62,11 @@ div.testimonials-section {
 					font-size: 24px;
 					max-width: 250px;
 					padding-top: 10px;
+					@media(max-width: 500px) {
+						margin-bottom: -10px;
+						width: 100%;
+						max-width: initial;
+					}
 				}
 
 		}
@@ -76,6 +85,9 @@ div.testimonials-section {
 					cursor: pointer;
 					opacity: .4;
 					transition: .5s;
+					@media(max-width: 500px) {
+						min-width: 130px;
+					}
 					&.compat-object-fit {
 						   background-size: contain;
 						   background-repeat: no-repeat;
@@ -86,7 +98,7 @@ div.testimonials-section {
 						  }
 						img {
 							object-fit: contain;
-							flex-basis: 200px;
+							flex-basis: 130px;
 						}
 				}
 				div.selected-logo {

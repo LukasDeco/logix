@@ -7,6 +7,10 @@ div.key-benefits-section {
 		div.kb-first-level {
 			display: flex;
 			justify-content: space-between;
+			width: 100%;
+			@media(max-width:500px) {
+					flex-direction: column;
+			}
 				div.title {
 					color: $wine-red;
 					flex: 1;
@@ -20,6 +24,12 @@ div.key-benefits-section {
 					flex-wrap: wrap;
 					margin-top: 20px;
 					min-height: 200px;
+					width: 100%;
+					overflow:hidden;
+					@media(max-width:500px) {
+							align-items: flex-start;
+							justify-content: center;
+					}
 						div.selected-kb {
 								div.icon {
 									background: $deep-blue !important;
@@ -33,7 +43,6 @@ div.key-benefits-section {
 									-moz-animation: toRightFromLeft 0.3s forwards;
 									animation: toRightFromLeft 0.3s forwards;
 								}
-
 						}
 						div.kb-icon {
 							display: flex;
@@ -41,7 +50,9 @@ div.key-benefits-section {
 							align-items: center;
 							justify-content: center;
 							flex: 1;
+							overflow:hidden;
 							cursor: pointer;
+							min-width: 140px;
 								div.icon {
 									display: flex;
 									justify-content: center;
@@ -52,21 +63,16 @@ div.key-benefits-section {
 									font-size: 70px;
 									min-width: 100px;
 									min-height: 100px;
-
 									transition: .25s;
 									overflow: hidden;
 									position: relative;
-
 										&:hover {
 											background: $sky-blue-solid;
 										}
-
 										i {
 											position: absolute;
 											font-family: 'logix-font';
 										}
-
-
 								}
 								p {
 									color: $deep-blue;
@@ -77,9 +83,9 @@ div.key-benefits-section {
 									font-family: Kievit;
 									margin-top: 10px;
 								}
-
-
-
+								@media(max-width:500px) {
+										max-width: 200px
+								}
 						}
 
 				}
@@ -91,6 +97,9 @@ div.key-benefits-section {
 			margin-bottom: 20px;
 			margin-top: 20px;
 			min-height: 250px;
+			@media(max-width:500px) {
+					display: none;
+			}
 				div.title-and-contact {
 					display: flex;
 					flex-direction: column;
@@ -155,6 +164,9 @@ div.key-benefits-section {
 			min-height: 270px;
 				div.third-level-empty {
 					flex: 1;
+					@media(max-width:500px) {
+							display: none;
+					}
 				}
 				div.hidden {
 							display: none !important;

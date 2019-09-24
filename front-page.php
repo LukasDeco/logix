@@ -74,11 +74,13 @@ get_header(); ?>
 							$kb_id = get_the_ID();
 
 						?>
-							<div id="benefit-icon-<?php echo $kb_id; ?>" class="kb-icon">
+						<div id="benefit-icon-<?php echo $kb_id; ?>" class="kb-icon">
 							<div class="icon">
 								<i class="icon-<?php the_field('key_benefit_icon')?>"></i>
 							</div>
-							<p><?php the_title();?></p>
+							<p>
+								<?php the_title();?>
+							</p>
 						</div>
 
 						<?php

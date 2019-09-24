@@ -80,10 +80,14 @@ div.solutions-archive {
 					overflow:hidden;
 					min-width: 500px;
 					max-width: 500px;
-						img {
-							object-fit: contain;
-							height:unset;
-						}
+
+					img {
+						object-fit: contain;
+						height:unset;
+					}
+					@media(max-width: 500px) {
+						display: none;
+					}
 				}
 				div.solutions-menu {
 					flex: 1;
