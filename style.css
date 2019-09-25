@@ -374,6 +374,10 @@ div.logix-page {
     justify-content: center;
     max-width: 1366px;
     width: 100%; }
+    @media (max-width: 500px) {
+      /* line 56, sass/_layouts/_front-page.scss */
+      div.logix-page div.logix-page-content {
+        padding: 0px 8px; } }
 
 /* line 1, sass/_layouts/_testimonials.scss */
 div.testimonials-section {
@@ -1861,21 +1865,28 @@ span.file-icon {
 .columned-menu {
   display: flex;
   justify-content: space-between;
-  font-family: FranklinGothicBookCondensed; }
-  /* line 5, sass/_components/_columnedMenu.scss */
+  font-family: FranklinGothicBookCondensed;
+  flex-wrap: wrap; }
+  @media (max-width: 500px) {
+    /* line 1, sass/_components/_columnedMenu.scss */
+    .columned-menu {
+      align-items: center;
+      justify-content: center; } }
+  /* line 10, sass/_components/_columnedMenu.scss */
   .columned-menu .column {
     display: flex;
     flex-direction: column;
     flex: 1;
     margin-right: 22px;
-    max-width: 210px; }
-    /* line 11, sass/_components/_columnedMenu.scss */
+    width: 210px;
+    min-width: 210px; }
+    /* line 17, sass/_components/_columnedMenu.scss */
     .columned-menu .column .titled-section {
       position: relative;
       margin-top: 15px;
       margin-bottom: 63px;
       transition: .5s; }
-      /* line 16, sass/_components/_columnedMenu.scss */
+      /* line 22, sass/_components/_columnedMenu.scss */
       .columned-menu .column .titled-section:before {
         position: absolute;
         top: -15px;
@@ -1883,24 +1894,24 @@ span.file-icon {
         height: 2px;
         width: 60px;
         background: #ad0617; }
-      /* line 24, sass/_components/_columnedMenu.scss */
+      /* line 30, sass/_components/_columnedMenu.scss */
       .columned-menu .column .titled-section h3 {
         color: #ad0617;
         margin-bottom: 34px;
         font-size: 18px;
         font-family: FranklinGothicBook; }
-      /* line 30, sass/_components/_columnedMenu.scss */
+      /* line 36, sass/_components/_columnedMenu.scss */
       .columned-menu .column .titled-section .item {
         line-height: 14px;
         margin-bottom: 8px; }
-        /* line 33, sass/_components/_columnedMenu.scss */
+        /* line 39, sass/_components/_columnedMenu.scss */
         .columned-menu .column .titled-section .item a {
           padding-left: 10px;
           text-decoration: none;
           color: #758592;
           font-size: 18px;
           position: relative; }
-          /* line 39, sass/_components/_columnedMenu.scss */
+          /* line 45, sass/_components/_columnedMenu.scss */
           .columned-menu .column .titled-section .item a:before {
             content: '';
             position: absolute;
@@ -1910,7 +1921,7 @@ span.file-icon {
             background: #5e8ab4;
             height: 3px;
             width: 3px; }
-        /* line 50, sass/_components/_columnedMenu.scss */
+        /* line 56, sass/_components/_columnedMenu.scss */
         .columned-menu .column .titled-section .item .no-profile {
           color: #242021; }
 

@@ -60,5 +60,8 @@ div.logix-page {
 			justify-content: center;
 			max-width: 1366px;
 			width:100%;
+			@media(max-width: 500px) {
+				padding: 0px 8px;
+			}
 		}
 }
