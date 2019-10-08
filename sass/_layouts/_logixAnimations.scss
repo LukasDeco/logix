@@ -34,3 +34,7 @@
   color: $wine-red;
   font-weight: 500;
 }
+
+#fancybox-content>div {
+  overflow-x: scroll !important;
+}

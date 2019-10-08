@@ -16,7 +16,6 @@ get_header(); ?>
 					while ( have_posts() ) : the_post(); ?>
 						<div class="solution-page">
 							<div class="solution-sidebar">
-								<?php the_field('sidebar_area'); ?>
 							</div>
 							<div class="solution-main-content">
 								<div class="title-area">
@@ -26,13 +25,18 @@ get_header(); ?>
 										<?php the_field('sub_paragraph'); ?>
 									</h5>
 								</div>
+							</div>
+						</div>
+						<div class="solution-page">
+							<div class="solution-sidebar">
+								<?php the_field('sidebar_area'); ?>
+							</div>
+							<div class="solution-main-content">
 								<div class="solution-page-area">
 									<?php the_content(); ?>
 								</div>
 
 							</div>
-
-
 						</div>
 				<?php		endwhile; // End of the loop.   ?>
 			</div>
