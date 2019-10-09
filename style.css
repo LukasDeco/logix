@@ -1152,8 +1152,13 @@ div.solution-page {
     div.solution-page .solution-main-content .title-area {
       display: flex;
       flex-direction: column;
-      margin-bottom: 40px; }
-      /* line 22, sass/_layouts/_solutions-page.scss */
+      margin-bottom: 40px;
+      text-align: center; }
+      @media (min-width: 500px) {
+        /* line 18, sass/_layouts/_solutions-page.scss */
+        div.solution-page .solution-main-content .title-area {
+          text-align: left; } }
+      /* line 26, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .title-area h1 {
         font-size: 55px;
         color: #ad0617;
@@ -1163,62 +1168,64 @@ div.solution-page {
         letter-spacing: 2px;
         line-height: 72px; }
         @media (min-width: 500px) {
-          /* line 22, sass/_layouts/_solutions-page.scss */
+          /* line 26, sass/_layouts/_solutions-page.scss */
           div.solution-page .solution-main-content .title-area h1 {
             font-size: 45px; } }
-      /* line 34, sass/_layouts/_solutions-page.scss */
+      /* line 38, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .title-area h2 {
         font-size: 26px;
         color: #ad0617;
         margin-top: -25px;
         margin-bottom: 25px; }
-      /* line 41, sass/_layouts/_solutions-page.scss */
+      /* line 45, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .title-area h5 {
         font-size: 24px;
         color: #5e8ab4; }
-    /* line 47, sass/_layouts/_solutions-page.scss */
+    /* line 51, sass/_layouts/_solutions-page.scss */
     div.solution-page .solution-main-content .solution-page-area {
       font-size: 24px; }
-      /* line 49, sass/_layouts/_solutions-page.scss */
+      /* line 53, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .solution-page-area p {
         color: #5e8ab4;
         font-size: 24px; }
-      /* line 53, sass/_layouts/_solutions-page.scss */
+      /* line 57, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .solution-page-area ul {
         color: #5e8ab4;
         font-size: 24px; }
-      /* line 58, sass/_layouts/_solutions-page.scss */
+      /* line 62, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .solution-page-area .has-red-divider-uptop {
         font-size: 24px; }
-  /* line 67, sass/_layouts/_solutions-page.scss */
+  /* line 71, sass/_layouts/_solutions-page.scss */
   div.solution-page div.solution-sidebar {
     display: flex;
     flex-direction: column;
     padding: 0px;
-    flex: 2; }
+    flex: 2;
+    text-align: center; }
     @media (min-width: 500px) {
-      /* line 67, sass/_layouts/_solutions-page.scss */
+      /* line 71, sass/_layouts/_solutions-page.scss */
       div.solution-page div.solution-sidebar {
-        padding: 0px 45px 0px 0px; } }
-    /* line 75, sass/_layouts/_solutions-page.scss */
+        padding: 0px 45px 0px 0px;
+        text-align: left; } }
+    /* line 81, sass/_layouts/_solutions-page.scss */
     div.solution-page div.solution-sidebar .has-red-divider-uptop {
       font-size: 24px; }
-  /* line 79, sass/_layouts/_solutions-page.scss */
+  /* line 85, sass/_layouts/_solutions-page.scss */
   div.solution-page .solution-sidebar.customer-testimonial-page {
     margin-top: 60px; }
 
-/* line 85, sass/_layouts/_solutions-page.scss */
+/* line 91, sass/_layouts/_solutions-page.scss */
 .solution-page-area {
   font-size: 18px; }
-  /* line 87, sass/_layouts/_solutions-page.scss */
+  /* line 93, sass/_layouts/_solutions-page.scss */
   .solution-page-area p {
     color: #5e8ab4;
     font-size: 26px; }
-  /* line 91, sass/_layouts/_solutions-page.scss */
+  /* line 97, sass/_layouts/_solutions-page.scss */
   .solution-page-area ul {
     color: #5e8ab4;
     font-size: 24px; }
-  /* line 96, sass/_layouts/_solutions-page.scss */
+  /* line 102, sass/_layouts/_solutions-page.scss */
   .solution-page-area .has-red-divider-uptop {
     font-size: 24px; }
 
