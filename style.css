@@ -1195,31 +1195,30 @@ div.solution-page {
     display: flex;
     flex-direction: column;
     padding: 0px;
-    flex: 2;
-    margin-top: 200px; }
+    flex: 2; }
     @media (min-width: 500px) {
       /* line 67, sass/_layouts/_solutions-page.scss */
       div.solution-page div.solution-sidebar {
         padding: 0px 45px 0px 0px; } }
-    /* line 76, sass/_layouts/_solutions-page.scss */
+    /* line 75, sass/_layouts/_solutions-page.scss */
     div.solution-page div.solution-sidebar .has-red-divider-uptop {
       font-size: 24px; }
-  /* line 80, sass/_layouts/_solutions-page.scss */
+  /* line 79, sass/_layouts/_solutions-page.scss */
   div.solution-page .solution-sidebar.customer-testimonial-page {
     margin-top: 60px; }
 
-/* line 86, sass/_layouts/_solutions-page.scss */
+/* line 85, sass/_layouts/_solutions-page.scss */
 .solution-page-area {
   font-size: 18px; }
-  /* line 88, sass/_layouts/_solutions-page.scss */
+  /* line 87, sass/_layouts/_solutions-page.scss */
   .solution-page-area p {
     color: #5e8ab4;
     font-size: 26px; }
-  /* line 92, sass/_layouts/_solutions-page.scss */
+  /* line 91, sass/_layouts/_solutions-page.scss */
   .solution-page-area ul {
     color: #5e8ab4;
     font-size: 24px; }
-  /* line 97, sass/_layouts/_solutions-page.scss */
+  /* line 96, sass/_layouts/_solutions-page.scss */
   .solution-page-area .has-red-divider-uptop {
     font-size: 24px; }
 
@@ -1264,19 +1263,24 @@ div.solution-page {
         margin-bottom: 30px;
         letter-spacing: 2px;
         line-height: 80px; }
-      /* line 38, sass/_layouts/_sidebarLayout.scss */
+        @media (min-width: 500px) {
+          /* line 28, sass/_layouts/_sidebarLayout.scss */
+          .logix-page-sidebar-title div.main-section div.title-area h1 {
+            margin-right: 30px;
+            text-align: left; } }
+      /* line 42, sass/_layouts/_sidebarLayout.scss */
       .logix-page-sidebar-title div.main-section div.title-area h2 {
         font-size: 32pt;
         color: #5e8ab4;
         margin-top: -25px; }
-      /* line 44, sass/_layouts/_sidebarLayout.scss */
+      /* line 48, sass/_layouts/_sidebarLayout.scss */
       .logix-page-sidebar-title div.main-section div.title-area h5 {
         font-size: 24px;
         color: #5e8ab4; }
-    /* line 50, sass/_layouts/_sidebarLayout.scss */
+    /* line 54, sass/_layouts/_sidebarLayout.scss */
     .logix-page-sidebar-title div.main-section div.page-area {
       font-size: 24px; }
-  /* line 55, sass/_layouts/_sidebarLayout.scss */
+  /* line 59, sass/_layouts/_sidebarLayout.scss */
   .logix-page-sidebar-title div.sidebar {
     display: flex;
     flex-direction: column;
@@ -1287,18 +1291,18 @@ div.solution-page {
     color: #758592;
     padding: 0px 15px;
     font-size: 24px; }
-    /* line 65, sass/_layouts/_sidebarLayout.scss */
+    /* line 69, sass/_layouts/_sidebarLayout.scss */
     .logix-page-sidebar-title div.sidebar h4 {
       font-size: 24px; }
     @media (min-width: 500px) {
-      /* line 55, sass/_layouts/_sidebarLayout.scss */
+      /* line 59, sass/_layouts/_sidebarLayout.scss */
       .logix-page-sidebar-title div.sidebar {
         justify-content: flex-start;
         align-items: inherit;
         text-align: left;
         padding: 0px 45px 0px 0px; } }
 
-/* line 77, sass/_layouts/_sidebarLayout.scss */
+/* line 81, sass/_layouts/_sidebarLayout.scss */
 div.logix-page-sidebar-content {
   display: flex;
   margin-top: 60px;
@@ -1307,10 +1311,10 @@ div.logix-page-sidebar-content {
   width: 100%;
   flex-direction: column; }
   @media (min-width: 500px) {
-    /* line 77, sass/_layouts/_sidebarLayout.scss */
+    /* line 81, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content {
       flex-direction: row; } }
-  /* line 87, sass/_layouts/_sidebarLayout.scss */
+  /* line 91, sass/_layouts/_sidebarLayout.scss */
   div.logix-page-sidebar-content div.main-section {
     display: flex;
     flex-direction: column;
@@ -1319,34 +1323,34 @@ div.logix-page-sidebar-content {
     font-size: 26px;
     padding: 16px; }
     @media (min-width: 500px) {
-      /* line 87, sass/_layouts/_sidebarLayout.scss */
+      /* line 91, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section {
         margin-right: 30px;
         padding: 0px; } }
-    /* line 98, sass/_layouts/_sidebarLayout.scss */
+    /* line 102, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section .back-forward-links {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      /* line 102, sass/_layouts/_sidebarLayout.scss */
+      /* line 106, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section .back-forward-links a {
         color: #ad0617;
         text-decoration: none;
         font-family: FranklinGothicBookCondensed; }
-    /* line 108, sass/_layouts/_sidebarLayout.scss */
+    /* line 112, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section .main-content {
       margin-bottom: 20px;
       padding: 0 15px; }
       @media (min-width: 500px) {
-        /* line 108, sass/_layouts/_sidebarLayout.scss */
+        /* line 112, sass/_layouts/_sidebarLayout.scss */
         div.logix-page-sidebar-content div.main-section .main-content {
           padding: 0px; } }
-    /* line 115, sass/_layouts/_sidebarLayout.scss */
+    /* line 119, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section div.title-area {
       display: flex;
       flex-direction: column;
       margin-bottom: 40px; }
-      /* line 119, sass/_layouts/_sidebarLayout.scss */
+      /* line 123, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h1 {
         font-size: 62pt;
         color: #ad0617;
@@ -1355,19 +1359,19 @@ div.logix-page-sidebar-content {
         margin-bottom: 30px;
         letter-spacing: 2px;
         line-height: 80px; }
-      /* line 129, sass/_layouts/_sidebarLayout.scss */
+      /* line 133, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h2 {
         font-size: 32pt;
         color: #5e8ab4;
         margin-top: -25px; }
-      /* line 135, sass/_layouts/_sidebarLayout.scss */
+      /* line 139, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.main-section div.title-area h5 {
         font-size: 24px;
         color: #5e8ab4; }
-    /* line 141, sass/_layouts/_sidebarLayout.scss */
+    /* line 145, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.main-section div.page-area {
       font-size: 24px; }
-  /* line 146, sass/_layouts/_sidebarLayout.scss */
+  /* line 150, sass/_layouts/_sidebarLayout.scss */
   div.logix-page-sidebar-content div.sidebar {
     display: flex;
     flex-direction: column;
@@ -1378,11 +1382,11 @@ div.logix-page-sidebar-content {
     color: #758592;
     padding: 0px 15px;
     font-size: 24px; }
-    /* line 156, sass/_layouts/_sidebarLayout.scss */
+    /* line 160, sass/_layouts/_sidebarLayout.scss */
     div.logix-page-sidebar-content div.sidebar h4 {
       font-size: 24px; }
     @media (min-width: 500px) {
-      /* line 146, sass/_layouts/_sidebarLayout.scss */
+      /* line 150, sass/_layouts/_sidebarLayout.scss */
       div.logix-page-sidebar-content div.sidebar {
         justify-content: flex-start;
         align-items: inherit;

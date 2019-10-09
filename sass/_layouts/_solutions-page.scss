@@ -69,13 +69,12 @@ div.solution-page {
 			flex-direction: column;
 			padding: 0px;
 			flex: 2;
-			margin-top: 200px;
-				@include breakpoint(500px){
-					padding: 0px 45px 0px 0px;
-				}
-				.has-red-divider-uptop {
-					font-size: 24px;
-				}
+			@include breakpoint(500px){
+				padding: 0px 45px 0px 0px;
+			}
+			.has-red-divider-uptop {
+				font-size: 24px;
+			}
 		}
 		.solution-sidebar.customer-testimonial-page {
 			margin-top: 60px;
