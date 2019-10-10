@@ -11,4 +11,9 @@
   img:nth-child(1) {
     margin-right: 10px;
   }
+  @media(max-width: 500px) {
+    img:nth-child(1) {
+      display: none;
+    }
+  }
 }

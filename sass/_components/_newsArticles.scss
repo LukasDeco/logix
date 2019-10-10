@@ -2,6 +2,7 @@
   margin-bottom: 40px;
   .article-head {
     display: flex;
+    flex-wrap: wrap;
     .news-image {
       height: 125px;
       display: inline;

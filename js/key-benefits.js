@@ -38,14 +38,5 @@
 			$('div#benefit-testimonial-' + kb_id_trim).css({'opacity' : '1'});
 		});
 
-	}
-
-
-	else {
-
-
-	}
-
-
 
 	} )( jQuery );

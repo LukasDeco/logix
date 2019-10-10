@@ -333,40 +333,53 @@ div.logix-page {
     /* line 18, sass/_layouts/_front-page.scss */
     div.logix-page div.hero-section div.hero-container {
       display: flex;
-      width: 100%;
-      max-width: 912px; }
-      /* line 22, sass/_layouts/_front-page.scss */
+      width: initial;
+      max-width: 912px;
+      justify-content: center; }
+      @media (min-width: 500px) {
+        /* line 18, sass/_layouts/_front-page.scss */
+        div.logix-page div.hero-section div.hero-container {
+          justify-content: flex-start;
+          width: 100%; } }
+      /* line 27, sass/_layouts/_front-page.scss */
       div.logix-page div.hero-section div.hero-container div.hero-title {
         flex: 3;
         min-width: 300px;
         margin: 0px 15px; }
         @media (min-width: 500px) {
-          /* line 22, sass/_layouts/_front-page.scss */
+          /* line 27, sass/_layouts/_front-page.scss */
           div.logix-page div.hero-section div.hero-container div.hero-title {
             font-size: 40pt;
             margin-left: 260px; } }
-        /* line 30, sass/_layouts/_front-page.scss */
+        /* line 35, sass/_layouts/_front-page.scss */
         div.logix-page div.hero-section div.hero-container div.hero-title h1 {
           color: #242021;
           font-size: 24px;
           font-family: KievitMedium;
           line-height: 1;
-          font-weight: inherit; }
-        /* line 38, sass/_layouts/_front-page.scss */
+          font-weight: inherit;
+          text-align: center; }
+          @media (min-width: 500px) {
+            /* line 35, sass/_layouts/_front-page.scss */
+            div.logix-page div.hero-section div.hero-container div.hero-title h1 {
+              text-align: left; } }
+        /* line 47, sass/_layouts/_front-page.scss */
         div.logix-page div.hero-section div.hero-container div.hero-title h2 {
           color: #ffffff;
           font-size: 37px;
           font-family: Kievit;
           line-height: 1;
-          font-weight: inherit; }
+          font-weight: inherit;
+          text-align: center; }
           @media (min-width: 500px) {
-            /* line 38, sass/_layouts/_front-page.scss */
+            /* line 47, sass/_layouts/_front-page.scss */
             div.logix-page div.hero-section div.hero-container div.hero-title h2 {
+              text-align: left;
               font-size: 40pt; } }
-      /* line 50, sass/_layouts/_front-page.scss */
+      /* line 61, sass/_layouts/_front-page.scss */
       div.logix-page div.hero-section div.hero-container div.hero-empty {
         flex: 2; }
-  /* line 56, sass/_layouts/_front-page.scss */
+  /* line 67, sass/_layouts/_front-page.scss */
   div.logix-page div.logix-page-content {
     display: flex;
     flex-direction: column;
@@ -375,7 +388,7 @@ div.logix-page {
     max-width: 1366px;
     width: 100%; }
     @media (max-width: 500px) {
-      /* line 56, sass/_layouts/_front-page.scss */
+      /* line 67, sass/_layouts/_front-page.scss */
       div.logix-page div.logix-page-content {
         padding: 0px 8px; } }
 
@@ -519,8 +532,9 @@ div.resources-here {
     flex-direction: column;
     flex: 1;
     margin: 10px;
-    justify-content: center; }
-  /* line 37, sass/_layouts/_resource-center.scss */
+    justify-content: center;
+    align-items: center; }
+  /* line 38, sass/_layouts/_resource-center.scss */
   div.resources-here div.resource-select {
     display: flex;
     flex: 1;
@@ -602,8 +616,9 @@ div.resources-here {
     justify-content: center;
     flex-direction: column;
     flex: 1;
-    margin: 10px; }
-  /* line 127, sass/_layouts/_resource-center.scss */
+    margin: 10px;
+    align-items: center; }
+  /* line 128, sass/_layouts/_resource-center.scss */
   div.resources-here div.resource-search {
     display: flex;
     flex: 1;
@@ -612,11 +627,11 @@ div.resources-here {
     height: 40px;
     justify-content: center;
     align-items: center; }
-    /* line 136, sass/_layouts/_resource-center.scss */
+    /* line 137, sass/_layouts/_resource-center.scss */
     div.resources-here div.resource-search form {
       width: 100%;
       height: 100%; }
-      /* line 139, sass/_layouts/_resource-center.scss */
+      /* line 140, sass/_layouts/_resource-center.scss */
       div.resources-here div.resource-search form div.logix-speech {
         display: flex;
         justify-content: space-between;
@@ -625,7 +640,7 @@ div.resources-here {
         height: 100%;
         background: linear-gradient(#b0b1b1, #f2f2f3);
         border: 1px solid #b0b1b1; }
-        /* line 147, sass/_layouts/_resource-center.scss */
+        /* line 148, sass/_layouts/_resource-center.scss */
         div.resources-here div.resource-search form div.logix-speech button {
           height: 100%;
           min-width: 40px;
@@ -636,13 +651,13 @@ div.resources-here {
           font-size: 30px;
           padding: 0px;
           border-radius: 0px; }
-        /* line 158, sass/_layouts/_resource-center.scss */
+        /* line 159, sass/_layouts/_resource-center.scss */
         div.resources-here div.resource-search form div.logix-speech input {
           width: 100%;
           height: 100%;
           border: none;
           background: none; }
-        /* line 165, sass/_layouts/_resource-center.scss */
+        /* line 166, sass/_layouts/_resource-center.scss */
         div.resources-here div.resource-search form div.logix-speech i#wp-voice-search {
           display: flex;
           justify-content: center;
@@ -653,7 +668,7 @@ div.resources-here {
           color: #5e8ab4;
           cursor: pointer; }
 
-/* line 182, sass/_layouts/_resource-center.scss */
+/* line 183, sass/_layouts/_resource-center.scss */
 div.resource-center-list {
   display: flex;
   flex-wrap: wrap;
@@ -662,7 +677,7 @@ div.resource-center-list {
   align-items: center;
   margin-bottom: 50px;
   min-height: 400px; }
-  /* line 190, sass/_layouts/_resource-center.scss */
+  /* line 191, sass/_layouts/_resource-center.scss */
   div.resource-center-list div.resource {
     margin: 10px;
     min-width: 160px;
@@ -675,13 +690,13 @@ div.resource-center-list {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
     padding: 10px;
     transition: .25s; }
-    /* line 202, sass/_layouts/_resource-center.scss */
+    /* line 203, sass/_layouts/_resource-center.scss */
     div.resource-center-list div.resource:hover {
       box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08); }
-    /* line 206, sass/_layouts/_resource-center.scss */
+    /* line 207, sass/_layouts/_resource-center.scss */
     div.resource-center-list div.resource:hover a {
       text-decoration: underline; }
-    /* line 209, sass/_layouts/_resource-center.scss */
+    /* line 210, sass/_layouts/_resource-center.scss */
     div.resource-center-list div.resource a {
       display: flex;
       flex-direction: column;
@@ -689,22 +704,22 @@ div.resource-center-list {
       justify-content: center;
       color: #5e8ab4;
       text-decoration: none; }
-      /* line 216, sass/_layouts/_resource-center.scss */
+      /* line 217, sass/_layouts/_resource-center.scss */
       div.resource-center-list div.resource a i {
         font-size: 55px; }
-      /* line 219, sass/_layouts/_resource-center.scss */
+      /* line 220, sass/_layouts/_resource-center.scss */
       div.resource-center-list div.resource a h5 {
         font-size: 12pt;
         text-align: center; }
-      /* line 223, sass/_layouts/_resource-center.scss */
+      /* line 224, sass/_layouts/_resource-center.scss */
       div.resource-center-list div.resource a p {
         font-size: 11px; }
-  /* line 229, sass/_layouts/_resource-center.scss */
+  /* line 230, sass/_layouts/_resource-center.scss */
   div.resource-center-list div.loader {
     display: inline-block;
     width: 10em;
     height: 10em; }
-    /* line 233, sass/_layouts/_resource-center.scss */
+    /* line 234, sass/_layouts/_resource-center.scss */
     div.resource-center-list div.loader:after {
       content: " ";
       display: block;
@@ -1160,7 +1175,7 @@ div.solution-page {
           text-align: left; } }
       /* line 26, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .title-area h1 {
-        font-size: 55px;
+        font-size: 50px;
         color: #ad0617;
         font-weight: 700;
         font-family: FranklinGothicDemiItalic;
@@ -1170,7 +1185,7 @@ div.solution-page {
         @media (min-width: 500px) {
           /* line 26, sass/_layouts/_solutions-page.scss */
           div.solution-page .solution-main-content .title-area h1 {
-            font-size: 45px; } }
+            font-size: 60px; } }
       /* line 38, sass/_layouts/_solutions-page.scss */
       div.solution-page .solution-main-content .title-area h2 {
         font-size: 26px;
@@ -1879,6 +1894,10 @@ span.file-icon {
   /* line 11, sass/_components/_imgRow.scss */
   .img-row img:nth-child(1) {
     margin-right: 10px; }
+  @media (max-width: 500px) {
+    /* line 15, sass/_components/_imgRow.scss */
+    .img-row img:nth-child(1) {
+      display: none; } }
 
 /* line 1, sass/_components/_columnedMenu.scss */
 .columned-menu {
@@ -2060,13 +2079,14 @@ span.file-icon {
     height: calc(100vh - 76px);
     width: 100%;
     z-index: 10;
-    overflow-y: scroll; }
-  /* line 21, sass/_components/_mobileMenu.scss */
+    overflow-y: scroll;
+    padding-bottom: 100px; }
+  /* line 22, sass/_components/_mobileMenu.scss */
   .mobile-menu ul.menu li {
     overflow: hidden;
     font-size: 20px;
     margin-bottom: 10px; }
-    /* line 25, sass/_components/_mobileMenu.scss */
+    /* line 26, sass/_components/_mobileMenu.scss */
     .mobile-menu ul.menu li a {
       color: #ad0617;
       transition: .5s;
@@ -2076,13 +2096,13 @@ span.file-icon {
       list-style: none;
       font-size: 22px;
       font-family: KievitMedium; }
-      /* line 34, sass/_components/_mobileMenu.scss */
+      /* line 35, sass/_components/_mobileMenu.scss */
       .mobile-menu ul.menu li a:hover {
         opacity: 0.7; }
-        /* line 36, sass/_components/_mobileMenu.scss */
+        /* line 37, sass/_components/_mobileMenu.scss */
         .mobile-menu ul.menu li a:hover::after {
           left: 0; }
-      /* line 40, sass/_components/_mobileMenu.scss */
+      /* line 41, sass/_components/_mobileMenu.scss */
       .mobile-menu ul.menu li a::after {
         content: "";
         height: 2px;
@@ -2092,11 +2112,11 @@ span.file-icon {
         bottom: 0;
         position: absolute;
         transition: .25s; }
-    /* line 51, sass/_components/_mobileMenu.scss */
+    /* line 52, sass/_components/_mobileMenu.scss */
     .mobile-menu ul.menu li .sub-menu li {
       font-size: 18px; }
 
-/* line 68, sass/_components/_mobileMenu.scss */
+/* line 69, sass/_components/_mobileMenu.scss */
 .mobile-menu.open {
   transform: none; }
 
@@ -2116,18 +2136,22 @@ span.file-icon {
 .events-list-container {
   display: flex;
   justify-content: flex-end; }
+  @media (max-width: 500px) {
+    /* line 1, sass/_components/_events.scss */
+    .events-list-container {
+      padding: 0px 8px; } }
 
-/* line 6, sass/_components/_events.scss */
+/* line 9, sass/_components/_events.scss */
 .events-list {
   width: 775px; }
 
-/* line 10, sass/_components/_events.scss */
+/* line 13, sass/_components/_events.scss */
 .event {
   margin-top: 20px; }
-  /* line 12, sass/_components/_events.scss */
+  /* line 15, sass/_components/_events.scss */
   .event p {
     margin-left: 0px !important; }
-  /* line 15, sass/_components/_events.scss */
+  /* line 18, sass/_components/_events.scss */
   .event .event-date-header {
     font-family: KievitBold;
     font-size: 26px;
@@ -2135,16 +2159,26 @@ span.file-icon {
     margin-left: 0px;
     font-family: FranklinGothicDemi;
     letter-spacing: 10px; }
-  /* line 23, sass/_components/_events.scss */
+  /* line 26, sass/_components/_events.scss */
+  .event .event-header {
+    display: flex; }
+    /* line 28, sass/_components/_events.scss */
+    .event .event-header .event-icon {
+      flex: 1;
+      margin-right: 5px; }
+    /* line 32, sass/_components/_events.scss */
+    .event .event-header .event-header-info {
+      flex: 3; }
+  /* line 36, sass/_components/_events.scss */
   .event .event-title {
     font-family: KievitBold;
     font-size: 30px;
     margin-left: 0px;
     color: #ad0617; }
-  /* line 29, sass/_components/_events.scss */
+  /* line 42, sass/_components/_events.scss */
   .event .event-venue {
     font-family: FranklinGothicDemiItalic; }
-  /* line 32, sass/_components/_events.scss */
+  /* line 45, sass/_components/_events.scss */
   .event .learn-more {
     font-style: italic;
     margin-left: 0px; }
@@ -2154,33 +2188,34 @@ span.file-icon {
   margin-bottom: 40px; }
   /* line 3, sass/_components/_newsArticles.scss */
   .news-article .article-head {
-    display: flex; }
-    /* line 5, sass/_components/_newsArticles.scss */
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 6, sass/_components/_newsArticles.scss */
     .news-article .article-head .news-image {
       height: 125px;
       display: inline;
       margin-right: 15px; }
-    /* line 10, sass/_components/_newsArticles.scss */
+    /* line 11, sass/_components/_newsArticles.scss */
     .news-article .article-head .article-info {
       flex: 1;
       display: flex;
       flex-direction: column; }
-      /* line 14, sass/_components/_newsArticles.scss */
+      /* line 15, sass/_components/_newsArticles.scss */
       .news-article .article-head .article-info .news-title {
         color: #ad0617;
         font-size: 34px;
         float: right;
         font-family: FranklinGothicDemi; }
-      /* line 20, sass/_components/_newsArticles.scss */
+      /* line 21, sass/_components/_newsArticles.scss */
       .news-article .article-head .article-info .news-date {
         font-weight: 600;
         font-style: italic;
         color: #5e8ab4; }
-  /* line 28, sass/_components/_newsArticles.scss */
+  /* line 29, sass/_components/_newsArticles.scss */
   .news-article .news-preview {
     color: #5e8ab4;
     font-size: 26px; }
-    /* line 32, sass/_components/_newsArticles.scss */
+    /* line 33, sass/_components/_newsArticles.scss */
     .news-article .news-preview p {
       margin-bottom: 10px;
       display: inline; }

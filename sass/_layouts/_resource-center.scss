@@ -33,6 +33,7 @@ div.resources-here {
 			flex: 1;
 			margin: 10px;
 			justify-content: center;
+			align-items: center;
 		}
 		div.resource-select {
 			display: flex;
@@ -40,7 +41,6 @@ div.resources-here {
 			min-height: 40px;
 			max-width: 450px;
 			min-width: 300px;
-
 			border: 1px solid #b0b1b1;
 			position: relative;
 			outline: none;
@@ -123,6 +123,7 @@ div.resources-here {
 			flex-direction: column;
 			flex: 1;
 			margin: 10px;
+			align-items: center;
 		}
 		div.resource-search {
 			display: flex;

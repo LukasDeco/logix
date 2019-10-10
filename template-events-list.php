@@ -51,8 +51,18 @@ get_header(); ?>
 								?>
 									<div class="event">
 										<p class="event-date-header"><?php echo strtoupper($date->format('F')); ?> <?php echo $date->format('Y'); ?></p>
-										<h3 class="event-title"><?php the_title(); ?></h3>
-										<p class="event-venue"><?php the_field('event_venue'); ?></p>
+										<div class="event-header">
+											<?php if(get_the_post_thumbnail_url()) { ?>
+											<div class="event-icon">
+												<img src="<?php the_post_thumbnail_url(); ?>" >
+											</div>
+											<?php } ?>
+											<div class="event-header-info">
+												<h3 class="event-title"><?php the_title(); ?></h3>
+												<p class="event-venue"><?php the_field('event_venue'); ?></p>
+											</div>
+										</div>
+
 										<p><?php echo $date_display; ?></p>
 										<p class="learn-more">
 											<?php the_field('for_more_information_text'); ?>

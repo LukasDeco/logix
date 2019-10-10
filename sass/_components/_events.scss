@@ -1,6 +1,9 @@
 .events-list-container {
   display: flex;
   justify-content: flex-end;
+  @media(max-width: 500px) {
+    padding: 0px 8px;
+  }
 }
 
 .events-list {
@@ -19,6 +22,16 @@
     margin-left: 0px;
     font-family: FranklinGothicDemi;
     letter-spacing: 10px;
+  }
+  .event-header {
+    display: flex;
+    .event-icon {
+      flex: 1;
+      margin-right: 5px;
+    }
+    .event-header-info {
+      flex: 3;
+    }
   }
   .event-title {
     font-family: KievitBold;

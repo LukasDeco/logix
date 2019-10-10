@@ -24,7 +24,7 @@ div.solution-page {
 						text-align: left;
 					}
 						h1 {
-							font-size: 55px;
+							font-size: 50px;
 							color: $wine-red;
 							font-weight: $heavy-font-weight;
 							font-family: FranklinGothicDemiItalic;
@@ -32,7 +32,7 @@ div.solution-page {
 							letter-spacing: 2px;
 							line-height: 72px;
 							@include breakpoint(500px){
-			          font-size: 45px;
+			          font-size: 60px;
 			        }
 						}
 						h2 {

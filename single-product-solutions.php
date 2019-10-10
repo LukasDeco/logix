@@ -35,7 +35,6 @@ get_header(); ?>
 								<div class="solution-page-area">
 									<?php the_content(); ?>
 								</div>
-
 							</div>
 						</div>
 				<?php		endwhile; // End of the loop.   ?>
