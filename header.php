@@ -43,6 +43,12 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 			<div class="lx-contact-icons"></div>
+			<!-- site contact icons with contact form -->
+			<div style="display: none;" class=" fancybox-hidden" >
+				<div class="hentry" id="contact-form">
+					<?php echo do_shortcode('[contact-form-7 id="1388" title="Contact form 1"]'); ?>
+				</div>
+			</div>
 			<div class="mobile-menu"><?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?></div>
 		</div>
 	</header><!-- #masthead -->
