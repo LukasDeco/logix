@@ -9,8 +9,8 @@ get_header(); ?>
 		<div class="hero-section" style="background-image:url('<?php echo esc_url( get_theme_mod( 'home_hero_image' ) ); ?>');">
 			<div class="hero-container">
 				<div class="hero-title">
-					<h2>Unlock Your<br> Facilities Potential</h2>
-					<h1>Solutions to optimize energy savings, efficiency and production.</h1>
+					<h2><?php echo get_theme_mod( 'main_headline' ); ?></h2>
+					<h1><?php echo get_theme_mod( 'sub_headline' ); ?></h1>
 				</div>
 				<div class="hero-empty">
 				</div>
