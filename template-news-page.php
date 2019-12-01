@@ -49,8 +49,12 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
+						<?php if(get_field('photo')) { ?>
+							<div class="news-article-photo">
+								<img src="<?php the_field('photo'); ?>">
+							</div>
+						<?php } ?>
 						<div class="news-preview">
-
 								<?php the_excerpt(); ?>
 								<a href="<?php the_permalink(); ?>">
 									Learn More

@@ -28,11 +28,14 @@ get_header(); ?>
 						<?php
 						$args = array(
 							'post_type' => 'events',
-							'meta_key' => 'event_date',
-							'orderby' => 'meta_value',
-							'order' => 'ASC',
-							'meta_key'   => 'is_active',
-		  				'meta_value' => true );
+							'meta_key'  => 'event_date',
+					    'orderby'   => 'meta_value_num',
+					    'order'     => 'ASC',
+							'meta_query' => array(
+								'key'  => 'is_active',
+								'value' => true
+							)
+					    );
 						$loop = new WP_Query( $args ) ;
 							if ( $loop->have_posts() ) :
 								while ( $loop->have_posts() ) : $loop->the_post();

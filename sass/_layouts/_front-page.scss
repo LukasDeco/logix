@@ -59,7 +59,11 @@ div.logix-page {
 						}
 
 						div.hero-empty {
-						flex: 2;
+						display: none;
+							@include breakpoint(500px){
+								display: block;
+								flex: 2;
+							}
 						}
 				}
 		}
