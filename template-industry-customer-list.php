@@ -47,7 +47,7 @@ get_header(); ?>
 									'post_type' => 'testimonials',
 									'meta_key' => 'customer_industry',
 									'meta_value' => 'Cold Storage & Grocery Distribution',
-									'posts_per_page'         => '20' ) );
+									'posts_per_page'         => '25' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -76,7 +76,7 @@ get_header(); ?>
 									'post_type' => 'testimonials',
 									'meta_key' => 'customer_industry',
 									'meta_value' => 'Fruit & Vegetable Processors',
-									'posts_per_page'         => '20' ) );
+									'posts_per_page'         => '25' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -105,7 +105,7 @@ get_header(); ?>
 									'post_type' => 'testimonials',
 									'meta_key' => 'customer_industry',
 									'meta_value' => 'Ice Rinks',
-									'posts_per_page' => '20' ) );
+									'posts_per_page' => '25' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -136,7 +136,7 @@ get_header(); ?>
 									'post_type' => 'testimonials',
 									'meta_key' => 'customer_industry',
 									'meta_value' => 'Food & Beverage Processors',
-									'posts_per_page'         => '20' ) );
+									'posts_per_page'         => '25' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -165,7 +165,7 @@ get_header(); ?>
 									'post_type' => 'testimonials',
 									'meta_key' => 'customer_industry',
 									'meta_value' => 'Breweries & Distribution',
-									'posts_per_page'         => '20' ) );
+									'posts_per_page'         => '25' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -194,7 +194,7 @@ get_header(); ?>
 									'post_type' => 'testimonials',
 									'meta_key' => 'customer_industry',
 									'meta_value' => 'Dairies',
-									'posts_per_page'         => '20' ) );
+									'posts_per_page'         => '25' ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
@@ -221,7 +221,11 @@ get_header(); ?>
 							Meat & Seafood Processors
 						</h3>
 						<?php
-							$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'customer_industry', 'meta_value' => 'Meat & Seafood Processors' ) );
+							$loop = new WP_Query( array(
+							'post_type' => 'testimonials',
+							'meta_key' => 'customer_industry',
+							'meta_value' => 'Meat & Seafood Processors',
+							'posts_per_page'         => '25' ) );
 							if ( $loop->have_posts() ) :
 								while ( $loop->have_posts() ) : $loop->the_post(); ?>
 									<div class="item">
@@ -246,7 +250,11 @@ get_header(); ?>
 								Wineries
 							</h3>
 							<?php
-								$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'customer_industry', 'meta_value' => 'Wineries' ) );
+								$loop = new WP_Query( array(
+									'post_type' => 'testimonials',
+									'meta_key' => 'customer_industry',
+									'meta_value' => 'Wineries',
+									'posts_per_page'         => '25'  ) );
 								if ( $loop->have_posts() ) :
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">

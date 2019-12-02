@@ -43,7 +43,25 @@ get_header(); ?>
 					<div>
 						<ul class="customer-profiles-list">
 							<?php
-							$loop = new WP_Query( array( 'post_type' => 'testimonials', 'meta_key' => 'full_profile', 'meta_value' => true, 'orderby'=> 'title', 'order' => 'ASC' ) );
+							$loop = new WP_Query( array(
+								'post_type' => 'testimonials',
+								'posts_per_page' => '20',
+								'meta_query' => array(
+									'relation' => 'AND',
+					        array(
+					            'key' => 'full_profile',
+					            'value' => true,
+					            'compare' => '='
+					        ),
+
+					        array(
+					            'key' => 'list_in_profiles',
+					            'value' => true,
+					            'compare' => '='
+					        )
+								),
+								'orderby'=> 'title',
+								'order' => 'ASC' ) );
 							if ( $loop->have_posts() ) :
 								while ( $loop->have_posts() ) : $loop->the_post(); ?>
 									<li class="item">

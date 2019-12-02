@@ -31,8 +31,9 @@ div.solution-page {
 							margin-bottom: 35px;
 							letter-spacing: 2px;
 							line-height: 72px;
-							@include breakpoint(500px){
-			          font-size: 60px;
+							@media(max-width:500px){
+			          font-size: 52px !important;
+								line-height: 52px !important;
 			        }
 						}
 						h2 {
@@ -54,6 +55,9 @@ div.solution-page {
           color: $arctic-blue;
 					font-size: 24px;
         }
+				.sub-paragraph {
+					color: $wine-red;
+				}
 				ul {
 					color: $arctic-blue;
 					font-size: 24px;

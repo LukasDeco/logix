@@ -14,6 +14,9 @@
       text-indent: -10px;
       font-size: $large-font-size;
       font-family: FranklinGothicBook;
+      p {
+        text-indent: -10px;
+      }
     }
     .customer-info {
       font-family: FranklinGothicBookCondensed;

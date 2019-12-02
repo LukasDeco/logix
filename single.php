@@ -24,7 +24,7 @@ get_header(); ?>
 		<div class="main-section">
 			<div class="logix-main-content">
 				<div class="solution-page-area">
-					<p>
+					<p class="sub-paragraph">
 						<?php the_field('sub_paragraph'); ?>
 					</p>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
