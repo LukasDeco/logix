@@ -31,6 +31,7 @@ div.our-solutions {
 					font-size: 37px;
 					display: flex;
 					align-items: center;
+					white-space: nowrap;
 						&:before {
 							content: '';
 							border-top: 20px solid transparent;

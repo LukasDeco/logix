@@ -36,7 +36,7 @@ get_header(); ?>
 					wp_reset_postdata(); ?>
 
 					<div class="title has-red-divider-uptop">
-						<p>What The Industry is Saying</p>
+						<p>What the Industry is Saying</p>
 					</div>
 				</div>
 
@@ -159,7 +159,7 @@ get_header(); ?>
 									<?php the_field('quote'); ?>
 								</div>
 								<div class="customer-info">
-									<p><?php the_field('customer_name'); ?><br><span><?php the_field('customer_company_title'); ?></span></p>
+									<p><?php the_field('customer_name'); ?><br><span><?php the_field('customer_title'); ?>, <?php the_field('customer_company'); ?></span></p>
 									<div class="customer-logo">
 										<img src="<?php the_field('customer_company_logo'); ?>">
 									</div>

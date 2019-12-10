@@ -111,7 +111,10 @@ get_header(); ?>
 				<?php $args = array(
 						post_type => 'resources',
 						post_status => 'publish',
-						category_name => ''
+						category_name => '',
+						posts_per_page => 64,
+						orderby => 'title',
+						order => 'ASC'
 					);
 					$resources_query = new  WP_Query( $args );
 					while ( $resources_query->have_posts() ) : $resources_query->the_post();

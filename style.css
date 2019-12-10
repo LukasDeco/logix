@@ -353,7 +353,7 @@ div.logix-page {
             margin-left: 260px; } }
         /* line 35, sass/_layouts/_front-page.scss */
         div.logix-page div.hero-section div.hero-container div.hero-title h1 {
-          color: #242021;
+          color: white;
           font-size: 24px;
           font-family: KievitMedium;
           line-height: 1;
@@ -1018,8 +1018,9 @@ div.our-solutions {
       font-family: KievitBold;
       font-size: 37px;
       display: flex;
-      align-items: center; }
-      /* line 34, sass/_layouts/_our-solutions.scss */
+      align-items: center;
+      white-space: nowrap; }
+      /* line 35, sass/_layouts/_our-solutions.scss */
       div.our-solutions div.solutions-menu h3:before {
         content: '';
         border-top: 20px solid transparent;
@@ -1027,24 +1028,24 @@ div.our-solutions {
         border-left: 20px solid #5e8ab4;
         position: absolute;
         left: -30px; }
-    /* line 44, sass/_layouts/_our-solutions.scss */
+    /* line 45, sass/_layouts/_our-solutions.scss */
     div.our-solutions div.solutions-menu ul {
       list-style: none;
       margin-left: 0px; }
-      /* line 47, sass/_layouts/_our-solutions.scss */
+      /* line 48, sass/_layouts/_our-solutions.scss */
       div.our-solutions div.solutions-menu ul li {
         font-size: 22px;
         font-family: KievitMedium; }
-        /* line 50, sass/_layouts/_our-solutions.scss */
+        /* line 51, sass/_layouts/_our-solutions.scss */
         div.our-solutions div.solutions-menu ul li a {
           color: #5e8ab4; }
-          /* line 52, sass/_layouts/_our-solutions.scss */
+          /* line 53, sass/_layouts/_our-solutions.scss */
           div.our-solutions div.solutions-menu ul li a:hover {
             color: #ad0617; }
-          /* line 56, sass/_layouts/_our-solutions.scss */
+          /* line 57, sass/_layouts/_our-solutions.scss */
           div.our-solutions div.solutions-menu ul li a:visited {
             color: #ad0617; }
-        /* line 61, sass/_layouts/_our-solutions.scss */
+        /* line 62, sass/_layouts/_our-solutions.scss */
         div.our-solutions div.solutions-menu ul li ul li a {
           margin-left: 20px; }
 
@@ -2113,14 +2114,15 @@ span.file-icon {
       text-decoration: none;
       list-style: none;
       font-size: 22px;
-      font-family: KievitMedium; }
-      /* line 35, sass/_components/_mobileMenu.scss */
+      font-family: KievitMedium;
+      hyphens: none; }
+      /* line 36, sass/_components/_mobileMenu.scss */
       .mobile-menu ul.menu li a:hover {
         opacity: 0.7; }
-        /* line 37, sass/_components/_mobileMenu.scss */
+        /* line 38, sass/_components/_mobileMenu.scss */
         .mobile-menu ul.menu li a:hover::after {
           left: 0; }
-      /* line 41, sass/_components/_mobileMenu.scss */
+      /* line 42, sass/_components/_mobileMenu.scss */
       .mobile-menu ul.menu li a::after {
         content: "";
         height: 2px;
@@ -2130,11 +2132,11 @@ span.file-icon {
         bottom: 0;
         position: absolute;
         transition: .25s; }
-    /* line 52, sass/_components/_mobileMenu.scss */
+    /* line 53, sass/_components/_mobileMenu.scss */
     .mobile-menu ul.menu li .sub-menu li {
       font-size: 18px; }
 
-/* line 69, sass/_components/_mobileMenu.scss */
+/* line 70, sass/_components/_mobileMenu.scss */
 .mobile-menu.open {
   transform: none; }
 
