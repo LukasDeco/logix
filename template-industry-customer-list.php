@@ -52,7 +52,7 @@ get_header(); ?>
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
 											<?php
-											$profile = get_post_meta($post->ID, 'full_profile', true);
+											$profile = get_post_meta($post->ID, 'list_in_profiles', true);
 											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
@@ -81,7 +81,7 @@ get_header(); ?>
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
 											<?php
-											$profile = get_post_meta($post->ID, 'full_profile', true);
+											$profile = get_post_meta($post->ID, 'list_in_profiles', true);
 											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
@@ -110,7 +110,7 @@ get_header(); ?>
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
 											<?php
-											$profile = get_post_meta($post->ID, 'full_profile', true);
+											$profile = get_post_meta($post->ID, 'list_in_profiles', true);
 											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
@@ -141,7 +141,7 @@ get_header(); ?>
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
 											<?php
-											$profile = get_post_meta($post->ID, 'full_profile', true);
+											$profile = get_post_meta($post->ID, 'list_in_profiles', true);
 											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
@@ -170,7 +170,7 @@ get_header(); ?>
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
 											<?php
-											$profile = get_post_meta($post->ID, 'full_profile', true);
+											$profile = get_post_meta($post->ID, 'list_in_profiles', true);
 											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
@@ -199,7 +199,7 @@ get_header(); ?>
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
 											<?php
-											$profile = get_post_meta($post->ID, 'full_profile', true);
+											$profile = get_post_meta($post->ID, 'list_in_profiles', true);
 											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
@@ -230,7 +230,7 @@ get_header(); ?>
 								while ( $loop->have_posts() ) : $loop->the_post(); ?>
 									<div class="item">
 										<?php
-										$profile = get_post_meta($post->ID, 'full_profile', true);
+										$profile = get_post_meta($post->ID, 'list_in_profiles', true);
 										if($profile) { ?>
 										<a href="<?php the_permalink(); ?>" >
 											<?php the_title(); ?>
@@ -259,7 +259,7 @@ get_header(); ?>
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										<div class="item">
 											<?php
-											$profile = get_post_meta($post->ID, 'full_profile', true);
+											$profile = get_post_meta($post->ID, 'list_in_profiles', true);
 											if($profile) { ?>
 											<a href="<?php the_permalink(); ?>" >
 												<?php the_title(); ?>
